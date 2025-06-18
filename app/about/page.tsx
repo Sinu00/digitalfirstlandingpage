@@ -13,7 +13,7 @@ export default function AboutPage() {
               <div className="bg-gradient-to-r from-blue-700 to-indigo-700 text-white px-3 py-2 font-serif font-bold text-xl rounded-md shadow-sm">
                 DIGITAL FIRST
               </div>
-              <div className="ml-3 text-slate-600 text-sm font-medium hidden sm:block">Print & Design Solutions</div>
+             
             </div>
 
             {/* Navigation */}
@@ -42,7 +42,7 @@ export default function AboutPage() {
             <div className="hidden lg:flex items-center space-x-4">
               <div className="flex items-center text-blue-700">
                 <Phone className="h-4 w-4 mr-2" />
-                <span className="text-sm font-medium">+971 58 987 5122</span>
+                <span className="text-sm font-medium">+97 00 00 000</span>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl lg:text-5xl font-serif font-bold mb-6">About Digital First</h1>
           <p className="text-lg text-blue-100 max-w-3xl mx-auto">
-            For over 38 years, we&apos;ve been the trusted partner for printing and design solutions 
+            For over 3 years, we&apos;ve been the trusted partner for printing and design solutions 
             across the UAE and Canada.
           </p>
         </div>
@@ -82,7 +82,7 @@ export default function AboutPage() {
                 <div className="bg-white/20 rounded-lg p-4 inline-block">
                   <Award className="h-12 w-12 mx-auto" />
                 </div>
-                <h3 className="text-2xl font-serif font-bold">38+ Years of Excellence</h3>
+                <h3 className="text-2xl font-serif font-bold">3+ Years of Excellence</h3>
                 <p className="text-blue-100">
                   Decades of experience in digital printing and design
                 </p>
@@ -274,7 +274,7 @@ export default function AboutPage() {
                 DIGITAL FIRST
               </div>
               <p className="text-slate-400 text-sm">
-                Your complete digital printing and design solution with over 38 years of excellence.
+                Your complete digital printing and design solution with over 3 years of excellence.
               </p>
             </div>
             
@@ -303,7 +303,7 @@ export default function AboutPage() {
               <div className="space-y-2 text-slate-400 text-sm">
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
-                  +971 58 987 5122
+                  +97 00 00 000
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-4 w-4 mr-2" />

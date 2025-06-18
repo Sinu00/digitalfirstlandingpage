@@ -13,7 +13,7 @@ export default function WhyDigitalFirstPage() {
               <div className="bg-gradient-to-r from-blue-700 to-indigo-700 text-white px-3 py-2 font-serif font-bold text-xl rounded-md shadow-sm">
                 DIGITAL FIRST
               </div>
-              <div className="ml-3 text-slate-600 text-sm font-medium hidden sm:block">Print & Design Solutions</div>
+             
             </div>
 
             {/* Navigation */}
@@ -42,7 +42,7 @@ export default function WhyDigitalFirstPage() {
             <div className="hidden lg:flex items-center space-x-4">
               <div className="flex items-center text-blue-700">
                 <Phone className="h-4 w-4 mr-2" />
-                <span className="text-sm font-medium">+971 58 987 5122</span>
+                <span className="text-sm font-medium">+97 00 00 000</span>
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function WhyDigitalFirstPage() {
               <div className="bg-gradient-to-r from-blue-600 to-indigo-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <Award className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">38+ Years Experience</h3>
+              <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">3+ Years Experience</h3>
               <p className="text-slate-600 leading-relaxed text-sm mb-4">
                 Nearly four decades of expertise in the printing industry, making us one of the most trusted names in the region.
               </p>
@@ -234,7 +234,7 @@ export default function WhyDigitalFirstPage() {
                 DIGITAL FIRST
               </div>
               <p className="text-slate-400 text-sm">
-                Your complete digital printing and design solution with over 38 years of excellence.
+                Your complete digital printing and design solution with over 3 years of excellence.
               </p>
             </div>
             
@@ -263,7 +263,7 @@ export default function WhyDigitalFirstPage() {
               <div className="space-y-2 text-slate-400 text-sm">
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
-                  +971 58 987 5122
+                  +97 00 00 000
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-4 w-4 mr-2" />

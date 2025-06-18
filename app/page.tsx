@@ -13,7 +13,6 @@ export default function HomePage() {
               <div className="bg-gradient-to-r from-blue-700 to-indigo-700 text-white px-3 py-2 font-serif font-bold text-xl rounded-md shadow-sm">
                 DIGITAL FIRST
               </div>
-              <div className="ml-3 text-slate-600 text-sm font-medium hidden sm:block">Print & Design Solutions</div>
             </div>
 
             {/* Navigation */}
@@ -40,7 +39,7 @@ export default function HomePage() {
             <div className="hidden lg:flex items-center space-x-4">
               <div className="flex items-center text-blue-700">
                 <Phone className="h-4 w-4 mr-2" />
-                <span className="text-sm font-medium">+971 58 987 5122</span>
+                <span className="text-sm font-medium">+97 00 00 000</span>
               </div>
             </div>
           </div>
@@ -52,11 +51,11 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl lg:text-6xl font-serif font-bold mb-6 leading-tight">
+              <h1 className="text-3xl lg:text-4xl font-serif font-bold mb-6 leading-tight">
                 Your Complete Digital Printing & Design Solution
               </h1>
-              <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                With over 38 years of excellence, we deliver premium printing services, custom gifts, 
+              <p className="text-lg text-blue-100 mb-8 leading-relaxed">
+                With over 3 years of excellence, we deliver premium printing services, custom gifts, 
                 professional photography, and innovative signage solutions across the UAE and Canada.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -75,7 +74,7 @@ export default function HomePage() {
                     <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Award className="h-8 w-8 text-white" />
                     </div>
-                    <h3 className="font-semibold mb-2">38+ Years</h3>
+                    <h3 className="font-semibold mb-2">3+ Years</h3>
                     <p className="text-blue-100 text-sm">Industry Experience</p>
                   </div>
                   <div className="text-center">
@@ -192,7 +191,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-6">
-                Trusted by Businesses for Over 38 Years
+                Trusted by Businesses for Over 3 Years
               </h2>
               <p className="text-lg text-slate-600 mb-6 leading-relaxed">
                 Digital First has been at the forefront of the printing and design industry, serving thousands 
@@ -326,7 +325,7 @@ export default function HomePage() {
                 DIGITAL FIRST
               </div>
               <p className="text-slate-400 text-sm">
-                Your complete digital printing and design solution with over 38 years of excellence.
+                Your complete digital printing and design solution with over 3 years of excellence.
               </p>
             </div>
             
@@ -355,7 +354,7 @@ export default function HomePage() {
               <div className="space-y-2 text-slate-400 text-sm">
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
-                  +971 58 987 5122
+                  +97 00 00 000
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-4 w-4 mr-2" />

@@ -13,7 +13,7 @@ export default function TwentyFourHoursPrintingPage() {
               <div className="bg-gradient-to-r from-blue-700 to-indigo-700 text-white px-3 py-2 font-serif font-bold text-xl rounded-md shadow-sm">
                 DIGITAL FIRST
               </div>
-              <div className="ml-3 text-slate-600 text-sm font-medium hidden sm:block">Print & Design Solutions</div>
+             
             </div>
 
             {/* Navigation */}
@@ -42,7 +42,7 @@ export default function TwentyFourHoursPrintingPage() {
             <div className="hidden lg:flex items-center space-x-4">
               <div className="flex items-center text-blue-700">
                 <Phone className="h-4 w-4 mr-2" />
-                <span className="text-sm font-medium">+971 58 987 5122</span>
+                <span className="text-sm font-medium">+97 00 00 000</span>
               </div>
             </div>
           </div>
@@ -224,7 +224,7 @@ export default function TwentyFourHoursPrintingPage() {
                   </div>
                   <div>
                     <h3 className="font-serif font-bold text-slate-900">Emergency Hotline</h3>
-                    <p className="text-slate-600 text-sm">+971 58 987 5122 (24/7)</p>
+                    <p className="text-slate-600 text-sm">+97 00 00 000 (24/7)</p>
                   </div>
                 </div>
                 
@@ -300,7 +300,7 @@ export default function TwentyFourHoursPrintingPage() {
                 DIGITAL FIRST
               </div>
               <p className="text-slate-400 text-sm">
-                Your complete digital printing and design solution with over 38 years of excellence.
+                Your complete digital printing and design solution with over 3 years of excellence.
               </p>
             </div>
             
@@ -329,7 +329,7 @@ export default function TwentyFourHoursPrintingPage() {
               <div className="space-y-2 text-slate-400 text-sm">
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
-                  +971 58 987 5122
+                  +97 00 00 000
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-4 w-4 mr-2" />

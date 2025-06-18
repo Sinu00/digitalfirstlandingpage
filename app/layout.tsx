@@ -16,7 +16,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Digital First - Print & Design Solutions",
-  description: "Your complete digital printing and design solution with over 38 years of excellence. Premium printing services, graphic design, and custom solutions across Dubai, Abu Dhabi, Sharjah, and Canada.",
+  description: "Your complete digital printing and design solution with over 3 years of excellence. Premium printing services, graphic design, and custom solutions across Dubai, Abu Dhabi, Sharjah, and Canada.",
   keywords: "digital printing, graphic design, print services, Dubai, Abu Dhabi, Sharjah, Canada",
 };
 
