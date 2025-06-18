@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Smartphone, Printer, Shield, Clock, MapPin, Phone, Mail, Wifi, Lock } from "lucide-react"
+import { Smartphone, Shield, Clock, MapPin, Phone, Mail, Wifi, Lock } from "lucide-react"
 
 export default function MobilePrintingPage() {
   return (
@@ -370,7 +370,7 @@ export default function MobilePrintingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-white mb-4">Ready to Start Mobile Printing?</h2>
           <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
-            Experience the convenience of printing from anywhere, anytime with Digital First mobile printing.
+            Let&apos;s bring your vision to life with our professional mobile printing services.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/locations" className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors">
