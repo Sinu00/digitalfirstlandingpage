@@ -1,36 +1,59 @@
 import Link from "next/link"
-import { Award, Brain, Target, Users, Zap, Shield, Star, CheckCircle } from "lucide-react"
+import { Award, Brain, Target, Users, Zap, Shield, Star, CheckCircle, Phone, Mail } from "lucide-react"
 
 export default function DigitalFirstExpertisePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-purple-100">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Header */}
-      <header className="bg-white/95 backdrop-blur-sm shadow-lg">
+      <header className="bg-white/95 backdrop-blur-sm shadow-sm border-b border-slate-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
+          <div className="flex justify-between items-center h-16">
+            {/* Logo */}
             <div className="flex items-center">
-              <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-3 font-bold text-2xl rounded-lg shadow-lg">
+              <div className="bg-gradient-to-r from-blue-700 to-indigo-700 text-white px-3 py-2 font-serif font-bold text-xl rounded-md shadow-sm">
                 DIGITAL FIRST
               </div>
-              <div className="ml-3 text-gray-700 text-sm font-medium">Print & Design Solutions</div>
+              <div className="ml-3 text-slate-600 text-sm font-medium hidden sm:block">Print & Design Solutions</div>
             </div>
-            <nav className="hidden md:flex space-x-8">
-              <Link href="/" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</Link>
-              <Link href="/printing-services" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Printing Services</Link>
-              <Link href="/custom-gifts" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Custom Gifts</Link>
-              <Link href="/photo-studio" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Photo Studio</Link>
-              <Link href="/signage" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Signage</Link>
-              <Link href="/locations" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Locations</Link>
+
+            {/* Navigation */}
+            <nav className="hidden md:flex space-x-6">
+              <Link href="/" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">
+                Home
+              </Link>
+              <Link href="/printing-services" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">
+                Printing Services
+              </Link>
+              <Link href="/custom-gifts" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">
+                Custom Gifts
+              </Link>
+              <Link href="/photo-studio" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">
+                Photo Studio
+              </Link>
+              <Link href="/signage" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">
+                Signage
+              </Link>
+              <Link href="/locations" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">
+                Locations
+              </Link>
             </nav>
+
+            {/* Contact Info */}
+            <div className="hidden lg:flex items-center space-x-4">
+              <div className="flex items-center text-blue-700">
+                <Phone className="h-4 w-4 mr-2" />
+                <span className="text-sm font-medium">+971 58 987 5122</span>
+              </div>
+            </div>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+      <section className="py-16 lg:py-24 bg-gradient-to-r from-blue-700 to-indigo-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold mb-6">The Digital First Expertise</h1>
-          <p className="text-xl text-indigo-100 max-w-3xl mx-auto">
+          <h1 className="text-3xl lg:text-5xl font-serif font-bold mb-6">The Digital First Expertise</h1>
+          <p className="text-lg text-blue-100 max-w-3xl mx-auto">
             Discover our specialized knowledge, industry expertise, and innovative solutions 
             that set us apart in the digital printing and design industry.
           </p>
@@ -38,67 +61,112 @@ export default function DigitalFirstExpertisePage() {
       </section>
 
       {/* Core Expertise Areas */}
-      <section className="py-20 bg-white">
+      <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Core Expertise</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Our Core Expertise</h2>
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
               Decades of experience combined with cutting-edge technology and innovative solutions.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Digital Printing Expertise */}
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
-              <div className="bg-gradient-to-r from-blue-600 to-indigo-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
-                <Brain className="h-8 w-8 text-white" />
+            <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+              <div className="bg-gradient-to-r from-blue-600 to-indigo-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <Brain className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Digital Printing Mastery</h3>
-              <p className="text-gray-600 mb-6">
+              <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">Digital Printing Mastery</h3>
+              <p className="text-slate-600 leading-relaxed text-sm mb-4">
                 Advanced digital printing techniques with precision color management and quality control.
               </p>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Color Management Systems</li>
-                <li>• Variable Data Printing</li>
-                <li>• High-Resolution Output</li>
-                <li>• Quality Control Protocols</li>
-                <li>• Workflow Optimization</li>
+              <ul className="space-y-2 text-slate-600 text-sm">
+                <li className="flex items-center">
+                  <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3"></div>
+                  Color Management Systems
+                </li>
+                <li className="flex items-center">
+                  <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3"></div>
+                  Variable Data Printing
+                </li>
+                <li className="flex items-center">
+                  <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3"></div>
+                  High-Resolution Output
+                </li>
+                <li className="flex items-center">
+                  <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3"></div>
+                  Quality Control Protocols
+                </li>
+                <li className="flex items-center">
+                  <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3"></div>
+                  Workflow Optimization
+                </li>
               </ul>
             </div>
 
             {/* Design Expertise */}
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-100">
-              <div className="bg-gradient-to-r from-green-600 to-emerald-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
-                <Target className="h-8 w-8 text-white" />
+            <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+              <div className="bg-gradient-to-r from-indigo-600 to-blue-700 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <Target className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Creative Design Excellence</h3>
-              <p className="text-gray-600 mb-6">
+              <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">Creative Design Excellence</h3>
+              <p className="text-slate-600 leading-relaxed text-sm mb-4">
                 Professional design services with creative vision and technical precision.
               </p>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Brand Identity Development</li>
-                <li>• Marketing Material Design</li>
-                <li>• Print-Ready Artwork</li>
-                <li>• Creative Direction</li>
-                <li>• Design Consultation</li>
+              <ul className="space-y-2 text-slate-600 text-sm">
+                <li className="flex items-center">
+                  <div className="w-1.5 h-1.5 bg-indigo-600 rounded-full mr-3"></div>
+                  Brand Identity Development
+                </li>
+                <li className="flex items-center">
+                  <div className="w-1.5 h-1.5 bg-indigo-600 rounded-full mr-3"></div>
+                  Marketing Material Design
+                </li>
+                <li className="flex items-center">
+                  <div className="w-1.5 h-1.5 bg-indigo-600 rounded-full mr-3"></div>
+                  Print-Ready Artwork
+                </li>
+                <li className="flex items-center">
+                  <div className="w-1.5 h-1.5 bg-indigo-600 rounded-full mr-3"></div>
+                  Creative Direction
+                </li>
+                <li className="flex items-center">
+                  <div className="w-1.5 h-1.5 bg-indigo-600 rounded-full mr-3"></div>
+                  Design Consultation
+                </li>
               </ul>
             </div>
 
             {/* Technology Expertise */}
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 border border-purple-100">
-              <div className="bg-gradient-to-r from-purple-600 to-pink-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
-                <Zap className="h-8 w-8 text-white" />
+            <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+              <div className="bg-gradient-to-r from-slate-600 to-blue-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <Zap className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Technology Innovation</h3>
-              <p className="text-gray-600 mb-6">
+              <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">Technology Innovation</h3>
+              <p className="text-slate-600 leading-relaxed text-sm mb-4">
                 State-of-the-art equipment and cutting-edge technology solutions.
               </p>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Latest Printing Equipment</li>
-                <li>• Digital Workflow Systems</li>
-                <li>• Automation Solutions</li>
-                <li>• Quality Monitoring</li>
-                <li>• Process Optimization</li>
+              <ul className="space-y-2 text-slate-600 text-sm">
+                <li className="flex items-center">
+                  <div className="w-1.5 h-1.5 bg-slate-600 rounded-full mr-3"></div>
+                  Latest Printing Equipment
+                </li>
+                <li className="flex items-center">
+                  <div className="w-1.5 h-1.5 bg-slate-600 rounded-full mr-3"></div>
+                  Digital Workflow Systems
+                </li>
+                <li className="flex items-center">
+                  <div className="w-1.5 h-1.5 bg-slate-600 rounded-full mr-3"></div>
+                  Automation Solutions
+                </li>
+                <li className="flex items-center">
+                  <div className="w-1.5 h-1.5 bg-slate-600 rounded-full mr-3"></div>
+                  Quality Monitoring
+                </li>
+                <li className="flex items-center">
+                  <div className="w-1.5 h-1.5 bg-slate-600 rounded-full mr-3"></div>
+                  Process Optimization
+                </li>
               </ul>
             </div>
           </div>
@@ -106,102 +174,102 @@ export default function DigitalFirstExpertisePage() {
       </section>
 
       {/* Industry Knowledge */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-indigo-50">
+      <section className="py-16 lg:py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Industry Knowledge & Experience</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Industry Knowledge & Experience</h2>
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
               38+ years of industry experience across multiple sectors and markets.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center space-y-4">
-              <div className="bg-indigo-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto">
-                <Award className="h-10 w-10 text-white" />
+              <div className="bg-blue-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
+                <Award className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900">Market Leadership</h3>
-              <p className="text-gray-600">Leading position in UAE printing industry</p>
+              <h3 className="text-xl font-serif font-bold text-slate-900">Market Leadership</h3>
+              <p className="text-slate-600">Leading position in UAE printing industry</p>
             </div>
             
             <div className="text-center space-y-4">
-              <div className="bg-purple-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto">
-                <Users className="h-10 w-10 text-white" />
+              <div className="bg-indigo-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
+                <Users className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900">Expert Team</h3>
-              <p className="text-gray-600">Skilled professionals with deep expertise</p>
+              <h3 className="text-xl font-serif font-bold text-slate-900">Expert Team</h3>
+              <p className="text-slate-600">Skilled professionals with deep expertise</p>
             </div>
             
             <div className="text-center space-y-4">
-              <div className="bg-blue-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto">
-                <Shield className="h-10 w-10 text-white" />
+              <div className="bg-slate-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
+                <Shield className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900">Quality Standards</h3>
-              <p className="text-gray-600">International quality standards</p>
+              <h3 className="text-xl font-serif font-bold text-slate-900">Quality Standards</h3>
+              <p className="text-slate-600">International quality standards</p>
             </div>
             
             <div className="text-center space-y-4">
-              <div className="bg-green-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto">
-                <Star className="h-10 w-10 text-white" />
+              <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
+                <Star className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900">Innovation</h3>
-              <p className="text-gray-600">Continuous innovation and improvement</p>
+              <h3 className="text-xl font-serif font-bold text-slate-900">Innovation</h3>
+              <p className="text-slate-600">Continuous innovation and improvement</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Specialized Solutions */}
-      <section className="py-20 bg-white">
+      <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Specialized Solutions</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Specialized Solutions</h2>
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
               Tailored solutions for specific industries and requirements.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Corporate Solutions</h3>
-              <ul className="space-y-4">
+            <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300">
+              <h3 className="text-xl font-serif font-bold text-slate-900 mb-4">Corporate Solutions</h3>
+              <ul className="space-y-3">
                 <li className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-blue-600 mr-3" />
-                  <span className="text-gray-700">Large-scale printing projects</span>
+                  <CheckCircle className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0" />
+                  <span className="text-slate-600 text-sm">Large-scale printing projects</span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-blue-600 mr-3" />
-                  <span className="text-gray-700">Brand consistency management</span>
+                  <CheckCircle className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0" />
+                  <span className="text-slate-600 text-sm">Brand consistency management</span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-blue-600 mr-3" />
-                  <span className="text-gray-700">Corporate identity packages</span>
+                  <CheckCircle className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0" />
+                  <span className="text-slate-600 text-sm">Corporate identity packages</span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-blue-600 mr-3" />
-                  <span className="text-gray-700">Marketing campaign support</span>
+                  <CheckCircle className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0" />
+                  <span className="text-slate-600 text-sm">Marketing campaign support</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-100">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Event & Exhibition</h3>
-              <ul className="space-y-4">
+            <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300">
+              <h3 className="text-xl font-serif font-bold text-slate-900 mb-4">Event & Exhibition</h3>
+              <ul className="space-y-3">
                 <li className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-green-600 mr-3" />
-                  <span className="text-gray-700">Large format printing</span>
+                  <CheckCircle className="h-5 w-5 text-indigo-600 mr-3 flex-shrink-0" />
+                  <span className="text-slate-600 text-sm">Large format printing</span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-green-600 mr-3" />
-                  <span className="text-gray-700">Exhibition graphics</span>
+                  <CheckCircle className="h-5 w-5 text-indigo-600 mr-3 flex-shrink-0" />
+                  <span className="text-slate-600 text-sm">Exhibition graphics</span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-green-600 mr-3" />
-                  <span className="text-gray-700">Event branding</span>
+                  <CheckCircle className="h-5 w-5 text-indigo-600 mr-3 flex-shrink-0" />
+                  <span className="text-slate-600 text-sm">Event branding</span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="h-6 w-6 text-green-600 mr-3" />
-                  <span className="text-gray-700">Promotional materials</span>
+                  <CheckCircle className="h-5 w-5 text-indigo-600 mr-3 flex-shrink-0" />
+                  <span className="text-slate-600 text-sm">Promotional materials</span>
                 </li>
               </ul>
             </div>
@@ -210,55 +278,55 @@ export default function DigitalFirstExpertisePage() {
       </section>
 
       {/* Certifications & Awards */}
-      <section className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
+      <section className="py-16 lg:py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Certifications & Recognition</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Certifications & Recognition</h2>
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
               Our expertise is recognized through various certifications and industry awards.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center space-y-4">
-              <div className="bg-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+              <div className="bg-blue-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
                 <Award className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900">Quality Certifications</h3>
-              <p className="text-gray-600">ISO certified quality management systems</p>
+              <h3 className="text-xl font-serif font-bold text-slate-900">Quality Certifications</h3>
+              <p className="text-slate-600">ISO certified quality management systems</p>
             </div>
             
             <div className="text-center space-y-4">
-              <div className="bg-pink-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+              <div className="bg-indigo-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
                 <Star className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900">Industry Awards</h3>
-              <p className="text-gray-600">Recognition for excellence in printing</p>
+              <h3 className="text-xl font-serif font-bold text-slate-900">Industry Awards</h3>
+              <p className="text-slate-600">Recognition for excellence in printing</p>
             </div>
             
             <div className="text-center space-y-4">
-              <div className="bg-indigo-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+              <div className="bg-slate-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
                 <Shield className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900">Environmental Standards</h3>
-              <p className="text-gray-600">Eco-friendly printing practices</p>
+              <h3 className="text-xl font-serif font-bold text-slate-900">Environmental Standards</h3>
+              <p className="text-slate-600">Eco-friendly printing practices</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
+      <section className="py-16 lg:py-24 bg-gradient-to-r from-blue-700 to-indigo-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-white mb-4">Experience Our Expertise</h2>
-          <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl lg:text-4xl font-serif font-bold text-white mb-4">Experience Our Expertise</h2>
+          <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
             Let our team of experts help you with your printing and design needs.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/contact" className="bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            <Link href="/contact" className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors">
               Consult Our Experts
             </Link>
-            <Link href="/locations" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition-colors">
+            <Link href="/locations" className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors">
               Visit Our Studio
             </Link>
           </div>
@@ -266,21 +334,21 @@ export default function DigitalFirstExpertisePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-slate-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-2 font-bold text-xl rounded mb-4 inline-block">
+              <div className="bg-gradient-to-r from-blue-700 to-indigo-700 text-white px-3 py-2 font-serif font-bold text-xl rounded-md shadow-sm mb-4 inline-block">
                 DIGITAL FIRST
               </div>
-              <p className="text-gray-400">
+              <p className="text-slate-400 text-sm">
                 Your complete digital printing and design solution with over 38 years of excellence.
               </p>
             </div>
             
             <div>
-              <h3 className="font-semibold mb-4">Services</h3>
-              <ul className="space-y-2 text-gray-400">
+              <h3 className="font-semibold mb-4 text-sm">Services</h3>
+              <ul className="space-y-2 text-slate-400 text-sm">
                 <li><Link href="/printing-services" className="hover:text-white transition-colors">Printing Services</Link></li>
                 <li><Link href="/custom-gifts" className="hover:text-white transition-colors">Custom Gifts</Link></li>
                 <li><Link href="/photo-studio" className="hover:text-white transition-colors">Photo Studio</Link></li>
@@ -289,8 +357,8 @@ export default function DigitalFirstExpertisePage() {
             </div>
             
             <div>
-              <h3 className="font-semibold mb-4">Locations</h3>
-              <ul className="space-y-2 text-gray-400">
+              <h3 className="font-semibold mb-4 text-sm">Locations</h3>
+              <ul className="space-y-2 text-slate-400 text-sm">
                 <li><Link href="/locations/dubai" className="hover:text-white transition-colors">Dubai</Link></li>
                 <li><Link href="/locations/abu-dhabi" className="hover:text-white transition-colors">Abu Dhabi</Link></li>
                 <li><Link href="/locations/sharjah" className="hover:text-white transition-colors">Sharjah</Link></li>
@@ -299,19 +367,21 @@ export default function DigitalFirstExpertisePage() {
             </div>
             
             <div>
-              <h3 className="font-semibold mb-4">Contact</h3>
-              <div className="space-y-2 text-gray-400">
+              <h3 className="font-semibold mb-4 text-sm">Contact</h3>
+              <div className="space-y-2 text-slate-400 text-sm">
                 <div className="flex items-center">
-                  <span className="text-sm">+971 58 987 5122</span>
+                  <Phone className="h-4 w-4 mr-2" />
+                  +971 58 987 5122
                 </div>
                 <div className="flex items-center">
-                  <span className="text-sm">info@digitalfirst.com</span>
+                  <Mail className="h-4 w-4 mr-2" />
+                  info@digitalfirst.com
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+          <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400 text-sm">
             <p>&copy; 2025 Digital First. All rights reserved.</p>
           </div>
         </div>
