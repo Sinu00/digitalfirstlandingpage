@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Camera, Phone, Mail, Clock, Shield, Award, FileText, Palette, MapPin, ArrowRight } from "lucide-react"
+import { Camera, Phone, Mail, Clock, Shield, Award, ArrowRight } from "lucide-react"
 
 export default function PhotoStudioPage() {
   return (

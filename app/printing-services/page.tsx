@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Printer, Clock, Shield, Award, FileText, Palette, Camera, Gift, ArrowRight, Phone, Mail } from "lucide-react"
+import { Printer, Clock, Shield, Award, FileText, Palette, ArrowRight, Phone, Mail } from "lucide-react"
 
 export default function PrintingServicesPage() {
   return (
