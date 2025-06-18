@@ -171,7 +171,7 @@ export default function CustomGiftsPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Perfect for Every Occasion</h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Whether it's a birthday, anniversary, wedding, or just because, we have the perfect personalized gift.
+              Whether it&apos;s a birthday, anniversary, wedding, or just because, we have the perfect personalized gift.
             </p>
           </div>
 
@@ -248,7 +248,7 @@ export default function CustomGiftsPage() {
               </div>
               <h3 className="text-2xl font-serif font-bold text-slate-900">Receive Your Gift</h3>
               <p className="text-slate-600 leading-relaxed">
-                We'll create your personalized gift with care and deliver it to you or directly to your recipient.
+                We&apos;ll create your personalized gift with care and deliver it to you or directly to your recipient.
               </p>
             </div>
           </div>

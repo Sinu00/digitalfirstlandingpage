@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Phone, Mail, MapPin, Clock, MessageSquare, Send, ChevronDown, ArrowRight } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Send } from "lucide-react"
 
 export default function ContactPage() {
   return (
@@ -54,7 +54,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl lg:text-5xl font-serif font-bold mb-6">Contact Us</h1>
           <p className="text-lg text-blue-100 max-w-3xl mx-auto">
-            Get in touch with our team. We're here to help with all your printing and design needs.
+            Get in touch with our team. We&apos;re here to help with all your printing and design needs.
           </p>
         </div>
       </section>
@@ -111,7 +111,7 @@ export default function ContactPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Send Us a Message</h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Fill out the form below and we'll get back to you as soon as possible.
+              Fill out the form below and we&apos;ll get back to you as soon as possible.
             </p>
           </div>
 
@@ -276,7 +276,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-white mb-4">Ready to Get Started?</h2>
           <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
-            Contact us today and let's discuss your project requirements.
+            Contact us today and let&apos;s discuss your project requirements.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/locations" className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors">

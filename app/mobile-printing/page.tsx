@@ -316,7 +316,7 @@ export default function MobilePrintingPage() {
                   </div>
                   <div>
                     <h3 className="font-serif font-bold text-slate-900">Easy Upload</h3>
-                    <p className="text-slate-600 text-sm">Upload documents directly from your phone's gallery or cloud storage</p>
+                    <p className="text-slate-600 text-sm">Upload documents directly from your phone&apos;s gallery or cloud storage</p>
                   </div>
                 </div>
                 

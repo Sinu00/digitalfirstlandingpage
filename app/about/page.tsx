@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Award, Clock, MapPin, Users, Shield, Zap, Star, CheckCircle, Phone, Mail } from "lucide-react"
+import { Award, Clock, Users, Shield, Zap, Star, Phone, Mail } from "lucide-react"
 
 export default function AboutPage() {
   return (

@@ -55,7 +55,7 @@ export default function LocationsPage() {
           <h1 className="text-3xl lg:text-5xl font-serif font-bold mb-6">Our Locations</h1>
           <p className="text-lg text-blue-100 max-w-3xl mx-auto">
             With over 50 locations across Dubai, Abu Dhabi, Sharjah, and Canada, 
-            there's always a Digital First center near you.
+            there&apos;s always a Digital First center near you.
           </p>
         </div>
       </section>

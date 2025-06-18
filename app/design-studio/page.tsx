@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Palette, Brush, Layers, Sparkles, Eye, Zap, Phone, Mail, ChevronDown, ArrowRight } from "lucide-react"
+import { Palette, Brush, Layers, Sparkles, Eye, Zap, Phone, Mail } from "lucide-react"
 
 export default function DesignStudioPage() {
   return (
