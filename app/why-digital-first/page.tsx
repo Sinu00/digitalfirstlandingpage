@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Award, Clock, MapPin, Users, Shield, Zap, Star, CheckCircle, Phone, Mail } from "lucide-react"
+import { Award, Clock, MapPin, Users, Shield, Zap, Star, Phone, Mail } from "lucide-react"
 
 export default function WhyDigitalFirstPage() {
   return (
@@ -66,7 +66,7 @@ export default function WhyDigitalFirstPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">What Sets Us Apart</h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              We've built our reputation on excellence, innovation, and customer satisfaction.
+              We&apos;ve built our reputation on excellence, innovation, and customer satisfaction.
             </p>
           </div>
 

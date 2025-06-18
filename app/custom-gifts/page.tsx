@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Gift, Heart, Star, Palette, Camera, Package, Truck, ArrowRight, Phone, Mail } from "lucide-react"
+import { Gift, Heart, Star, Palette, Camera, Package, ArrowRight, Phone, Mail } from "lucide-react"
 
 export default function CustomGiftsPage() {
   return (

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Palette, Truck, MapPin, Clock, Shield, Award, FileText, Camera, ArrowRight, Phone, Mail } from "lucide-react"
+import { Palette, Truck, MapPin, Clock, Shield, Award, ArrowRight, Phone, Mail } from "lucide-react"
 
 export default function SignagePage() {
   return (
