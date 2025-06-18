@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Clock, Printer, Zap, Shield, MapPin, Phone, Mail, ChevronDown, ArrowRight } from "lucide-react"
+import { Clock, Phone, Mail, Shield, Zap, Star, CheckCircle } from "lucide-react"
 
 export default function TwentyFourHoursPrintingPage() {
   return (
@@ -52,10 +52,10 @@ export default function TwentyFourHoursPrintingPage() {
       {/* Hero Section */}
       <section className="py-16 lg:py-24 bg-gradient-to-r from-blue-700 to-indigo-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-3xl lg:text-5xl font-serif font-bold mb-6">24/7 Printing Services</h1>
+          <h1 className="text-3xl lg:text-5xl font-serif font-bold mb-6">24/7 Emergency Printing Services</h1>
           <p className="text-lg text-blue-100 max-w-3xl mx-auto">
-            Emergency printing services available round the clock. 
-            When you need it done now, we're here for you 24 hours a day, 7 days a week.
+            When you need it done right now. Our emergency printing services are available 24/7 
+            for urgent projects that can&apos;t wait.
           </p>
         </div>
       </section>
@@ -64,9 +64,9 @@ export default function TwentyFourHoursPrintingPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Emergency Printing Services</h2>
+            <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Emergency Printing Solutions</h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Available 24/7 for urgent printing needs, emergency documents, and last-minute projects.
+              We understand that sometimes you need printing services outside of regular business hours.
             </p>
           </div>
 
@@ -78,94 +78,82 @@ export default function TwentyFourHoursPrintingPage() {
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">Urgent Documents</h3>
               <p className="text-slate-600 leading-relaxed text-sm mb-4">
-                Emergency printing for important documents that can't wait.
+                Emergency printing for contracts, reports, presentations, and other critical documents.
               </p>
               <ul className="space-y-2 text-slate-600 text-sm">
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3"></div>
-                  Legal Documents
+                  Legal documents
                 </li>
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3"></div>
-                  Business Contracts
+                  Business contracts
                 </li>
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3"></div>
-                  Emergency Reports
+                  Emergency reports
                 </li>
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3"></div>
-                  Time-Sensitive Materials
-                </li>
-                <li className="flex items-center">
-                  <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3"></div>
-                  Last-Minute Presentations
+                  Presentation materials
                 </li>
               </ul>
             </div>
 
-            {/* Express Printing */}
+            {/* Marketing Materials */}
             <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
               <div className="bg-gradient-to-r from-indigo-600 to-blue-700 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <Zap className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">Express Printing</h3>
+              <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">Marketing Materials</h3>
               <p className="text-slate-600 leading-relaxed text-sm mb-4">
-                Lightning-fast printing services for when every minute counts.
+                Last-minute marketing materials for events, campaigns, and promotional activities.
               </p>
               <ul className="space-y-2 text-slate-600 text-sm">
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-indigo-600 rounded-full mr-3"></div>
-                  Same Hour Service
+                  Event banners
                 </li>
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-indigo-600 rounded-full mr-3"></div>
-                  Priority Processing
+                  Promotional flyers
                 </li>
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-indigo-600 rounded-full mr-3"></div>
-                  Rush Orders
+                  Business cards
                 </li>
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-indigo-600 rounded-full mr-3"></div>
-                  Emergency Pickup
-                </li>
-                <li className="flex items-center">
-                  <div className="w-1.5 h-1.5 bg-indigo-600 rounded-full mr-3"></div>
-                  Instant Quotes
+                  Brochures
                 </li>
               </ul>
             </div>
 
-            {/* 24/7 Support */}
+            {/* Signage & Graphics */}
             <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
               <div className="bg-gradient-to-r from-slate-600 to-blue-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <Shield className="h-6 w-6 text-white" />
+                <Star className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">24/7 Support</h3>
+              <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">Signage & Graphics</h3>
               <p className="text-slate-600 leading-relaxed text-sm mb-4">
-                Round-the-clock customer support and technical assistance.
+                Emergency signage, posters, and large format printing for immediate needs.
               </p>
               <ul className="space-y-2 text-slate-600 text-sm">
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-slate-600 rounded-full mr-3"></div>
-                  Always Available
+                  Emergency signs
                 </li>
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-slate-600 rounded-full mr-3"></div>
-                  Expert Assistance
+                  Event posters
                 </li>
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-slate-600 rounded-full mr-3"></div>
-                  Technical Support
+                  Display graphics
                 </li>
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-slate-600 rounded-full mr-3"></div>
-                  Emergency Contact
-                </li>
-                <li className="flex items-center">
-                  <div className="w-1.5 h-1.5 bg-slate-600 rounded-full mr-3"></div>
-                  Live Chat Support
+                  Vehicle graphics
                 </li>
               </ul>
             </div>
@@ -177,16 +165,16 @@ export default function TwentyFourHoursPrintingPage() {
       <section className="py-16 lg:py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">24/7 Available Services</h2>
+            <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Available 24/7 Services</h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              All our services are available 24 hours a day, 7 days a week for your convenience.
+              Our emergency printing services cover all your urgent printing needs.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center space-y-4">
               <div className="bg-blue-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
-                <Printer className="h-8 w-8 text-white" />
+                <CheckCircle className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900">Digital Printing</h3>
               <p className="text-slate-600">High-quality digital printing</p>
@@ -194,26 +182,26 @@ export default function TwentyFourHoursPrintingPage() {
             
             <div className="text-center space-y-4">
               <div className="bg-indigo-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
-                <span className="text-white font-bold text-2xl">📄</span>
+                <CheckCircle className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-serif font-bold text-slate-900">Document Printing</h3>
-              <p className="text-slate-600">Business documents & reports</p>
+              <h3 className="text-xl font-serif font-bold text-slate-900">Large Format</h3>
+              <p className="text-slate-600">Banners, posters, and signage</p>
             </div>
             
             <div className="text-center space-y-4">
               <div className="bg-slate-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
-                <span className="text-white font-bold text-2xl">📸</span>
+                <CheckCircle className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-serif font-bold text-slate-900">Photo Printing</h3>
-              <p className="text-slate-600">Emergency photo services</p>
+              <h3 className="text-xl font-serif font-bold text-slate-900">Binding</h3>
+              <p className="text-slate-600">Professional binding services</p>
             </div>
             
             <div className="text-center space-y-4">
               <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
-                <span className="text-white font-bold text-2xl">🎨</span>
+                <CheckCircle className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-serif font-bold text-slate-900">Design Services</h3>
-              <p className="text-slate-600">Urgent design work</p>
+              <h3 className="text-xl font-serif font-bold text-slate-900">Finishing</h3>
+              <p className="text-slate-600">Lamination and finishing</p>
             </div>
           </div>
         </div>
@@ -221,27 +209,64 @@ export default function TwentyFourHoursPrintingPage() {
 
       {/* Emergency Contact */}
       <section className="py-16 lg:py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Emergency Contact</h2>
-          <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
-            Need urgent printing? Contact us immediately for 24/7 emergency services.
-          </p>
-
-          <div className="bg-gradient-to-br from-blue-700 to-indigo-800 rounded-xl p-8 text-white shadow-xl">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="space-y-4">
-                <div className="flex items-center justify-center">
-                  <Phone className="h-6 w-6 text-blue-200 mr-3" />
-                  <span className="text-2xl font-bold">+971 58 987 5122</span>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900">Emergency Contact</h2>
+              <p className="text-lg text-slate-600">
+                Need emergency printing services? Contact us immediately and we&apos;ll get your project done right away.
+              </p>
+              
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-blue-700 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 shadow-sm">
+                    <Phone className="h-4 w-4 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-serif font-bold text-slate-900">Emergency Hotline</h3>
+                    <p className="text-slate-600 text-sm">+971 58 987 5122 (24/7)</p>
+                  </div>
                 </div>
-                <p className="text-blue-100 text-sm">24/7 Emergency Hotline</p>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-indigo-700 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 shadow-sm">
+                    <Mail className="h-4 w-4 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-serif font-bold text-slate-900">Email Support</h3>
+                    <p className="text-slate-600 text-sm">emergency@digitalfirst.com</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-slate-700 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 shadow-sm">
+                    <Shield className="h-4 w-4 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-serif font-bold text-slate-900">Priority Service</h3>
+                    <p className="text-slate-600 text-sm">Express processing and delivery</p>
+                  </div>
+                </div>
               </div>
+            </div>
+            
+            <div className="bg-gradient-to-br from-blue-700 to-indigo-800 rounded-xl p-8 text-white text-center shadow-lg">
               <div className="space-y-4">
-                <div className="flex items-center justify-center">
-                  <Mail className="h-6 w-6 text-blue-200 mr-3" />
-                  <span className="text-xl font-bold">emergency@digitalfirst.com</span>
+                <div className="bg-white/20 rounded-lg p-4 inline-block">
+                  <Clock className="h-12 w-12 mx-auto" />
                 </div>
-                <p className="text-blue-100 text-sm">Emergency Email Support</p>
+                <h3 className="text-2xl font-serif font-bold">24/7 Available</h3>
+                <p className="text-blue-100">
+                  Emergency printing services available round the clock
+                </p>
+                <div className="flex justify-center space-x-4">
+                  <div className="bg-white/20 rounded-lg px-4 py-2">
+                    <span className="font-semibold">Fast Turnaround</span>
+                  </div>
+                  <div className="bg-white/20 rounded-lg px-4 py-2">
+                    <span className="font-semibold">Quality Guaranteed</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -253,14 +278,14 @@ export default function TwentyFourHoursPrintingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-white mb-4">Need Emergency Printing?</h2>
           <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
-            Don't wait - our 24/7 printing services are here when you need them most.
+            Don&apos;t let urgent deadlines hold you back. Contact us now for immediate assistance.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/locations" className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors">
-              Find 24/7 Location
+            <Link href="/contact" className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors">
+              Contact Now
             </Link>
-            <Link href="/contact" className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors">
-              Emergency Contact
+            <Link href="/locations" className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors">
+              Find Location
             </Link>
           </div>
         </div>
@@ -308,7 +333,7 @@ export default function TwentyFourHoursPrintingPage() {
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-4 w-4 mr-2" />
-                  emergency@digitalfirst.com
+                  info@digitalfirst.com
                 </div>
               </div>
             </div>
