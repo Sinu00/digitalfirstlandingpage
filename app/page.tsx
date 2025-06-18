@@ -1,6 +1,5 @@
-import Image from "next/image"
 import Link from "next/link"
-import { ChevronDown, Phone, Mail, MapPin, Clock, Printer, Palette, Camera, Gift, FileText, ArrowRight } from "lucide-react"
+import { ArrowRight, Phone, Mail, MapPin, Clock, Award, Shield, Users, Star } from "lucide-react"
 
 export default function HomePage() {
   return (
@@ -19,9 +18,7 @@ export default function HomePage() {
 
             {/* Navigation */}
             <nav className="hidden md:flex space-x-6">
-              <Link href="/" className="text-blue-700 hover:text-blue-800 font-medium transition-colors text-sm">
-                Home
-              </Link>
+              <Link href="/" className="text-blue-700 font-medium text-sm">Home</Link>
               <Link href="/printing-services" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">
                 Printing Services
               </Link>
@@ -34,8 +31,8 @@ export default function HomePage() {
               <Link href="/signage" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">
                 Signage
               </Link>
-              <Link href="/locations" className="text-slate-600 hover:text-blue-700 font-medium flex items-center transition-colors text-sm">
-                Locations <ChevronDown className="ml-1 h-3 w-3" />
+              <Link href="/locations" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">
+                Locations
               </Link>
             </nav>
 
@@ -51,74 +48,56 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-[calc(100vh-4rem)] flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <section className="min-h-[calc(100vh-4rem)] flex items-center bg-gradient-to-r from-blue-700 to-indigo-800 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Hero Content */}
-            <div className="space-y-8">
-              <div className="space-y-6">
-                <h1 className="text-4xl lg:text-5xl font-serif font-bold text-slate-900 leading-tight">
-                  Your Complete
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-700"> Digital</span>
-                  <br />
-                  Printing Solution
-                </h1>
-                <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">
-                  From concept to completion, we deliver premium printing and design services with cutting-edge technology and unmatched quality.
-                </p>
-              </div>
-              
+            <div>
+              <h1 className="text-4xl lg:text-6xl font-serif font-bold mb-6 leading-tight">
+                Your Complete Digital Printing & Design Solution
+              </h1>
+              <p className="text-xl text-blue-100 mb-8 leading-relaxed">
+                With over 38 years of excellence, we deliver premium printing services, custom gifts, 
+                professional photography, and innovative signage solutions across the UAE and Canada.
+              </p>
               <div className="flex flex-wrap gap-4">
-                <Link href="/printing-services" className="bg-gradient-to-r from-blue-700 to-indigo-700 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 flex items-center">
-                  Get Started <ArrowRight className="ml-2 h-4 w-4" />
+                <Link href="/printing-services" className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors">
+                  Explore Services
                 </Link>
-                <Link href="/locations" className="border-2 border-blue-700 text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
-                  Find Location
+                <Link href="/contact" className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors">
+                  Get Quote
                 </Link>
-              </div>
-
-              {/* Stats */}
-              <div className="grid grid-cols-3 gap-6 pt-8 border-t border-slate-200">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-700">38+</div>
-                  <div className="text-sm text-slate-600">Years Experience</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-700">50+</div>
-                  <div className="text-sm text-slate-600">Locations</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-700">24/7</div>
-                  <div className="text-sm text-slate-600">Support</div>
-                </div>
               </div>
             </div>
-
-            {/* Hero Image */}
-            <div className="relative">
-              <div className="bg-gradient-to-br from-blue-700 to-indigo-800 rounded-xl p-8 text-white shadow-xl">
-                <div className="text-center space-y-4">
-                  <div className="bg-white/20 rounded-lg p-4 inline-block">
-                    <Clock className="h-8 w-8 mx-auto" />
-                  </div>
-                  <div className="space-y-2">
-                    <div className="font-bold text-xl">NOW OPEN</div>
-                    <h2 className="text-lg font-semibold">AZIZI RIVIERA</h2>
-                    <h3 className="text-base">DUBAI</h3>
-                  </div>
-                  <p className="text-blue-100 text-sm">
-                    Unit No. 25, Azizi Riviera3, Al Markada<br />
-                    Nad Al Sheba 1, Dubai
-                  </p>
-                  <div className="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm">
-                    <div className="flex items-center justify-center">
-                      <Phone className="h-4 w-4 mr-2" />
-                      +971 58 987 5122
+            <div className="hidden lg:block">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="text-center">
+                    <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Award className="h-8 w-8 text-white" />
                     </div>
-                    <div className="flex items-center justify-center">
-                      <Mail className="h-4 w-4 mr-2" />
-                      azizi3@digitalfirst.com
+                    <h3 className="font-semibold mb-2">38+ Years</h3>
+                    <p className="text-blue-100 text-sm">Industry Experience</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Users className="h-8 w-8 text-white" />
                     </div>
+                    <h3 className="font-semibold mb-2">10,000+</h3>
+                    <p className="text-blue-100 text-sm">Happy Clients</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Star className="h-8 w-8 text-white" />
+                    </div>
+                    <h3 className="font-semibold mb-2">Premium</h3>
+                    <p className="text-blue-100 text-sm">Quality Service</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Clock className="h-8 w-8 text-white" />
+                    </div>
+                    <h3 className="font-semibold mb-2">Fast</h3>
+                    <p className="text-blue-100 text-sm">Turnaround</p>
                   </div>
                 </div>
               </div>
@@ -132,130 +111,190 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">
-              How Can We Help You?
+              Our Services
             </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Choose from our comprehensive range of digital printing and design services tailored to meet your every need.
+              From digital printing to custom gifts, we offer comprehensive solutions for all your business and personal needs.
             </p>
           </div>
-
-          {/* Service Cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Print Service */}
-            <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="bg-gradient-to-r from-blue-600 to-indigo-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <Printer className="h-6 w-6 text-white" />
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Printing Services */}
+            <Link href="/printing-services" className="group">
+              <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group-hover:border-blue-300">
+                <div className="bg-gradient-to-r from-blue-600 to-indigo-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                  <div className="text-white text-2xl font-bold">P</div>
+                </div>
+                <h3 className="text-xl font-serif font-bold text-slate-900 mb-4">Printing Services</h3>
+                <p className="text-slate-600 mb-4">
+                  Digital and offset printing for all your business needs. From business cards to large format banners.
+                </p>
+                <div className="flex items-center text-blue-600 font-semibold group-hover:text-blue-700 transition-colors">
+                  Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                </div>
               </div>
-              <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">
-                I want to
-                <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">print</span>
-              </h3>
-              <h4 className="font-semibold text-slate-800 mb-3 text-sm">Digital & Offset Printing</h4>
-              <p className="text-slate-600 leading-relaxed text-sm mb-4">
-                State-of-the-art digital and offset printing facilities under one roof. Guaranteed delivery on time with premium quality at competitive rates.
+            </Link>
+
+            {/* Custom Gifts */}
+            <Link href="/custom-gifts" className="group">
+              <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group-hover:border-blue-300">
+                <div className="bg-gradient-to-r from-emerald-600 to-teal-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                  <div className="text-white text-2xl font-bold">G</div>
+                </div>
+                <h3 className="text-xl font-serif font-bold text-slate-900 mb-4">Custom Gifts</h3>
+                <p className="text-slate-600 mb-4">
+                  Personalized gifts and promotional items. Perfect for corporate events and special occasions.
+                </p>
+                <div className="flex items-center text-emerald-600 font-semibold group-hover:text-emerald-700 transition-colors">
+                  Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                </div>
+              </div>
+            </Link>
+
+            {/* Photo Studio */}
+            <Link href="/photo-studio" className="group">
+              <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group-hover:border-blue-300">
+                <div className="bg-gradient-to-r from-purple-600 to-pink-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                  <div className="text-white text-2xl font-bold">P</div>
+                </div>
+                <h3 className="text-xl font-serif font-bold text-slate-900 mb-4">Photo Studio</h3>
+                <p className="text-slate-600 mb-4">
+                  Professional photography services. Portraits, corporate events, and product photography.
+                </p>
+                <div className="flex items-center text-purple-600 font-semibold group-hover:text-purple-700 transition-colors">
+                  Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                </div>
+              </div>
+            </Link>
+
+            {/* Signage */}
+            <Link href="/signage" className="group">
+              <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group-hover:border-blue-300">
+                <div className="bg-gradient-to-r from-orange-600 to-red-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                  <div className="text-white text-2xl font-bold">S</div>
+                </div>
+                <h3 className="text-xl font-serif font-bold text-slate-900 mb-4">Signage</h3>
+                <p className="text-slate-600 mb-4">
+                  Indoor and outdoor signage solutions. Vehicle wraps, banners, and custom displays.
+                </p>
+                <div className="flex items-center text-orange-600 font-semibold group-hover:text-orange-700 transition-colors">
+                  Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-16 lg:py-24 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-6">
+                Trusted by Businesses for Over 38 Years
+              </h2>
+              <p className="text-lg text-slate-600 mb-6 leading-relaxed">
+                Digital First has been at the forefront of the printing and design industry, serving thousands 
+                of satisfied customers across the UAE and Canada. Our commitment to quality, innovation, and 
+                customer satisfaction has made us the preferred choice for businesses and individuals alike.
               </p>
-              <Link href="/printing-services" className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors text-sm">
-                Learn More <ArrowRight className="ml-1 h-3 w-3" />
+              <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                We&apos;re proud to offer state-of-the-art technology combined with decades of expertise, 
+                ensuring every project meets the highest standards of excellence.
+              </p>
+              <Link href="/about" className="inline-flex items-center bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors">
+                Learn More About Us <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </div>
-
-            {/* Self-Print Service */}
-            <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="bg-gradient-to-r from-indigo-600 to-blue-700 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <FileText className="h-6 w-6 text-white" />
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
+              <div className="grid grid-cols-2 gap-6">
+                <div className="text-center">
+                  <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Award className="h-8 w-8 text-blue-700" />
+                  </div>
+                  <h3 className="font-semibold text-slate-900 mb-2">Quality Guaranteed</h3>
+                  <p className="text-slate-600 text-sm">Every project meets our high standards</p>
+                </div>
+                <div className="text-center">
+                  <div className="bg-emerald-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Shield className="h-8 w-8 text-emerald-700" />
+                  </div>
+                  <h3 className="font-semibold text-slate-900 mb-2">Secure & Reliable</h3>
+                  <p className="text-slate-600 text-sm">Your data and projects are safe with us</p>
+                </div>
+                <div className="text-center">
+                  <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Clock className="h-8 w-8 text-purple-700" />
+                  </div>
+                  <h3 className="font-semibold text-slate-900 mb-2">Fast Delivery</h3>
+                  <p className="text-slate-600 text-sm">Quick turnaround times guaranteed</p>
+                </div>
+                <div className="text-center">
+                  <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Users className="h-8 w-8 text-orange-700" />
+                  </div>
+                  <h3 className="font-semibold text-slate-900 mb-2">Expert Team</h3>
+                  <p className="text-slate-600 text-sm">Experienced professionals at your service</p>
+                </div>
               </div>
-              <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">
-                I want to
-                <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-700">self-print</span>
-              </h3>
-              <h4 className="font-semibold text-slate-800 mb-3 text-sm">Mobile Printing</h4>
-              <p className="text-slate-600 leading-relaxed text-sm mb-4">
-                Contactless printing service with secure self-printing stations. Print directly from your mobile, tablet, or laptop with complete privacy.
-              </p>
-              <Link href="/mobile-printing" className="inline-flex items-center text-indigo-600 font-semibold hover:text-indigo-700 transition-colors text-sm">
-                Learn More <ArrowRight className="ml-1 h-3 w-3" />
-              </Link>
-            </div>
-
-            {/* Design Service */}
-            <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="bg-gradient-to-r from-slate-600 to-blue-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <Palette className="h-6 w-6 text-white" />
-              </div>
-              <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">
-                I want to
-                <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-blue-600">design</span>
-              </h3>
-              <h4 className="font-semibold text-slate-800 mb-3 text-sm">Graphic Design Studio</h4>
-              <p className="text-slate-600 leading-relaxed text-sm mb-4">
-                Professional design services for logos, invitations, marketing materials, business cards, and more. One-stop solution for all your design needs.
-              </p>
-              <Link href="/design-studio" className="inline-flex items-center text-slate-600 font-semibold hover:text-slate-700 transition-colors text-sm">
-                Learn More <ArrowRight className="ml-1 h-3 w-3" />
-              </Link>
-            </div>
-
-            {/* Curious Service */}
-            <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="bg-gradient-to-r from-blue-700 to-indigo-700 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <MapPin className="h-6 w-6 text-white" />
-              </div>
-              <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">
-                I'm just
-                <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-700">curious</span>
-              </h3>
-              <h4 className="font-semibold text-slate-800 mb-3 text-sm">Learn More About Us</h4>
-              <p className="text-slate-600 leading-relaxed text-sm mb-4">
-                Discover our story, explore our services, or get help with your printing needs. Our expert team is available 24/7 to assist you.
-              </p>
-              <Link href="/about" className="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition-colors text-sm">
-                Learn More <ArrowRight className="ml-1 h-3 w-3" />
-              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-16 lg:py-24 bg-slate-50">
+      {/* Locations Section */}
+      <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">
-              Why Choose Digital First?
+              Visit Our Locations
             </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              With over three decades of experience, we've built a reputation for excellence, innovation, and customer satisfaction.
+              We&apos;re conveniently located across the UAE and Canada, ready to serve your printing and design needs.
             </p>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center space-y-4">
-              <div className="bg-blue-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
-                <Clock className="h-8 w-8 text-white" />
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Link href="/locations/dubai" className="group">
+              <div className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group-hover:border-blue-300">
+                <div className="bg-gradient-to-r from-blue-600 to-indigo-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                  <MapPin className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="text-lg font-serif font-bold text-slate-900 mb-2">Dubai</h3>
+                <p className="text-slate-600 text-sm">Main office and production facility</p>
               </div>
-              <h3 className="text-xl font-serif font-bold text-slate-900">Fast Turnaround</h3>
-              <p className="text-slate-600">Quick delivery times with guaranteed quality, no matter the volume of your order.</p>
-            </div>
+            </Link>
             
-            <div className="text-center space-y-4">
-              <div className="bg-indigo-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
-                <Printer className="h-8 w-8 text-white" />
+            <Link href="/locations/abu-dhabi" className="group">
+              <div className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group-hover:border-blue-300">
+                <div className="bg-gradient-to-r from-emerald-600 to-teal-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                  <MapPin className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="text-lg font-serif font-bold text-slate-900 mb-2">Abu Dhabi</h3>
+                <p className="text-slate-600 text-sm">Capital city branch</p>
               </div>
-              <h3 className="text-xl font-serif font-bold text-slate-900">Latest Technology</h3>
-              <p className="text-slate-600">State-of-the-art digital and offset printing equipment for superior results.</p>
-            </div>
+            </Link>
             
-            <div className="text-center space-y-4">
-              <div className="bg-slate-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
-                <MapPin className="h-8 w-8 text-white" />
+            <Link href="/locations/sharjah" className="group">
+              <div className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group-hover:border-blue-300">
+                <div className="bg-gradient-to-r from-purple-600 to-pink-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                  <MapPin className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="text-lg font-serif font-bold text-slate-900 mb-2">Sharjah</h3>
+                <p className="text-slate-600 text-sm">Cultural capital location</p>
               </div>
-              <h3 className="text-xl font-serif font-bold text-slate-900">50+ Locations</h3>
-              <p className="text-slate-600">Convenient locations across Dubai, Abu Dhabi, Sharjah, and Canada.</p>
-            </div>
+            </Link>
+            
+            <Link href="/locations/canada" className="group">
+              <div className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group-hover:border-blue-300">
+                <div className="bg-gradient-to-r from-orange-600 to-red-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                  <MapPin className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="text-lg font-serif font-bold text-slate-900 mb-2">Canada</h3>
+                <p className="text-slate-600 text-sm">International expansion</p>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -263,18 +302,16 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="py-16 lg:py-24 bg-gradient-to-r from-blue-700 to-indigo-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-serif font-bold text-white mb-4">
-            Ready to Get Started?
-          </h2>
+          <h2 className="text-3xl lg:text-4xl font-serif font-bold text-white mb-4">Ready to Start Your Project?</h2>
           <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
-            Visit your nearest Digital First location or contact us today to discuss your printing and design needs.
+            Let&apos;s bring your vision to life with our professional printing and design services.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/locations" className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors">
-              Find a Location
+            <Link href="/contact" className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors">
+              Get Started
             </Link>
-            <Link href="/contact" className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors">
-              Contact Us
+            <Link href="/locations" className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors">
+              Find Location
             </Link>
           </div>
         </div>
@@ -297,7 +334,7 @@ export default function HomePage() {
               <h3 className="font-semibold mb-4 text-sm">Services</h3>
               <ul className="space-y-2 text-slate-400 text-sm">
                 <li><Link href="/printing-services" className="hover:text-white transition-colors">Printing Services</Link></li>
-                <li><Link href="/design-studio" className="hover:text-white transition-colors">Design Studio</Link></li>
+                <li><Link href="/custom-gifts" className="hover:text-white transition-colors">Custom Gifts</Link></li>
                 <li><Link href="/photo-studio" className="hover:text-white transition-colors">Photo Studio</Link></li>
                 <li><Link href="/signage" className="hover:text-white transition-colors">Signage</Link></li>
               </ul>

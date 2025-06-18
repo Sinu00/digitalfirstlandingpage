@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Printer, Clock, Shield, Award, FileText, Palette, ArrowRight, Phone, Mail } from "lucide-react"
+import { Clock, Shield, Award, FileText, Palette, ArrowRight, Phone, Mail } from "lucide-react"
 
 export default function PrintingServicesPage() {
   return (
@@ -8,20 +8,35 @@ export default function PrintingServicesPage() {
       <header className="bg-white/95 backdrop-blur-sm shadow-sm border-b border-slate-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
+            {/* Logo */}
             <div className="flex items-center">
               <div className="bg-gradient-to-r from-blue-700 to-indigo-700 text-white px-3 py-2 font-serif font-bold text-xl rounded-md shadow-sm">
                 DIGITAL FIRST
               </div>
               <div className="ml-3 text-slate-600 text-sm font-medium hidden sm:block">Print & Design Solutions</div>
             </div>
+
+            {/* Navigation */}
             <nav className="hidden md:flex space-x-6">
-              <Link href="/" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">Home</Link>
+              <Link href="/" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">
+                Home
+              </Link>
               <Link href="/printing-services" className="text-blue-700 font-medium text-sm">Printing Services</Link>
-              <Link href="/custom-gifts" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">Custom Gifts</Link>
-              <Link href="/photo-studio" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">Photo Studio</Link>
-              <Link href="/signage" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">Signage</Link>
-              <Link href="/locations" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">Locations</Link>
+              <Link href="/custom-gifts" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">
+                Custom Gifts
+              </Link>
+              <Link href="/photo-studio" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">
+                Photo Studio
+              </Link>
+              <Link href="/signage" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">
+                Signage
+              </Link>
+              <Link href="/locations" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">
+                Locations
+              </Link>
             </nav>
+
+            {/* Contact Info */}
             <div className="hidden lg:flex items-center space-x-4">
               <div className="flex items-center text-blue-700">
                 <Phone className="h-4 w-4 mr-2" />
@@ -59,7 +74,7 @@ export default function PrintingServicesPage() {
             {/* Digital Printing */}
             <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
               <div className="bg-gradient-to-r from-blue-600 to-indigo-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <Printer className="h-8 w-8 text-white" />
+                <FileText className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">Digital Printing</h3>
               <p className="text-slate-600 mb-6 leading-relaxed">
@@ -195,10 +210,10 @@ export default function PrintingServicesPage() {
             
             <div className="text-center space-y-4">
               <div className="bg-emerald-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
-                <Printer className="h-8 w-8 text-white" />
+                <FileText className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900">Latest Technology</h3>
-              <p className="text-slate-600 text-sm">State-of-the-art printing equipment and software</p>
+              <p className="text-slate-600 text-sm">State-of-the-art printing equipment and technology</p>
             </div>
           </div>
         </div>
@@ -209,11 +224,11 @@ export default function PrintingServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-white mb-4">Ready to Start Your Project?</h2>
           <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
-            Get a free quote for your printing needs or visit one of our locations to discuss your project.
+            Let&apos;s bring your vision to life with our professional printing services.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors">
-              Get Free Quote
+              Get Started
             </Link>
             <Link href="/locations" className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors">
               Find Location
@@ -227,7 +242,7 @@ export default function PrintingServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-3 py-2 font-serif font-bold text-lg rounded mb-4 inline-block">
+              <div className="bg-gradient-to-r from-blue-700 to-indigo-700 text-white px-3 py-2 font-serif font-bold text-xl rounded-md shadow-sm mb-4 inline-block">
                 DIGITAL FIRST
               </div>
               <p className="text-slate-400 text-sm">
@@ -239,7 +254,7 @@ export default function PrintingServicesPage() {
               <h3 className="font-semibold mb-4 text-sm">Services</h3>
               <ul className="space-y-2 text-slate-400 text-sm">
                 <li><Link href="/printing-services" className="hover:text-white transition-colors">Printing Services</Link></li>
-                <li><Link href="/design-studio" className="hover:text-white transition-colors">Design Studio</Link></li>
+                <li><Link href="/custom-gifts" className="hover:text-white transition-colors">Custom Gifts</Link></li>
                 <li><Link href="/photo-studio" className="hover:text-white transition-colors">Photo Studio</Link></li>
                 <li><Link href="/signage" className="hover:text-white transition-colors">Signage</Link></li>
               </ul>
