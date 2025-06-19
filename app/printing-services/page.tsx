@@ -71,44 +71,46 @@ export default function PrintingServicesPage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { name: 'Business Cards', img: '/printing-services/business-cards.jpg' },
-              { name: 'Corporate Identity', img: '/printing-services/corporate-identity.jpg' },
-              { name: 'Flyers & Brochures', img: '/printing-services/flyers-brochures.jpg' },
-              { name: 'Binding Services', img: '/printing-services/binding-services.jpg' },
-              { name: 'Passport Size Photo', img: '/printing-services/passport-size-photo.jpg' },
-              { name: 'Customised Mugs', img: '/printing-services/customised-mugs.jpg' },
-              { name: 'Rubber Stamp', img: '/printing-services/rubber-stamp.jpg' },
-              { name: 'Printing on Gift Items', img: '/printing-services/printing-on-gift-items.jpg' },
-              { name: 'Foiling', img: '/printing-services/foiling.jpg' },
-              { name: 'Spot UV', img: '/printing-services/spot-uv.jpg' },
-              { name: 'Thermal Embossing', img: '/printing-services/thermal-embossing.jpg' },
-              { name: 'Large Format Printing', img: '/printing-services/large-format-printing.jpg' },
-              { name: 'Large Format Scanning', img: '/printing-services/large-format-scanning.jpg' },
-              { name: 'Photocopy Services', img: '/printing-services/photocopy-services.jpg' },
-              { name: 'Customised Calendar', img: '/printing-services/customised-calendar.jpg' },
-              { name: 'Menu Cards', img: '/printing-services/menu-cards.jpg' },
-              { name: 'Autocad Plotting', img: '/printing-services/autocad-plotting.jpg' },
-              { name: 'Wedding Cards', img: '/printing-services/wedding-cards.jpg' },
-              { name: 'Personalized Greeting', img: '/printing-services/personalized-greeting.jpg' },
-              { name: 'Foam Board Mounting', img: '/printing-services/foam-board-mounting.jpg' },
-              { name: 'Flex Printing', img: '/printing-services/flex-printing.jpg' },
-              { name: 'Tent Cards', img: '/printing-services/tent-cards.jpg' },
-              { name: 'Book Marks', img: '/printing-services/book-marks.jpg' },
-              { name: 'Hang Tags', img: '/printing-services/hang-tags.jpg' },
-              { name: 'Roll-Up Stand', img: '/printing-services/roll-up-stand.jpg' },
-              { name: 'PVC ID Card Printing', img: '/printing-services/pvc-id-card-printing.jpg' },
-              { name: 'Canvas & Streching', img: '/printing-services/canvas-streching.jpg' },
-              { name: 'Papper Bags', img: '/printing-services/papper-bags.jpg' },
-              { name: 'CD - DVD Writing', img: '/printing-services/cd-dvd-writing.jpg' },
+              { name: 'Business Cards', img: '/printing-services/business-cards.jpg', slug: 'business-cards' },
+              { name: 'Corporate Identity', img: '/printing-services/corporate-identity.jpg', slug: 'corporate-identity' },
+              { name: 'Flyers & Brochures', img: '/printing-services/flyers-brochures.jpg', slug: 'flyers-brochures' },
+              { name: 'Binding Services', img: '/printing-services/binding-services.jpg', slug: 'binding-services' },
+              { name: 'Passport Size Photo', img: '/printing-services/passport-size-photo.jpg', slug: 'passport-size-photo' },
+              { name: 'Customised Mugs', img: '/printing-services/customised-mugs.jpg', slug: 'customised-mugs' },
+              { name: 'Rubber Stamp', img: '/printing-services/rubber-stamp.jpg', slug: 'rubber-stamp' },
+              { name: 'Printing on Gift Items', img: '/printing-services/printing-on-gift-items.jpg', slug: 'printing-on-gift-items' },
+              { name: 'Foiling', img: '/printing-services/foiling.jpg', slug: 'foiling' },
+              { name: 'Spot UV', img: '/printing-services/spot-uv.jpg', slug: 'spot-uv' },
+              { name: 'Thermal Embossing', img: '/printing-services/thermal-embossing.jpg', slug: 'thermal-embossing' },
+              { name: 'Large Format Printing', img: '/printing-services/large-format-printing.jpg', slug: 'large-format-printing' },
+              { name: 'Large Format Scanning', img: '/printing-services/large-format-scanning.jpg', slug: 'large-format-scanning' },
+              { name: 'Photocopy Services', img: '/printing-services/photocopy-services.jpg', slug: 'photocopy-services' },
+              { name: 'Customised Calendar', img: '/printing-services/customised-calendar.jpg', slug: 'customised-calendar' },
+              { name: 'Menu Cards', img: '/printing-services/menu-cards.jpg', slug: 'menu-cards' },
+              { name: 'Autocad Plotting', img: '/printing-services/autocad-plotting.jpg', slug: 'autocad-plotting' },
+              { name: 'Wedding Cards', img: '/printing-services/wedding-cards.jpg', slug: 'wedding-cards' },
+              { name: 'Personalized Greeting', img: '/printing-services/personalized-greeting.jpg', slug: 'personalized-greeting' },
+              { name: 'Foam Board Mounting', img: '/printing-services/foam-board-mounting.jpg', slug: 'foam-board-mounting' },
+              { name: 'Flex Printing', img: '/printing-services/flex-printing.jpg', slug: 'flex-printing' },
+              { name: 'Tent Cards', img: '/printing-services/tent-cards.jpg', slug: 'tent-cards' },
+              { name: 'Book Marks', img: '/printing-services/book-marks.jpg', slug: 'book-marks' },
+              { name: 'Hang Tags', img: '/printing-services/hang-tags.jpg', slug: 'hang-tags' },
+              { name: 'Roll-Up Stand', img: '/printing-services/roll-up-stand.jpg', slug: 'roll-up-stand' },
+              { name: 'PVC ID Card Printing', img: '/printing-services/pvc-id-card-printing.jpg', slug: 'pvc-id-card-printing' },
+              { name: 'Canvas & Streching', img: '/printing-services/canvas-streching.jpg', slug: 'canvas-streching' },
+              { name: 'Papper Bags', img: '/printing-services/papper-bags.jpg', slug: 'papper-bags' },
+              { name: 'CD - DVD Writing', img: '/printing-services/cd-dvd-writing.jpg', slug: 'cd-dvd-writing' },
             ].map((service) => (
-              <div key={service.name} className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
-                <img
-                  src={service.img}
-                  alt={service.name}
-                  className="w-20 h-20 object-cover rounded-lg mb-4 border border-slate-100 bg-slate-100"
-                />
-                <h3 className="text-lg font-serif font-bold text-slate-900 mb-2 text-center">{service.name}</h3>
-              </div>
+              <Link key={service.name} href={`/printing-services/${service.slug}`} className="w-full">
+                <div className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col items-center cursor-pointer">
+                  <img
+                    src={service.img}
+                    alt={service.name}
+                    className="w-20 h-20 object-cover rounded-lg mb-4 border border-slate-100 bg-slate-100"
+                  />
+                  <h3 className="text-lg font-serif font-bold text-slate-900 mb-2 text-center">{service.name}</h3>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
