@@ -43,124 +43,64 @@ export default function CustomGiftsPage() {
         </div>
       </section>
 
-      {/* Gift Categories */}
+      {/* Gift Products Grid */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Personalized Gift Categories</h2>
+            <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Personalized Gift Products</h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Choose from our wide range of customizable gift options for every occasion and recipient.
+              Choose from our wide range of customizable gift products for every occasion and recipient.
             </p>
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Photo Gifts */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="bg-gradient-to-r from-blue-600 to-indigo-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <Camera className="h-8 w-8 text-white" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { name: 'T Shirt Printing', img: '/custom-gifts/t-shirt-printing.jpg' },
+              { name: 'Hoodie Printing', img: '/custom-gifts/hoodie-printing.jpg' },
+              { name: 'Embroidery Shirts & T-Shirts', img: '/custom-gifts/embroidery-shirts.jpg' },
+              { name: 'Custom Patch', img: '/custom-gifts/custom-patch.jpg' },
+              { name: 'Abaya Embroidery', img: '/custom-gifts/abaya-embroidery.jpg' },
+              { name: 'Fashion Embroidery', img: '/custom-gifts/fashion-embroidery.jpg' },
+              { name: 'Apron', img: '/custom-gifts/apron.jpg' },
+              { name: 'Cap Printing', img: '/custom-gifts/cap-printing.jpg' },
+              { name: 'Embroidery Towel', img: '/custom-gifts/embroidery-towel.jpg' },
+              { name: 'Bathrobe', img: '/custom-gifts/bathrobe.jpg' },
+              { name: 'Table Cloths', img: '/custom-gifts/table-cloths.jpg' },
+              { name: 'Table Runner', img: '/custom-gifts/table-runner.jpg' },
+              { name: 'Pillow Cover', img: '/custom-gifts/pillow-cover.jpg' },
+              { name: 'Safety Jacket', img: '/custom-gifts/safety-jacket.jpg' },
+              { name: 'Safety Helmet', img: '/custom-gifts/safety-helmet.jpg' },
+              { name: 'Safety Coverall', img: '/custom-gifts/safety-coverall.jpg' },
+              { name: 'Glass Printing', img: '/custom-gifts/glass-printing.jpg' },
+              { name: 'Print on Ceramics', img: '/custom-gifts/print-on-ceramics.jpg' },
+              { name: 'Ceramic Plates Engraving', img: '/custom-gifts/ceramic-plates-engraving.jpg' },
+              { name: 'Cutlery Engraving', img: '/custom-gifts/cutlery-engraving.jpg' },
+              { name: 'Knife Engraving', img: '/custom-gifts/knife-engraving.jpg' },
+              { name: 'Pen Engraving', img: '/custom-gifts/pen-engraving.jpg' },
+              { name: 'Wooden Engraving', img: '/custom-gifts/wooden-engraving.jpg' },
+              { name: 'Bottle Printing', img: '/custom-gifts/bottle-printing.jpg' },
+              { name: 'Trophy Engraving', img: '/custom-gifts/trophy-engraving.jpg' },
+              { name: 'Key Duplication', img: '/custom-gifts/key-duplication.jpg' },
+              { name: 'Cotton Bag', img: '/custom-gifts/cotton-bag.jpg' },
+              { name: 'Note Book Printing', img: '/custom-gifts/note-book-printing.jpg' },
+              { name: 'Mug Printing', img: '/custom-gifts/mug-printing.jpg' },
+              { name: 'Name Badge', img: '/custom-gifts/name-badge.jpg' },
+              { name: 'Corporate Kit', img: '/custom-gifts/corporate-kit.jpg' },
+              { name: 'USB', img: '/custom-gifts/usb.jpg' },
+              { name: 'Lanyard', img: '/custom-gifts/lanyard.jpg' },
+              { name: 'Custom Ribbon', img: '/custom-gifts/custom-ribbon.jpg' },
+              { name: 'Custom Flag', img: '/custom-gifts/custom-flag.jpg' },
+              { name: 'Key Chain', img: '/custom-gifts/key-chain.jpg' },
+              { name: 'Name Plate', img: '/custom-gifts/name-plate.jpg' },
+            ].map((product) => (
+              <div key={product.name} className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                <img
+                  src={product.img}
+                  alt={product.name}
+                  className="w-20 h-20 object-cover rounded-lg mb-4 border border-slate-100 bg-slate-100"
+                />
+                <h3 className="text-base font-serif font-bold text-slate-900 mb-2 text-center">{product.name}</h3>
               </div>
-              <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">Photo Gifts</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Transform your precious memories into beautiful personalized gifts that last a lifetime.
-              </p>
-              <ul className="space-y-3 text-slate-600 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Custom Photo Mugs
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Photo Albums & Frames
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Personalized Calendars
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Canvas Prints
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Photo Books
-                </li>
-              </ul>
-              <Link href="/contact" className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-                Get Quote <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
-            </div>
-
-            {/* Textile Gifts */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="bg-gradient-to-r from-indigo-600 to-purple-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <Package className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">Textile Gifts</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Comfortable and stylish personalized clothing and accessories for everyone.
-              </p>
-              <ul className="space-y-3 text-slate-600 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
-                  Custom T-Shirts
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
-                  Personalized Hoodies
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
-                  Embroidered Caps
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
-                  Custom Bags
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
-                  Personalized Towels
-                </li>
-              </ul>
-              <Link href="/contact" className="inline-flex items-center text-indigo-600 font-semibold hover:text-indigo-700 transition-colors">
-                Get Quote <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
-            </div>
-
-            {/* Home & Office */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="bg-gradient-to-r from-purple-600 to-blue-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <Heart className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">Home & Office</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Add a personal touch to your living and working spaces with custom items.
-              </p>
-              <ul className="space-y-3 text-slate-600 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  Custom Mugs & Cups
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  Personalized Stationery
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  Custom Mouse Pads
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  Personalized Keychains
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  Custom Coasters
-                </li>
-              </ul>
-              <Link href="/contact" className="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 transition-colors">
-                Get Quote <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
-            </div>
+            ))}
           </div>
         </div>
       </section>

@@ -63,112 +63,53 @@ export default function PrintingServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">
-              Our Printing Solutions
+              Our Printing Products & Services
             </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              From small business cards to large format banners, we have the technology and expertise to handle all your printing needs.
+              A complete range of print, design, and finishing solutions for every business and personal need.
             </p>
           </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Digital Printing */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="bg-gradient-to-r from-blue-600 to-indigo-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <FileText className="h-8 w-8 text-white" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { name: 'Business Cards', img: '/printing-services/business-cards.jpg' },
+              { name: 'Corporate Identity', img: '/printing-services/corporate-identity.jpg' },
+              { name: 'Flyers & Brochures', img: '/printing-services/flyers-brochures.jpg' },
+              { name: 'Binding Services', img: '/printing-services/binding-services.jpg' },
+              { name: 'Passport Size Photo', img: '/printing-services/passport-size-photo.jpg' },
+              { name: 'Customised Mugs', img: '/printing-services/customised-mugs.jpg' },
+              { name: 'Rubber Stamp', img: '/printing-services/rubber-stamp.jpg' },
+              { name: 'Printing on Gift Items', img: '/printing-services/printing-on-gift-items.jpg' },
+              { name: 'Foiling', img: '/printing-services/foiling.jpg' },
+              { name: 'Spot UV', img: '/printing-services/spot-uv.jpg' },
+              { name: 'Thermal Embossing', img: '/printing-services/thermal-embossing.jpg' },
+              { name: 'Large Format Printing', img: '/printing-services/large-format-printing.jpg' },
+              { name: 'Large Format Scanning', img: '/printing-services/large-format-scanning.jpg' },
+              { name: 'Photocopy Services', img: '/printing-services/photocopy-services.jpg' },
+              { name: 'Customised Calendar', img: '/printing-services/customised-calendar.jpg' },
+              { name: 'Menu Cards', img: '/printing-services/menu-cards.jpg' },
+              { name: 'Autocad Plotting', img: '/printing-services/autocad-plotting.jpg' },
+              { name: 'Wedding Cards', img: '/printing-services/wedding-cards.jpg' },
+              { name: 'Personalized Greeting', img: '/printing-services/personalized-greeting.jpg' },
+              { name: 'Foam Board Mounting', img: '/printing-services/foam-board-mounting.jpg' },
+              { name: 'Flex Printing', img: '/printing-services/flex-printing.jpg' },
+              { name: 'Tent Cards', img: '/printing-services/tent-cards.jpg' },
+              { name: 'Book Marks', img: '/printing-services/book-marks.jpg' },
+              { name: 'Hang Tags', img: '/printing-services/hang-tags.jpg' },
+              { name: 'Roll-Up Stand', img: '/printing-services/roll-up-stand.jpg' },
+              { name: 'PVC ID Card Printing', img: '/printing-services/pvc-id-card-printing.jpg' },
+              { name: 'Canvas & Streching', img: '/printing-services/canvas-streching.jpg' },
+              { name: 'Papper Bags', img: '/printing-services/papper-bags.jpg' },
+              { name: 'CD - DVD Writing', img: '/printing-services/cd-dvd-writing.jpg' },
+            ].map((service) => (
+              <div key={service.name} className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                <img
+                  src={service.img}
+                  alt={service.name}
+                  className="w-20 h-20 object-cover rounded-lg mb-4 border border-slate-100 bg-slate-100"
+                />
+                <h3 className="text-lg font-serif font-bold text-slate-900 mb-2 text-center">{service.name}</h3>
               </div>
-              <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">Digital Printing</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                High-quality digital printing for small to medium print runs. Perfect for business cards, 
-                flyers, brochures, and marketing materials.
-              </p>
-              <ul className="space-y-3 text-slate-600 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Business Cards & Stationery
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Flyers & Brochures
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Posters & Banners
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Photo Printing
-                </li>
-              </ul>
-              <Link href="/contact" className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-                Get Quote <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
-            </div>
-
-            {/* Offset Printing */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="bg-gradient-to-r from-emerald-600 to-teal-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <FileText className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">Offset Printing</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Cost-effective offset printing for large volume orders. Superior quality for magazines, 
-                catalogs, and bulk printing needs.
-              </p>
-              <ul className="space-y-3 text-slate-600 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-emerald-600 rounded-full mr-3"></div>
-                  Magazines & Catalogs
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-emerald-600 rounded-full mr-3"></div>
-                  Books & Manuals
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-emerald-600 rounded-full mr-3"></div>
-                  Large Format Printing
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-emerald-600 rounded-full mr-3"></div>
-                  Packaging Materials
-                </li>
-              </ul>
-              <Link href="/contact" className="inline-flex items-center text-emerald-600 font-semibold hover:text-emerald-700 transition-colors">
-                Get Quote <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
-            </div>
-
-            {/* Large Format */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="bg-gradient-to-r from-purple-600 to-pink-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <Palette className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">Large Format</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Wide format printing for banners, posters, vehicle wraps, and outdoor signage. 
-                UV-resistant and weatherproof options available.
-              </p>
-              <ul className="space-y-3 text-slate-600 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  Banners & Posters
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  Vehicle Wraps
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  Outdoor Signage
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  Exhibition Graphics
-                </li>
-              </ul>
-              <Link href="/contact" className="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 transition-colors">
-                Get Quote <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
-            </div>
+            ))}
           </div>
         </div>
       </section>

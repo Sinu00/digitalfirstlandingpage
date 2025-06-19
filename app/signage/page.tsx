@@ -48,121 +48,55 @@ export default function SignagePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">
-              Professional Signage Services
+              Our Expertise
             </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              From banners to vehicle wraps, we provide comprehensive signage solutions that make your brand stand out.
+              Comprehensive signage solutions to elevate your brand's visibility and impact.
             </p>
           </div>
-          
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Banners & Posters */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="bg-gradient-to-r from-blue-600 to-indigo-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <Palette className="h-8 w-8 text-white" />
+            {[
+              {
+                name: 'Outdoor Signage',
+                img: '/signage/outdoor-signage.jpg',
+                desc: 'Desco Signage provides you with durable and high-impact outdoor signage designed to elevate your brand\'s visibility and attract attention from any distance.'
+              },
+              {
+                name: 'Indoor Signage',
+                img: '/signage/indoor-signage.jpg',
+                desc: 'Desco Signage provides custom indoor signage that enhances your interiors, creating a welcoming and informative atmosphere that aligns with your brand identity.'
+              },
+              {
+                name: '3D Signage',
+                img: '/signage/3d-signage.jpg',
+                desc: 'Desco Signage provides you with unique 3D signage that adds depth and dimension, making your brand visually compelling and unforgettable.'
+              },
+              {
+                name: 'Wall Branding',
+                img: '/signage/wall-branding.jpg',
+                desc: 'Desco Signage provides you with stunning wall graphics that transform blank walls into powerful storytelling spaces.'
+              },
+              {
+                name: 'Vehicle Graphics',
+                img: '/signage/vehicle-graphics.jpg',
+                desc: 'Desco Signage provides you with vibrant vehicle graphics that turn your vehicles into moving advertisements, maximizing brand exposure wherever they go.'
+              },
+              {
+                name: 'Exhibition Stands',
+                img: '/signage/exhibition-stands.jpg',
+                desc: 'Desco Signage provides custom designed exhibition stands that make a powerful impression at events, helping you showcase your brand\'s uniqueness and professionalism.'
+              },
+            ].map((service) => (
+              <div key={service.name} className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center">
+                <img
+                  src={service.img}
+                  alt={service.name}
+                  className="w-32 h-24 object-cover rounded-lg mb-4 border border-slate-100 bg-slate-100"
+                />
+                <h3 className="text-lg font-serif font-bold text-slate-900 mb-2">{service.name}</h3>
+                <p className="text-slate-600 text-sm mb-2">{service.desc}</p>
               </div>
-              <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">Banners & Posters</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                High-impact banners and posters for events, promotions, and outdoor advertising.
-              </p>
-              <ul className="space-y-3 text-slate-600 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Event Banners
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Promotional Posters
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Exhibition Graphics
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Trade Show Displays
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Outdoor Advertising
-                </li>
-              </ul>
-              <Link href="/contact" className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-                Get Quote <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
-            </div>
-
-            {/* Vehicle Wraps */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="bg-gradient-to-r from-indigo-600 to-purple-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <Truck className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">Vehicle Wraps</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Transform your vehicle into a mobile advertising platform with professional wraps.
-              </p>
-              <ul className="space-y-3 text-slate-600 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
-                  Full Vehicle Wraps
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
-                  Partial Wraps
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
-                  Window Graphics
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
-                  Fleet Branding
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
-                  Removable Graphics
-                </li>
-              </ul>
-              <Link href="/contact" className="inline-flex items-center text-indigo-600 font-semibold hover:text-indigo-700 transition-colors">
-                Get Quote <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
-            </div>
-
-            {/* Outdoor Signage */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="bg-gradient-to-r from-purple-600 to-blue-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <MapPin className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">Outdoor Signage</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Durable outdoor signage solutions designed to withstand the elements.
-              </p>
-              <ul className="space-y-3 text-slate-600 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  Store Front Signs
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  Building Wraps
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  Billboards
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  Directional Signs
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  LED Displays
-                </li>
-              </ul>
-              <Link href="/contact" className="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 transition-colors">
-                Get Quote <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
-            </div>
+            ))}
           </div>
         </div>
       </section>

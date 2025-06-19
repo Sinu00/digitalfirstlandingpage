@@ -54,116 +54,27 @@ export default function PhotoStudioPage() {
               From passport photos to professional portraits, we provide high-quality photography services for all your needs.
             </p>
           </div>
-          
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Passport Photos */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="bg-gradient-to-r from-blue-600 to-indigo-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <Camera className="h-8 w-8 text-white" />
+            {[
+              { name: 'Passport Size Photo', img: '/photo-studio/passport-size-photo.jpg' },
+              { name: 'Infant ID Photo', img: '/photo-studio/infant-id-photo.jpg' },
+              { name: 'Retouching', img: '/photo-studio/retouching.jpg' },
+              { name: 'Colorization', img: '/photo-studio/colorization.jpg' },
+              { name: 'Photo Restoration', img: '/photo-studio/photo-restoration.jpg' },
+              { name: 'Photo Enhancement', img: '/photo-studio/photo-enhancement.jpg' },
+              { name: 'Digitizing', img: '/photo-studio/digitizing.jpg' },
+              { name: 'Profile Shoot', img: '/photo-studio/profile-shoot.jpg' },
+              { name: 'Family Photoshoot', img: '/photo-studio/family-photoshoot.jpg' },
+            ].map((service) => (
+              <div key={service.name} className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                <img
+                  src={service.img}
+                  alt={service.name}
+                  className="w-20 h-20 object-cover rounded-lg mb-4 border border-slate-100 bg-slate-100"
+                />
+                <h3 className="text-base font-serif font-bold text-slate-900 mb-2 text-center">{service.name}</h3>
               </div>
-              <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">Passport Photos</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Professional passport photos for all country specifications. 
-                Verified and validated with guarantor signature and stamp.
-              </p>
-              <ul className="space-y-3 text-slate-600 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  All Country Specifications
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Verified & Validated
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Guarantor Signature & Stamp
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Same Day Processing
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  Professional Quality
-                </li>
-              </ul>
-              <Link href="/contact" className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-                Get Quote <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
-            </div>
-
-            {/* ID Photos */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="bg-gradient-to-r from-indigo-600 to-purple-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <Shield className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">ID Photos</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                High-quality photos for various identification documents and applications.
-              </p>
-              <ul className="space-y-3 text-slate-600 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
-                  Emirates ID Photos
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
-                  Visa Applications
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
-                  School & College IDs
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
-                  Professional ID Cards
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
-                  Newborn Visa Applications
-                </li>
-              </ul>
-              <Link href="/contact" className="inline-flex items-center text-indigo-600 font-semibold hover:text-indigo-700 transition-colors">
-                Get Quote <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
-            </div>
-
-            {/* Professional Portraits */}
-            <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="bg-gradient-to-r from-purple-600 to-blue-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <Award className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">Professional Portraits</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Professional headshots and portraits for business, social media, and personal use.
-              </p>
-              <ul className="space-y-3 text-slate-600 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  Business Headshots
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  LinkedIn Photos
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  Family Portraits
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  Event Photography
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  Social Media Photos
-                </li>
-              </ul>
-              <Link href="/contact" className="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 transition-colors">
-                Get Quote <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
-            </div>
+            ))}
           </div>
         </div>
       </section>
