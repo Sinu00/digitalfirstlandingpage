@@ -1,37 +1,17 @@
 import Link from "next/link"
 import { Gift, Heart, Star, Palette, Camera, Package, ArrowRight, Phone, Mail } from "lucide-react"
+import Header from "../../components/Header"
+import Footer from "../../components/Footer"
+
+// Helper to slugify product names
+function slugify(name: string) {
+  return name.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+}
 
 export default function CustomGiftsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      {/* Header */}
-      <header className="bg-white/95 backdrop-blur-sm shadow-sm border-b border-slate-200 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <div className="bg-gradient-to-r from-blue-700 to-indigo-700 text-white px-3 py-2 font-serif font-bold text-xl rounded-md shadow-sm">
-                DIGITAL FIRST
-              </div>
-             
-            </div>
-            <nav className="hidden md:flex space-x-6">
-              <Link href="/" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">Home</Link>
-              <Link href="/printing-services" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">Printing Services</Link>
-              <Link href="/custom-gifts" className="text-blue-700 font-medium text-sm">Custom Gifts</Link>
-              <Link href="/photo-studio" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">Photo Studio</Link>
-              <Link href="/signage" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">Signage</Link>
-              <Link href="/locations" className="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm">Locations</Link>
-            </nav>
-            <div className="hidden lg:flex items-center space-x-4">
-              <div className="flex items-center text-blue-700">
-                <Phone className="h-4 w-4 mr-2" />
-                <span className="text-sm font-medium">+97 00 00 000</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
+      <Header />
       {/* Hero Section */}
       <section className="py-16 lg:py-24 bg-gradient-to-r from-blue-700 to-indigo-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -92,14 +72,18 @@ export default function CustomGiftsPage() {
               { name: 'Key Chain', img: '/custom-gifts/key-chain.jpg' },
               { name: 'Name Plate', img: '/custom-gifts/name-plate.jpg' },
             ].map((product) => (
-              <div key={product.name} className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
-                <img
-                  src={product.img}
-                  alt={product.name}
-                  className="w-20 h-20 object-cover rounded-lg mb-4 border border-slate-100 bg-slate-100"
-                />
-                <h3 className="text-base font-serif font-bold text-slate-900 mb-2 text-center">{product.name}</h3>
-              </div>
+              <Link key={product.name} href={`/custom-gifts/${slugify(product.name)}`} className="w-full">
+                <div className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col items-center cursor-pointer">
+                  <img
+                    src={product.img}
+                    alt={product.name}
+                    className="w-full h-40 md:h-48 lg:h-56 object-cover rounded-lg mb-4 border border-slate-100 bg-slate-100"
+                  />
+                  <h3 className="text-lg font-serif font-bold text-slate-900 mb-2 text-center group-hover:text-blue-700 transition-colors">
+                    {product.name}
+                  </h3>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -213,59 +197,7 @@ export default function CustomGiftsPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-3 py-2 font-serif font-bold text-lg rounded mb-4 inline-block">
-                DIGITAL FIRST
-              </div>
-              <p className="text-slate-400 text-sm">
-                Your complete digital printing and design solution with over 3 years of excellence.
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4 text-sm">Services</h3>
-              <ul className="space-y-2 text-slate-400 text-sm">
-                <li><Link href="/printing-services" className="hover:text-white transition-colors">Printing Services</Link></li>
-                <li><Link href="/custom-gifts" className="hover:text-white transition-colors">Custom Gifts</Link></li>
-                <li><Link href="/photo-studio" className="hover:text-white transition-colors">Photo Studio</Link></li>
-                <li><Link href="/signage" className="hover:text-white transition-colors">Signage</Link></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4 text-sm">Locations</h3>
-              <ul className="space-y-2 text-slate-400 text-sm">
-                <li><Link href="/locations/dubai" className="hover:text-white transition-colors">Dubai</Link></li>
-                <li><Link href="/locations/abu-dhabi" className="hover:text-white transition-colors">Abu Dhabi</Link></li>
-                <li><Link href="/locations/sharjah" className="hover:text-white transition-colors">Sharjah</Link></li>
-                <li><Link href="/locations/canada" className="hover:text-white transition-colors">Canada</Link></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4 text-sm">Contact</h3>
-              <div className="space-y-2 text-slate-400 text-sm">
-                <div className="flex items-center">
-                  <Phone className="h-4 w-4 mr-2" />
-                  +97 00 00 000
-                </div>
-                <div className="flex items-center">
-                  <Mail className="h-4 w-4 mr-2" />
-                  info@digitalfirst.com
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400 text-sm">
-            <p>&copy; 2025 Digital First. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 } 
