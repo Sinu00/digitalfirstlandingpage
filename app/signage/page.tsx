@@ -66,7 +66,7 @@ export default function SignagePage() {
                 <img
                   src={service.img}
                   alt={service.name}
-                  className="w-32 h-24 object-cover rounded-lg mb-4 border border-slate-100 bg-slate-100"
+                  className="w-full h-40 md:h-48 lg:h-56 object-cover rounded-lg mb-4 border border-slate-100 bg-slate-100"
                 />
                 <h3 className="text-lg font-serif font-bold text-slate-900 mb-2">{service.name}</h3>
                 <p className="text-slate-600 text-sm mb-2">{service.desc}</p>
