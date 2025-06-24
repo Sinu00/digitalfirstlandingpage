@@ -68,7 +68,7 @@ export default function PrintingServicesPage() {
               { name: 'Customised Mugs', img: '/printing-services/Customised-Mugs.jpg', slug: 'customised-mugs' },
               { name: 'Rubber Stamp', img: '/printing-services/Rubber-Stamp.jpg', slug: 'rubber-stamp' },
               { name: 'Printing on Gift Items', img: '/printing-services/Printing-on-Gift-Items.jpg', slug: 'printing-on-gift-items' },
-              { name: 'Foiling', img: '/printing-services/Foiling.jpg', slug: 'foiling' },
+              { name: 'Foiling', img: '/printing-services/foiling.jpg', slug: 'foiling' },
               { name: 'Spot UV', img: '/printing-services/Spot-UV.jpg', slug: 'spot-uv' },
               { name: 'Thermal Embossing', img: '/printing-services/Thermal-Embossing.jpg', slug: 'thermal-embossing' },
               { name: 'Large Format Printing', img: '/printing-services/Large-Format-Printing.jpg', slug: 'large-format-printing' },
