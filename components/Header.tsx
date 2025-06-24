@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Phone } from "lucide-react";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import Image from 'next/image'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,9 +22,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="bg-gradient-to-r from-blue-700 to-indigo-700 text-white px-3 py-2 font-serif font-bold text-xl rounded-md shadow-sm">
-              DIGITAL FIRST
-            </div>
+<img src="/digitalfirstlogo.jpg" alt="" className="h-10 w-auto" />
           </div>
 
           {/* Desktop Navigation */}

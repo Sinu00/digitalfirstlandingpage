@@ -12,7 +12,7 @@ export default function PVCIDCardPrintingPage() {
           />
           <h1 className="text-4xl font-serif font-bold mb-4">PVC ID Card Printing</h1>
           <p className="text-lg text-slate-700 mb-6">
-            Secure and professional identification with our PVC ID card printing services. We produce durable, high-quality cards for employees, students, or members, with options for barcodes, magnetic stripes, and custom designs to suit your organization's needs.
+            Secure and professional identification with our PVC ID card printing services. We produce durable, high-quality cards for employees, students, or members, with options for barcodes, magnetic stripes, and custom designs to suit your organization&apos;s needs.
           </p>
           <Link href="/printing-services" className="text-blue-700 hover:underline">← Back to Printing Services</Link>
         </div>

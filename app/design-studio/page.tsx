@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Palette, Brush, Layers, Sparkles, Eye, Zap, Phone, Mail } from "lucide-react"
+import { Palette, Brush, Layers, Sparkles, Eye, Zap } from "lucide-react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 

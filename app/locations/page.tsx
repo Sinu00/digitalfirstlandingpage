@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { MapPin, Phone, Mail, Clock, Building, Globe, ChevronDown, ArrowRight } from "lucide-react"
+import { MapPin, Phone, Mail, Clock, Building, Globe, ArrowRight } from "lucide-react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 

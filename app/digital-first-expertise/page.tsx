@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Award, Brain, Target, Users, Zap, Shield, Star, CheckCircle, Phone, Mail } from "lucide-react"
+import { Award, Brain, Target, Users, Zap, Shield, Star, CheckCircle } from "lucide-react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 

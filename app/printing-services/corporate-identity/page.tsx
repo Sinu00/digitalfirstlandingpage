@@ -11,8 +11,8 @@ export default function CorporateIdentityPage() {
             className="mx-auto rounded-lg mb-8 w-72 h-44 object-cover"
           />
           <h1 className="text-4xl font-serif font-bold mb-4">Corporate Identity</h1>
-          <p className="text-lg text-slate-700 mb-6">
-            Establish a strong and cohesive brand presence with our Corporate Identity solutions. From business cards and letterheads to branded envelopes and folders, we ensure your company's image is professional, consistent, and memorable across all touchpoints. Our design and print experts work with you to create materials that reflect your brand values and leave a lasting impression.
+          <p className="text-lg text-slate-600 leading-relaxed mb-8">
+            From business cards to letterheads, envelopes and folders, we ensure your company&apos;s image is professional, consistent, and memorable across all touchpoints. Our design and print experts work with you to create materials that reflect your brand values and leave a lasting impression.
           </p>
           <Link href="/printing-services" className="text-blue-700 hover:underline">← Back to Printing Services</Link>
         </div>

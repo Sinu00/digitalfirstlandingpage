@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Camera, Phone, Mail, Clock, Shield, Award, ArrowRight } from "lucide-react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import Image from 'next/image'
 
 export default function PhotoStudioPage() {
   return (
@@ -42,9 +43,11 @@ export default function PhotoStudioPage() {
               { name: 'Family Photoshoot', img: '/photo-studio/family-photoshoot.jpg' },
             ].map((service) => (
               <div key={service.name} className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
-                <img
+                <Image
                   src={service.img}
                   alt={service.name}
+                  width={400}
+                  height={224}
                   className="w-full h-40 md:h-48 lg:h-56 object-cover rounded-lg mb-4 border border-slate-100 bg-slate-100"
                 />
                 <h3 className="text-base font-serif font-bold text-slate-900 mb-2 text-center">{service.name}</h3>
