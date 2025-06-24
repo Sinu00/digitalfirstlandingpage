@@ -61,12 +61,12 @@ export default function PhotoStudioPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { name: 'Passport Size Photo', img: '/photo-studio/passport-size-photo.jpg' },
-              { name: 'Infant ID Photo', img: '/photo-studio/infant-id-photo.jpg' },
+              { name: 'Infant ID Photo', img: '/photo-studio/Infant-ID-Photo.jpg' },
               { name: 'Retouching', img: '/photo-studio/retouching.jpg' },
               { name: 'Colorization', img: '/photo-studio/colorization.jpg' },
-              { name: 'Photo Restoration', img: '/photo-studio/photo-restoration.jpg' },
+              { name: 'Photo Restoration', img: '/photo-studio/Photo-Restoration.jpg' },
               { name: 'Photo Enhancement', img: '/photo-studio/photo-enhancement.jpg' },
-              { name: 'Digitizing', img: '/photo-studio/digitizing.jpg' },
+              { name: 'Digitizing', img: '/photo-studio/Digitizing.jpg' },
               { name: 'Profile Shoot', img: '/photo-studio/profile-shoot.jpg' },
               { name: 'Family Photoshoot', img: '/photo-studio/family-photoshoot.jpg' },
             ].map((service) => (
