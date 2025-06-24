@@ -7,7 +7,7 @@ export default function CustomisedMugsPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/printing-services/customised-mugs.jpg"
+            src="/printing-services/Customised-Mugs.jpg"
             alt="Customised Mugs"
             width={288}
             height={176}

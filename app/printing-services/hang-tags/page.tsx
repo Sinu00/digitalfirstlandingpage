@@ -7,7 +7,7 @@ export default function HangTagsPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/printing-services/hang-tags.jpg"
+            src="/printing-services/Hang-Tags.jpg"
             alt="Hang Tags"
             width={288}
             height={176}

@@ -7,7 +7,7 @@ export default function LargeFormatPrintingPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/printing-services/large-format-printing.jpg"
+            src="/printing-services/Large-Format-Printing.jpg"
             alt="Large Format Printing"
             className="mx-auto rounded-lg mb-8 w-72 h-44 object-cover"
             width={288}

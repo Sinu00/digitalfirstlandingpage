@@ -7,7 +7,7 @@ export default function FoamBoardMountingPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/printing-services/foam-board-mounting.jpg"
+            src="/printing-services/Foam-Board-Mounting.jpg"
             alt="Foam Board Mounting"
             width={288}
             height={176}

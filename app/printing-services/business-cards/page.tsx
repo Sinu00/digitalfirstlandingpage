@@ -7,7 +7,7 @@ export default function BusinessCardsPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/printing-services/business-cards.jpg"
+            src="/printing-services/Business-Cards.jpg"
             alt="Business Cards"
             width={288}
             height={176}

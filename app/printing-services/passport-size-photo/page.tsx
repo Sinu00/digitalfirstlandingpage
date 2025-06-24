@@ -7,7 +7,7 @@ export default function PassportSizePhotoPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/printing-services/passport-size-photo.jpg"
+            src="/printing-services/Passport-Size-Photo.jpg"
             alt="Passport Size Photo"
             className="mx-auto rounded-lg mb-8 w-72 h-44 object-cover"
             width={288}

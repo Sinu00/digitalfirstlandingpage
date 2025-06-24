@@ -7,7 +7,7 @@ export default function PVCIDCardPrintingPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/printing-services/pvc-id-card-printing.jpg"
+            src="/printing-services/PVC-ID-Card-Printing.jpg"
             alt="PVC ID Card Printing"
             className="mx-auto rounded-lg mb-8 w-72 h-44 object-cover"
             width={288}

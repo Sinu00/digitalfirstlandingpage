@@ -7,7 +7,7 @@ export default function AutocadPlottingPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/printing-services/autocad-plotting.jpg"
+            src="/printing-services/Autocad-Plotting.jpg"
             alt="Autocad Plotting"
             width={288}
             height={176}
