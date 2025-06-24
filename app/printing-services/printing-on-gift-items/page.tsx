@@ -7,7 +7,7 @@ export default function PrintingOnGiftItemsPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/printing-services/printing-on-gift-items.jpg"
+            src="/printing-services/Printing-on-Gift-items.jpg"
             alt="Printing on Gift Items"
             className="mx-auto rounded-lg mb-8 w-72 h-44 object-cover"
             width={288}
