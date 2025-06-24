@@ -210,7 +210,7 @@ export default function TwentyFourHoursPrintingPage() {
                   </div>
                   <div>
                     <h3 className="font-serif font-bold text-slate-900">Emergency Hotline</h3>
-                    <p className="text-slate-600 text-sm">+97 00 00 000 (24/7)</p>
+                    <p className="text-slate-600 text-sm">0506116675</p>
                   </div>
                 </div>
                 
@@ -220,7 +220,7 @@ export default function TwentyFourHoursPrintingPage() {
                   </div>
                   <div>
                     <h3 className="font-serif font-bold text-slate-900">Email Support</h3>
-                    <p className="text-slate-600 text-sm">emergency@digitalfirst.com</p>
+                    <p className="text-slate-600 text-sm">digitalfirst@digitalfirstprint.com</p>
                   </div>
                 </div>
                 

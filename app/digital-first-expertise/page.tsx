@@ -5,11 +5,11 @@ import Footer from "../../components/Footer"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Digital First Expertise | Printing & Design Leaders UAE & Canada",
-  description: "Discover Digital First's expertise in digital printing, design, and custom solutions. Serving Dubai, Abu Dhabi, Sharjah, and Canada with innovation and quality.",
+  title: "Digital First Expertise | Printing & Packaging Leaders Ajman, UAE",
+  description: "Discover Digital First's expertise in digital printing, packaging, and custom solutions. Serving Ajman, UAE with innovation and quality.",
   openGraph: {
-    title: "Digital First Expertise | Printing & Design Leaders UAE & Canada",
-    description: "Discover Digital First's expertise in digital printing, design, and custom solutions. Serving Ajman, Abu Dhabi, Sharjah, and Canada with innovation and quality.",
+    title: "Digital First Expertise | Printing & Packaging Leaders Ajman, UAE",
+    description: "Discover Digital First's expertise in digital printing, packaging, and custom solutions. Serving Ajman, UAE with innovation and quality.",
     url: "https://digitalfirst.com/digital-first-expertise",
     siteName: "Digital First",
     images: [
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital First Expertise | Printing & Design Leaders UAE & Canada",
-    description: "Discover Digital First's expertise in digital printing, design, and custom solutions. Serving Ajman, Abu Dhabi, Sharjah, and Canada with innovation and quality.",
+    title: "Digital First Expertise | Printing & Packaging Leaders Ajman, UAE",
+    description: "Discover Digital First's expertise in digital printing, packaging, and custom solutions. Serving Ajman, UAE with innovation and quality.",
     images: ["/digitalfirstlogo.jpg"],
   },
 }

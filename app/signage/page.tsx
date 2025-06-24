@@ -6,8 +6,8 @@ import Image from 'next/image'
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Signage Solutions | Indoor, Outdoor, 3D & Vehicle Graphics | Digital First UAE & Canada",
-  description: "Professional signage solutions by Digital First. Indoor, outdoor, 3D signage, wall branding, and vehicle graphics. Serving UAE and Canada.",
+  title: "Signage Solutions | Indoor, Outdoor, 3D & Vehicle Graphics | Digital First Ajman, UAE",
+  description: "Professional signage solutions by Digital First. Indoor, outdoor, 3D signage, wall branding, and vehicle graphics. Serving Ajman, UAE.",
   openGraph: {
     title: "Signage Solutions | Indoor, Outdoor, 3D & Vehicle Graphics | Digital First UAE & Canada",
     description: "Professional signage solutions by Digital First. Indoor, outdoor, 3D signage, wall branding, and vehicle graphics. Serving UAE and Canada.",

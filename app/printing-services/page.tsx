@@ -6,11 +6,11 @@ import Image from 'next/image'
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Printing Services | Digital & Offset Printing | Digital First UAE & Canada",
-  description: "Professional digital and offset printing solutions for business and personal needs. Fast turnaround, premium quality, and expert support across UAE and Canada.",
+  title: "Printing Services | Digital & Offset Printing | Digital First Ajman, UAE",
+  description: "Professional digital and offset printing solutions for business and personal needs. Fast turnaround, premium quality, and expert support in Ajman, UAE.",
   openGraph: {
-    title: "Printing Services | Digital & Offset Printing | Digital First UAE & Canada",
-    description: "Professional digital and offset printing solutions for business and personal needs. Fast turnaround, premium quality, and expert support across UAE and Canada.",
+    title: "Printing Services | Digital & Offset Printing | Digital First Ajman, UAE",
+    description: "Professional digital and offset printing solutions for business and personal needs. Fast turnaround, premium quality, and expert support in Ajman, UAE.",
     url: "https://digitalfirst.com/printing-services",
     siteName: "Digital First",
     images: [
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Printing Services | Digital & Offset Printing | Digital First UAE & Canada",
-    description: "Professional digital and offset printing solutions for business and personal needs. Fast turnaround, premium quality, and expert support across UAE and Canada.",
+    title: "Printing Services | Digital & Offset Printing | Digital First Ajman, UAE",
+    description: "Professional digital and offset printing solutions for business and personal needs. Fast turnaround, premium quality, and expert support in Ajman, UAE.",
     images: ["/digitalfirstlogo.jpg"],
   },
 };

@@ -6,11 +6,11 @@ import Image from 'next/image'
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Photo Studio | Passport, Portrait, Retouching | Digital First UAE & Canada",
-  description: "Professional photo studio services: passport photos, portraits, retouching, restoration, and more. Fast, high-quality photography across UAE and Canada.",
+  title: "Photo Studio | Passport, Portrait, Retouching | Digital First Ajman, UAE",
+  description: "Professional photo studio services: passport photos, portraits, retouching, restoration, and more. Fast, high-quality photography in Ajman, UAE.",
   openGraph: {
-    title: "Photo Studio | Passport, Portrait, Retouching | Digital First UAE & Canada",
-    description: "Professional photo studio services: passport photos, portraits, retouching, restoration, and more. Fast, high-quality photography across UAE and Canada.",
+    title: "Photo Studio | Passport, Portrait, Retouching | Digital First Ajman, UAE",
+    description: "Professional photo studio services: passport photos, portraits, retouching, restoration, and more. Fast, high-quality photography in Ajman, UAE.",
     url: "https://digitalfirst.com/photo-studio",
     siteName: "Digital First",
     images: [
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Photo Studio | Passport, Portrait, Retouching | Digital First UAE & Canada",
-    description: "Professional photo studio services: passport photos, portraits, retouching, restoration, and more. Fast, high-quality photography across UAE and Canada.",
+    title: "Photo Studio | Passport, Portrait, Retouching | Digital First Ajman, UAE",
+    description: "Professional photo studio services: passport photos, portraits, retouching, restoration, and more. Fast, high-quality photography in Ajman, UAE.",
     images: ["/digitalfirstlogo.jpg"],
   },
 };
@@ -160,11 +160,11 @@ export default function PhotoStudioPage() {
               <div className="space-y-3">
                 <div className="flex items-center text-blue-700">
                   <Mail className="h-5 w-5 mr-3" />
-                  <span className="text-sm">photos@digitalfirst.com</span>
+                  <span className="text-sm">digitalfirst@digitalfirstprint.com</span>
                 </div>
                 <div className="flex items-center text-blue-700">
                   <Phone className="h-5 w-5 mr-3" />
-                  <span className="text-sm">+97 00 00 000</span>
+                  <span className="text-sm">0506116675</span>
                 </div>
               </div>
             </div>

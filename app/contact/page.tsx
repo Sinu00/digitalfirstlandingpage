@@ -5,11 +5,11 @@ import Footer from "../../components/Footer"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Contact Digital First | Print & Design Solutions UAE & Canada",
-  description: "Contact Digital First for all your printing and design needs. Reach our team for support, quotes, and inquiries across the UAE and Canada.",
+  title: "Contact Digital First Printing & Packaging | Ajman, UAE",
+  description: "Contact Digital First Printing & Packaging in Industrial Area 2, Ajman, UAE. Reach our team for support, quotes, and inquiries.",
   openGraph: {
-    title: "Contact Digital First | Print & Design Solutions UAE & Canada",
-    description: "Contact Digital First for all your printing and design needs. Reach our team for support, quotes, and inquiries across the UAE and Canada.",
+    title: "Contact Digital First Printing & Packaging | Ajman, UAE",
+    description: "Contact Digital First Printing & Packaging in Industrial Area 2, Ajman, UAE. Reach our team for support, quotes, and inquiries.",
     url: "https://digitalfirst.com/contact",
     siteName: "Digital First",
     images: [
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Digital First | Print & Design Solutions UAE & Canada",
-    description: "Contact Digital First for all your printing and design needs. Reach our team for support, quotes, and inquiries across the UAE and Canada.",
+    title: "Contact Digital First Printing & Packaging | Ajman, UAE",
+    description: "Contact Digital First Printing & Packaging in Industrial Area 2, Ajman, UAE. Reach our team for support, quotes, and inquiries.",
     images: ["/digitalfirstlogo.jpg"],
   },
 }
@@ -57,7 +57,7 @@ export default function ContactPage() {
               <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">Call Us</h3>
               <p className="text-slate-600 leading-relaxed text-sm mb-4">Speak directly with our team</p>
               <div className="space-y-2">
-                <div className="text-blue-600 font-semibold text-sm">+97 00 00 000</div>
+                <div className="text-blue-600 font-semibold text-sm">0506116675</div>
                 <div className="text-xs text-slate-500">Available 24/7</div>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function ContactPage() {
               <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">Email Us</h3>
               <p className="text-slate-600 leading-relaxed text-sm mb-4">Send us your inquiries</p>
               <div className="space-y-2">
-                <div className="text-indigo-600 font-semibold text-sm">info@digitalfirst.com</div>
+                <div className="text-indigo-600 font-semibold text-sm">digitalfirst@digitalfirstprint.com</div>
                 <div className="text-xs text-slate-500">Quick response guaranteed</div>
               </div>
             </div>
@@ -81,10 +81,10 @@ export default function ContactPage() {
                 <MapPin className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">Visit Us</h3>
-              <p className="text-slate-600 leading-relaxed text-sm mb-4">Find your nearest location</p>
+              <p className="text-slate-600 leading-relaxed text-sm mb-4">Visit our main office and production facility</p>
               <div className="space-y-2">
-                <div className="text-slate-600 font-semibold text-sm">50+ Locations</div>
-                <div className="text-xs text-slate-500">Across 4 countries</div>
+                <div className="text-slate-600 font-semibold text-sm">Industrial Area 2, Ajman, UAE</div>
+                <div className="text-xs text-slate-500">Open 24/7</div>
               </div>
             </div>
           </div>
@@ -223,7 +223,7 @@ export default function ContactPage() {
                 <Phone className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900">Phone</h3>
-              <p className="text-slate-600">+97 00 00 000</p>
+              <p className="text-slate-600">0506116675</p>
               <p className="text-sm text-slate-500">24/7 Support</p>
             </div>
             
@@ -232,7 +232,7 @@ export default function ContactPage() {
                 <Mail className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900">Email</h3>
-              <p className="text-slate-600">info@digitalfirst.com</p>
+              <p className="text-slate-600">digitalfirst@digitalfirstprint.com</p>
               <p className="text-sm text-slate-500">Quick Response</p>
             </div>
             
@@ -241,8 +241,8 @@ export default function ContactPage() {
                 <MapPin className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900">Locations</h3>
-              <p className="text-slate-600">50+ Centers</p>
-              <p className="text-sm text-slate-500">4 Countries</p>
+              <p className="text-slate-600">Industrial Area 2, Ajman, UAE</p>
+              <p className="text-sm text-slate-500">Open 24/7</p>
             </div>
             
             <div className="text-center space-y-4">

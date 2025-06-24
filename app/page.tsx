@@ -5,8 +5,8 @@ import Footer from "../components/Footer"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Digital First | Print & Design Solutions UAE, Dubai, Abu Dhabi, Sharjah, Canada",
-  description: "Digital First offers premium digital printing, graphic design, and custom solutions across Dubai, Abu Dhabi, Sharjah, and Canada. 3+ years of excellence. Get a quote today!",
+  title: "Digital First Printing & Packaging | Industrial Area 2, Ajman, UAE",
+  description: "Digital First Printing & Packaging, Industrial Area 2, Ajman, UAE. Your trusted partner for digital printing and packaging solutions.",
   openGraph: {
     title: "Digital First | Print & Design Solutions UAE, Dubai, Abu Dhabi, Sharjah, Canada",
     description: "Digital First offers premium digital printing, graphic design, and custom solutions across Dubai, Abu Dhabi, Sharjah, and Canada. 3+ years of excellence. Get a quote today!",
@@ -45,7 +45,7 @@ export default function HomePage() {
               </h1>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
                 With over 3 years of excellence, we deliver premium printing services, custom gifts, 
-                professional photography, and innovative signage solutions across the UAE and Canada.
+                professional photography, and innovative signage solutions across the UAE.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/printing-services" className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors">
@@ -184,7 +184,7 @@ export default function HomePage() {
               </h2>
               <p className="text-lg text-slate-600 mb-6 leading-relaxed">
                 Digital First has been at the forefront of the printing and design industry, serving thousands 
-                of satisfied customers across the UAE and Canada. Our commitment to quality, innovation, and 
+                of satisfied customers across the UAE. Our commitment to quality, innovation, and 
                 customer satisfaction has made us the preferred choice for businesses and individuals alike.
               </p>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
@@ -236,51 +236,20 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">
-              Visit Our Locations
+              Visit Our Location
             </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              We&apos;re conveniently located across the UAE and Canada, ready to serve your printing and design needs.
+              Visit us at our main office and production facility in Industrial Area 2, Ajman, UAE.
             </p>
           </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Link href="/locations/dubai" className="group">
+          <div className="flex justify-center">
+            <Link href="/locations/ajman" className="group">
               <div className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group-hover:border-blue-300">
                 <div className="bg-gradient-to-r from-blue-600 to-indigo-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                   <MapPin className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="text-lg font-serif font-bold text-slate-900 mb-2">Ajman</h3>
-                <p className="text-slate-600 text-sm">Main office and production facility</p>
-              </div>
-            </Link>
-            
-            <Link href="/locations/abu-dhabi" className="group">
-              <div className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group-hover:border-blue-300">
-                <div className="bg-gradient-to-r from-emerald-600 to-teal-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <MapPin className="h-6 w-6 text-white" />
-                </div>
-                <h3 className="text-lg font-serif font-bold text-slate-900 mb-2">Abu Dhabi</h3>
-                <p className="text-slate-600 text-sm">Capital city branch</p>
-              </div>
-            </Link>
-            
-            <Link href="/locations/sharjah" className="group">
-              <div className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group-hover:border-blue-300">
-                <div className="bg-gradient-to-r from-purple-600 to-pink-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <MapPin className="h-6 w-6 text-white" />
-                </div>
-                <h3 className="text-lg font-serif font-bold text-slate-900 mb-2">Sharjah</h3>
-                <p className="text-slate-600 text-sm">Cultural capital location</p>
-              </div>
-            </Link>
-            
-            <Link href="/locations/canada" className="group">
-              <div className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group-hover:border-blue-300">
-                <div className="bg-gradient-to-r from-orange-600 to-red-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <MapPin className="h-6 w-6 text-white" />
-                </div>
-                <h3 className="text-lg font-serif font-bold text-slate-900 mb-2">Canada</h3>
-                <p className="text-slate-600 text-sm">International expansion</p>
+                <p className="text-slate-600 text-sm">Industrial Area 2, Main office & production facility</p>
               </div>
             </Link>
           </div>

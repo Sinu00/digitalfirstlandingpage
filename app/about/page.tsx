@@ -5,11 +5,11 @@ import Footer from "../../components/Footer"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "About Digital First | Print & Design Solutions UAE & Canada",
-  description: "Learn about Digital First's 3+ years of excellence in digital printing and design across the UAE and Canada. Discover our story, mission, and expert team.",
+  title: "About Digital First Printing & Packaging | Ajman, UAE",
+  description: "Learn about Digital First Printing & Packaging, located in Industrial Area 2, Ajman, UAE. Discover our story, mission, and expert team.",
   openGraph: {
-    title: "About Digital First | Print & Design Solutions UAE & Canada",
-    description: "Learn about Digital First's 3+ years of excellence in digital printing and design across the UAE and Canada. Discover our story, mission, and expert team.",
+    title: "About Digital First Printing & Packaging | Ajman, UAE",
+    description: "Learn about Digital First Printing & Packaging, located in Industrial Area 2, Ajman, UAE. Discover our story, mission, and expert team.",
     url: "https://digitalfirst.com/about",
     siteName: "Digital First",
     images: [
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Digital First | Print & Design Solutions UAE & Canada",
-    description: "Learn about Digital First's 3+ years of excellence in digital printing and design across the UAE and Canada. Discover our story, mission, and expert team.",
+    title: "About Digital First Printing & Packaging | Ajman, UAE",
+    description: "Learn about Digital First Printing & Packaging, located in Industrial Area 2, Ajman, UAE. Discover our story, mission, and expert team.",
     images: ["/digitalfirstlogo.jpg"],
   },
 }
@@ -41,7 +41,7 @@ export default function AboutPage() {
           <h1 className="text-3xl lg:text-5xl font-serif font-bold mb-6">About Digital First</h1>
           <p className="text-lg text-blue-100 max-w-3xl mx-auto">
             For over 3 years, we&apos;ve been the trusted partner for printing and design solutions 
-            across the UAE and Canada.
+            across the UAE.
           </p>
         </div>
       </section>
@@ -54,12 +54,11 @@ export default function AboutPage() {
               <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900">Our Story</h2>
               <p className="text-lg text-slate-600 leading-relaxed">
                 Founded in 1987, Digital First began as a small printing shop with a big vision: to revolutionize 
-                the printing industry through technology and innovation. What started as a single location has 
-                grown into a network of over 50 branches across the UAE and Canada.
+                the printing industry through technology and innovation. Today, we are proud to serve our customers from our main office and production facility in Industrial Area 2, Ajman, UAE.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">
-                Today, we&apos;re proud to be one of the region&apos;s leading digital printing and design companies, 
-                serving thousands of satisfied customers with cutting-edge technology and exceptional service.
+                We&apos;re proud to be one of the region&apos;s leading digital printing and packaging companies, 
+                serving satisfied customers with cutting-edge technology and exceptional service.
               </p>
             </div>
             
@@ -74,7 +73,7 @@ export default function AboutPage() {
                 </p>
                 <div className="flex justify-center space-x-4">
                   <div className="bg-white/20 rounded-lg px-4 py-2">
-                    <span className="font-semibold">50+ Locations</span>
+                    <span className="font-semibold">Ajman, UAE</span>
                   </div>
                   <div className="bg-white/20 rounded-lg px-4 py-2">
                     <span className="font-semibold">Expert Team</span>

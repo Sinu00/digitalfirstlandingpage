@@ -92,7 +92,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center text-blue-700">
               <Phone className="h-4 w-4 mr-2" />
-              <span className="text-sm font-medium">+97 00 00 000</span>
+              <span className="text-sm font-medium">0506116675</span>
             </div>
           </div>
         </div>

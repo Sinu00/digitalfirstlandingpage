@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
          <Image src="/digitalfirstlogoremovebg.png" alt="Digital First" className="h-10 w-auto" width={100} height={100} />
             <p className="text-slate-400 text-sm">
-              Your complete digital printing and design solution with over 3 years of excellence.
+              Digital First Printing & Packaging, Industrial Area 2, Ajman, UAE
             </p>
           </div>
           <div>
@@ -23,12 +23,9 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold mb-4 text-sm">Locations</h3>
+            <h3 className="font-semibold mb-4 text-sm">Location</h3>
             <ul className="space-y-2 text-slate-400 text-sm">
-              <li><Link href="/locations/Ajman" className="hover:text-white transition-colors">Ajman</Link></li>
-              <li><Link href="/locations/abu-dhabi" className="hover:text-white transition-colors">Abu Dhabi</Link></li>
-              <li><Link href="/locations/sharjah" className="hover:text-white transition-colors">Sharjah</Link></li>
-              <li><Link href="/locations/canada" className="hover:text-white transition-colors">Canada</Link></li>
+              <li><Link href="/locations/ajman" className="hover:text-white transition-colors">Ajman</Link></li>
             </ul>
           </div>
           <div>
@@ -36,11 +33,11 @@ export default function Footer() {
             <div className="space-y-2 text-slate-400 text-sm">
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-2" />
-                +97 00 00 000
+                0506116675
               </div>
               <div className="flex items-center">
                 <Mail className="h-4 w-4 mr-2" />
-                info@digitalfirst.com
+                digitalfirst@digitalfirstprint.com
               </div>
             </div>
           </div>

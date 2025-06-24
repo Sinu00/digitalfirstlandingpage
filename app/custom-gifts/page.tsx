@@ -11,8 +11,8 @@ function slugify(name: string) {
 }
 
 export const metadata: Metadata = {
-  title: "Custom Gifts | Personalized Printing & Engraving | Digital First UAE & Canada",
-  description: "Create unforgettable moments with personalized gifts from Digital First. Custom mugs, t-shirts, embroidery, and more. Fast delivery across UAE and Canada.",
+  title: "Custom Gifts | Personalized Printing & Engraving | Digital First Ajman, UAE",
+  description: "Create unforgettable moments with personalized gifts from Digital First. Custom mugs, t-shirts, embroidery, and more. Fast delivery in Ajman, UAE.",
   openGraph: {
     title: "Custom Gifts | Personalized Printing & Engraving | Digital First UAE & Canada",
     description: "Create unforgettable moments with personalized gifts from Digital First. Custom mugs, t-shirts, embroidery, and more. Fast delivery across UAE and Canada.",

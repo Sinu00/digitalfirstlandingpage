@@ -17,11 +17,11 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://digitalfirst.com"),
   title: {
-    default: "Digital First | Print & Design Solutions UAE, Dubai, Abu Dhabi, Sharjah, Canada",
+    default: "Digital First Printing & Packaging | Industrial Area 2, Ajman, UAE",
     template: "%s | Digital First",
   },
-  description: "Digital First offers premium digital printing, graphic design, and custom solutions across Dubai, Abu Dhabi, Sharjah, and Canada. 3+ years of excellence. Get a quote today!",
-  keywords: "digital printing, graphic design, print services, Dubai, Abu Dhabi, Sharjah, Canada",
+  description: "Digital First Printing & Packaging, Industrial Area 2, Ajman, UAE. Your trusted partner for digital printing and packaging solutions.",
+  keywords: "digital printing, packaging, print services, Ajman, UAE, Industrial Area 2",
 };
 
 export default function RootLayout({
