@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Clock, Shield, Award, FileText, Palette, ArrowRight, Phone, Mail } from "lucide-react"
+import { Clock, Shield, Award, FileText } from "lucide-react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import Image from 'next/image'

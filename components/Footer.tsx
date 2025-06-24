@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Phone, Mail } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,9 +8,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <div className="bg-gradient-to-r from-blue-700 to-indigo-700 text-white px-3 py-2 font-serif font-bold text-xl rounded-md shadow-sm mb-4 inline-block">
-              DIGITAL FIRST
-            </div>
+         <Image src="/digitalfirstlogoremovebg.png" alt="Digital First" className="h-10 w-auto" width={100} height={100} />
             <p className="text-slate-400 text-sm">
               Your complete digital printing and design solution with over 3 years of excellence.
             </p>

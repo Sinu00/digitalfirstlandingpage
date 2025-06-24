@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Smartphone, Shield, Clock, MapPin, Phone, Mail, Wifi, Lock } from "lucide-react"
+import { Smartphone, Shield, Clock, MapPin, Wifi, Lock } from "lucide-react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 

@@ -1,10 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function TShirtPrintingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 flex items-center justify-center py-16">
       <div className="max-w-2xl w-full mx-auto bg-white rounded-xl shadow-lg p-8 text-center">
-        <img
+        <Image
           src="/custom-gifts/t-shirt-printing.jpg"
           alt="T Shirt Printing"
           className="mx-auto mb-8 rounded-xl shadow w-full max-w-md h-64 object-contain bg-slate-100"

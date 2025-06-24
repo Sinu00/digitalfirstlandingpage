@@ -3,14 +3,14 @@ import Link from "next/link";
 import { Phone } from "lucide-react";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
   // Helper to check if a link is active
-  const isActive = (href) => {
+  const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
     // For main sections, highlight if path starts with the section (for subpages)
     return pathname === href || pathname.startsWith(href + "/");
@@ -22,7 +22,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-<img src="/digitalfirstlogo.jpg" alt="" className="h-10 w-auto" />
+            <Image src="/digitalfirstlogo.jpg" alt="Digital First" className="h-10 w-auto" width={100} height={100} />
           </div>
 
           {/* Desktop Navigation */}
