@@ -3,6 +3,7 @@ import { ArrowRight, MapPin, Clock, Award, Shield, Users, Star } from "lucide-re
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import type { Metadata } from "next"
+import HeroSlider from "../components/HeroSlider"
 
 export const metadata: Metadata = {
   title: "Digital First Printing & Packaging | Industrial Area 2, Ajman, UAE",
@@ -36,63 +37,67 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <Header />
       {/* Hero Section */}
-      <section className="min-h-[calc(100vh-4rem)] flex items-center bg-gradient-to-r from-blue-700 to-indigo-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-3xl lg:text-4xl font-serif font-bold mb-6 leading-tight">
-                Your Complete Digital Printing & Design Solution
-              </h1>
-              <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                With over 3 years of excellence, we deliver premium printing services, custom gifts, 
-                professional photography, and innovative signage solutions across the UAE.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Link href="/printing-services" className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors">
-                  Explore Services
-                </Link>
-                <Link href="/contact" className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors">
-                  Get Quote
-                </Link>
-              </div>
+      <HeroSlider>
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1
+              className="text-3xl lg:text-4xl font-serif font-bold mb-6 leading-tight text-black"
+              style={{
+                WebkitTextStroke: '0.2px white',
+                textShadow: '0 2px 8px rgba(0,0,0,0.5)',
+              }}
+            >
+              Your Complete Digital Printing & Design Solution
+            </h1>
+            <p className="text-lg text-blue-100 mb-8 leading-relaxed">
+              With over 3 years of excellence, we deliver premium printing services, custom gifts, 
+              professional photography, and innovative signage solutions across the UAE.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/printing-services" className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors">
+                Explore Services
+              </Link>
+              <Link href="/contact" className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors">
+                Get Quote
+              </Link>
             </div>
-            <div className="hidden lg:block">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center">
-                    <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Award className="h-8 w-8 text-white" />
-                    </div>
-                    <h3 className="font-semibold mb-2">3+ Years</h3>
-                    <p className="text-blue-100 text-sm">Industry Experience</p>
+          </div>
+          <div className="hidden lg:block">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+              <div className="grid grid-cols-2 gap-6">
+                <div className="text-center">
+                  <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Award className="h-8 w-8 text-white" />
                   </div>
-                  <div className="text-center">
-                    <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Users className="h-8 w-8 text-white" />
-                    </div>
-                    <h3 className="font-semibold mb-2">10,000+</h3>
-                    <p className="text-blue-100 text-sm">Happy Clients</p>
+                  <h3 className="font-semibold mb-2">3+ Years</h3>
+                  <p className="text-blue-100 text-sm">Industry Experience</p>
+                </div>
+                <div className="text-center">
+                  <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Users className="h-8 w-8 text-white" />
                   </div>
-                  <div className="text-center">
-                    <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Star className="h-8 w-8 text-white" />
-                    </div>
-                    <h3 className="font-semibold mb-2">Premium</h3>
-                    <p className="text-blue-100 text-sm">Quality Service</p>
+                  <h3 className="font-semibold mb-2">10,000+</h3>
+                  <p className="text-blue-100 text-sm">Happy Clients</p>
+                </div>
+                <div className="text-center">
+                  <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Star className="h-8 w-8 text-white" />
                   </div>
-                  <div className="text-center">
-                    <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Clock className="h-8 w-8 text-white" />
-                    </div>
-                    <h3 className="font-semibold mb-2">Fast</h3>
-                    <p className="text-blue-100 text-sm">Turnaround</p>
+                  <h3 className="font-semibold mb-2">Premium</h3>
+                  <p className="text-blue-100 text-sm">Quality Service</p>
+                </div>
+                <div className="text-center">
+                  <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Clock className="h-8 w-8 text-white" />
                   </div>
+                  <h3 className="font-semibold mb-2">Fast</h3>
+                  <p className="text-blue-100 text-sm">Turnaround</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </HeroSlider>
 
       {/* Services Section */}
       <section className="py-16 lg:py-24 bg-white">
@@ -184,7 +189,7 @@ export default function HomePage() {
               </h2>
               <p className="text-lg text-slate-600 mb-6 leading-relaxed">
                 Digital First has been at the forefront of the printing and design industry, serving thousands 
-                of satisfied customers across the UAE. Our commitment to quality, innovation, and 
+                of satisfied customers across UAE. Our commitment to quality, innovation, and 
                 customer satisfaction has made us the preferred choice for businesses and individuals alike.
               </p>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">

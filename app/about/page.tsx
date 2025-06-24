@@ -41,7 +41,7 @@ export default function AboutPage() {
           <h1 className="text-3xl lg:text-5xl font-serif font-bold mb-6">About Digital First</h1>
           <p className="text-lg text-blue-100 max-w-3xl mx-auto">
             For over 3 years, we&apos;ve been the trusted partner for printing and design solutions 
-            across the UAE.
+            across UAE.
           </p>
         </div>
       </section>
