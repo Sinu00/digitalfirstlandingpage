@@ -3,6 +3,34 @@ import { Camera, Phone, Mail, Clock, Shield, Award, ArrowRight } from "lucide-re
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import Image from 'next/image'
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Photo Studio | Passport, Portrait, Retouching | Digital First UAE & Canada",
+  description: "Professional photo studio services: passport photos, portraits, retouching, restoration, and more. Fast, high-quality photography across UAE and Canada.",
+  openGraph: {
+    title: "Photo Studio | Passport, Portrait, Retouching | Digital First UAE & Canada",
+    description: "Professional photo studio services: passport photos, portraits, retouching, restoration, and more. Fast, high-quality photography across UAE and Canada.",
+    url: "https://digitalfirst.com/photo-studio",
+    siteName: "Digital First",
+    images: [
+      {
+        url: "/digitalfirstlogo.jpg",
+        width: 400,
+        height: 400,
+        alt: "Digital First Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Photo Studio | Passport, Portrait, Retouching | Digital First UAE & Canada",
+    description: "Professional photo studio services: passport photos, portraits, retouching, restoration, and more. Fast, high-quality photography across UAE and Canada.",
+    images: ["/digitalfirstlogo.jpg"],
+  },
+};
 
 export default function PhotoStudioPage() {
   return (

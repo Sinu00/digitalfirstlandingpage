@@ -3,6 +3,34 @@ import { Palette, Clock, Shield, Award } from "lucide-react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import Image from 'next/image'
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Signage Solutions | Indoor, Outdoor, 3D & Vehicle Graphics | Digital First UAE & Canada",
+  description: "Professional signage solutions by Digital First. Indoor, outdoor, 3D signage, wall branding, and vehicle graphics. Serving UAE and Canada.",
+  openGraph: {
+    title: "Signage Solutions | Indoor, Outdoor, 3D & Vehicle Graphics | Digital First UAE & Canada",
+    description: "Professional signage solutions by Digital First. Indoor, outdoor, 3D signage, wall branding, and vehicle graphics. Serving UAE and Canada.",
+    url: "https://digitalfirst.com/signage",
+    siteName: "Digital First",
+    images: [
+      {
+        url: "/digitalfirstlogo.jpg",
+        width: 400,
+        height: 400,
+        alt: "Digital First Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Signage Solutions | Indoor, Outdoor, 3D & Vehicle Graphics | Digital First UAE & Canada",
+    description: "Professional signage solutions by Digital First. Indoor, outdoor, 3D signage, wall branding, and vehicle graphics. Serving UAE and Canada.",
+    images: ["/digitalfirstlogo.jpg"],
+  },
+};
 
 export default function SignagePage() {
   return (

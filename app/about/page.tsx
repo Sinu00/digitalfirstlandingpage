@@ -2,6 +2,34 @@ import Link from "next/link"
 import { Award, Clock, Users, Shield, Zap, Star } from "lucide-react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "About Digital First | Print & Design Solutions UAE & Canada",
+  description: "Learn about Digital First's 3+ years of excellence in digital printing and design across the UAE and Canada. Discover our story, mission, and expert team.",
+  openGraph: {
+    title: "About Digital First | Print & Design Solutions UAE & Canada",
+    description: "Learn about Digital First's 3+ years of excellence in digital printing and design across the UAE and Canada. Discover our story, mission, and expert team.",
+    url: "https://digitalfirst.com/about",
+    siteName: "Digital First",
+    images: [
+      {
+        url: "/digitalfirstlogo.jpg",
+        width: 400,
+        height: 400,
+        alt: "Digital First Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Digital First | Print & Design Solutions UAE & Canada",
+    description: "Learn about Digital First's 3+ years of excellence in digital printing and design across the UAE and Canada. Discover our story, mission, and expert team.",
+    images: ["/digitalfirstlogo.jpg"],
+  },
+}
 
 export default function AboutPage() {
   return (

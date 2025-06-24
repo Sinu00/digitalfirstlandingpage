@@ -3,11 +3,39 @@ import { Gift, Heart, Star, Palette } from "lucide-react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import Image from 'next/image'
+import type { Metadata } from "next";
 
 // Helper to slugify product names
 function slugify(name: string) {
   return name.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 }
+
+export const metadata: Metadata = {
+  title: "Custom Gifts | Personalized Printing & Engraving | Digital First UAE & Canada",
+  description: "Create unforgettable moments with personalized gifts from Digital First. Custom mugs, t-shirts, embroidery, and more. Fast delivery across UAE and Canada.",
+  openGraph: {
+    title: "Custom Gifts | Personalized Printing & Engraving | Digital First UAE & Canada",
+    description: "Create unforgettable moments with personalized gifts from Digital First. Custom mugs, t-shirts, embroidery, and more. Fast delivery across UAE and Canada.",
+    url: "https://digitalfirst.com/custom-gifts",
+    siteName: "Digital First",
+    images: [
+      {
+        url: "/digitalfirstlogo.jpg",
+        width: 400,
+        height: 400,
+        alt: "Digital First Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Custom Gifts | Personalized Printing & Engraving | Digital First UAE & Canada",
+    description: "Create unforgettable moments with personalized gifts from Digital First. Custom mugs, t-shirts, embroidery, and more. Fast delivery across UAE and Canada.",
+    images: ["/digitalfirstlogo.jpg"],
+  },
+};
 
 export default function CustomGiftsPage() {
   return (

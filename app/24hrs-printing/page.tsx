@@ -2,6 +2,34 @@ import Link from "next/link"
 import { Clock, Phone, Mail, Shield, Zap, Star, CheckCircle } from "lucide-react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "24/7 Emergency Printing Services | Digital First UAE & Canada",
+  description: "Get urgent printing services any time, day or night. Digital First offers 24/7 emergency printing for documents, marketing materials, and signage across the UAE and Canada.",
+  openGraph: {
+    title: "24/7 Emergency Printing Services | Digital First UAE & Canada",
+    description: "Get urgent printing services any time, day or night. Digital First offers 24/7 emergency printing for documents, marketing materials, and signage across the UAE and Canada.",
+    url: "https://digitalfirst.com/24hrs-printing",
+    siteName: "Digital First",
+    images: [
+      {
+        url: "/digitalfirstlogo.jpg",
+        width: 400,
+        height: 400,
+        alt: "Digital First Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "24/7 Emergency Printing Services | Digital First UAE & Canada",
+    description: "Get urgent printing services any time, day or night. Digital First offers 24/7 emergency printing for documents, marketing materials, and signage across the UAE and Canada.",
+    images: ["/digitalfirstlogo.jpg"],
+  },
+};
 
 export default function TwentyFourHoursPrintingPage() {
   return (

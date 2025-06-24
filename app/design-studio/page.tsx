@@ -2,6 +2,34 @@ import Link from "next/link"
 import { Palette, Brush, Layers, Sparkles, Eye, Zap } from "lucide-react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Design Studio | Creative Graphic Design Services | Digital First UAE & Canada",
+  description: "Bring your ideas to life with Digital First's creative design studio. Professional graphic design, branding, and custom artwork for print and digital projects.",
+  openGraph: {
+    title: "Design Studio | Creative Graphic Design Services | Digital First UAE & Canada",
+    description: "Bring your ideas to life with Digital First's creative design studio. Professional graphic design, branding, and custom artwork for print and digital projects.",
+    url: "https://digitalfirst.com/design-studio",
+    siteName: "Digital First",
+    images: [
+      {
+        url: "/digitalfirstlogo.jpg",
+        width: 400,
+        height: 400,
+        alt: "Digital First Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Design Studio | Creative Graphic Design Services | Digital First UAE & Canada",
+    description: "Bring your ideas to life with Digital First's creative design studio. Professional graphic design, branding, and custom artwork for print and digital projects.",
+    images: ["/digitalfirstlogo.jpg"],
+  },
+}
 
 export default function DesignStudioPage() {
   return (

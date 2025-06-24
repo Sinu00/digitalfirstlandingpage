@@ -2,6 +2,34 @@ import Link from "next/link"
 import { Award, Clock, MapPin, Users, Shield, Zap, Star } from "lucide-react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Why Choose Digital First? | Print & Design Excellence UAE & Canada",
+  description: "Discover why Digital First is the trusted choice for printing and design in Dubai, Abu Dhabi, Sharjah, and Canada. Quality, speed, and innovation.",
+  openGraph: {
+    title: "Why Choose Digital First? | Print & Design Excellence UAE & Canada",
+    description: "Discover why Digital First is the trusted choice for printing and design in Dubai, Abu Dhabi, Sharjah, and Canada. Quality, speed, and innovation.",
+    url: "https://digitalfirst.com/why-digital-first",
+    siteName: "Digital First",
+    images: [
+      {
+        url: "/digitalfirstlogo.jpg",
+        width: 400,
+        height: 400,
+        alt: "Digital First Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Why Choose Digital First? | Print & Design Excellence UAE & Canada",
+    description: "Discover why Digital First is the trusted choice for printing and design in Ajman, Abu Dhabi, Sharjah, and Canada. Quality, speed, and innovation.",
+    images: ["/digitalfirstlogo.jpg"],
+  },
+};
 
 export default function WhyDigitalFirstPage() {
   return (
@@ -94,7 +122,7 @@ export default function WhyDigitalFirstPage() {
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">50+ Locations</h3>
               <p className="text-slate-600 leading-relaxed text-sm mb-4">
-                Extensive network of locations across Dubai, Abu Dhabi, Sharjah, and Canada for your convenience.
+                Extensive network of locations across Ajman, Abu Dhabi, Sharjah, and Canada for your convenience.
               </p>
               <ul className="space-y-2 text-slate-600 text-sm">
                 <li className="flex items-center">

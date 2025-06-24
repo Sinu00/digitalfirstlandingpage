@@ -15,11 +15,12 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Digital First - Print & Design Solutions",
-  icons: {
-    icon: "/digitalfirstlogo.jpg",
+  metadataBase: new URL("https://digitalfirst.com"),
+  title: {
+    default: "Digital First | Print & Design Solutions UAE, Dubai, Abu Dhabi, Sharjah, Canada",
+    template: "%s | Digital First",
   },
-  description: "Your complete digital printing and design solution with over 3 years of excellence. Premium printing services, graphic design, and custom solutions across Dubai, Abu Dhabi, Sharjah, and Canada.",
+  description: "Digital First offers premium digital printing, graphic design, and custom solutions across Dubai, Abu Dhabi, Sharjah, and Canada. 3+ years of excellence. Get a quote today!",
   keywords: "digital printing, graphic design, print services, Dubai, Abu Dhabi, Sharjah, Canada",
 };
 

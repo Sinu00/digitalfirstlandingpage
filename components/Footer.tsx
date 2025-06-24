@@ -25,7 +25,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4 text-sm">Locations</h3>
             <ul className="space-y-2 text-slate-400 text-sm">
-              <li><Link href="/locations/dubai" className="hover:text-white transition-colors">Dubai</Link></li>
+              <li><Link href="/locations/Ajman" className="hover:text-white transition-colors">Ajman</Link></li>
               <li><Link href="/locations/abu-dhabi" className="hover:text-white transition-colors">Abu Dhabi</Link></li>
               <li><Link href="/locations/sharjah" className="hover:text-white transition-colors">Sharjah</Link></li>
               <li><Link href="/locations/canada" className="hover:text-white transition-colors">Canada</Link></li>

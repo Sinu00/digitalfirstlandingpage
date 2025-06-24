@@ -2,6 +2,34 @@ import Link from "next/link"
 import { MapPin, Phone, Mail, Clock, Building, Globe, ArrowRight } from "lucide-react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Our Locations | Digital First Print & Design UAE, Canada, Dubai, Abu Dhabi, Sharjah",
+  description: "Find your nearest Digital First location. Over 50 print and design centers across Dubai, Abu Dhabi, Sharjah, and Canada. 24/7 support and expert services.",
+  openGraph: {
+    title: "Our Locations | Digital First Print & Design UAE, Canada, Dubai, Abu Dhabi, Sharjah",
+    description: "Find your nearest Digital First location. Over 50 print and design centers across Dubai, Abu Dhabi, Sharjah, and Canada. 24/7 support and expert services.",
+    url: "https://digitalfirst.com/locations",
+    siteName: "Digital First",
+    images: [
+      {
+        url: "/digitalfirstlogo.jpg",
+        width: 400,
+        height: 400,
+        alt: "Digital First Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Locations | Digital First Print & Design UAE, Canada, Dubai, Abu Dhabi, Sharjah",
+    description: "Find your nearest Digital First location. Over 50 print and design centers across Dubai, Abu Dhabi, Sharjah, and Canada. 24/7 support and expert services.",
+    images: ["/digitalfirstlogo.jpg"],
+  },
+}
 
 export default function LocationsPage() {
   return (
@@ -12,7 +40,7 @@ export default function LocationsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl lg:text-5xl font-serif font-bold mb-6">Our Locations</h1>
           <p className="text-lg text-blue-100 max-w-3xl mx-auto">
-            With over 50 locations across Dubai, Abu Dhabi, Sharjah, and Canada, 
+            With over 50 locations across Ajman, Abu Dhabi, Sharjah, and Canada, 
             there&apos;s always a Digital First center near you.
           </p>
         </div>
@@ -53,14 +81,14 @@ export default function LocationsPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Dubai */}
+            {/* Ajman */}
             <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
               <div className="bg-gradient-to-r from-blue-600 to-indigo-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Building className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">Dubai</h3>
+              <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">Ajman</h3>
               <p className="text-slate-600 leading-relaxed text-sm mb-4">
-                Multiple locations across Dubai serving all your printing and design needs.
+                Multiple locations across Ajman serving all your printing and design needs.
               </p>
               <div className="space-y-2 mb-4">
                 <div className="flex items-center text-slate-600 text-sm">
@@ -72,8 +100,8 @@ export default function LocationsPage() {
                   <span>24/7 Service Available</span>
                 </div>
               </div>
-              <Link href="/locations/dubai" className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors text-sm">
-                View Dubai Locations <ArrowRight className="ml-1 h-3 w-3" />
+              <Link href="/locations/Ajman" className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors text-sm">
+                View Ajman Locations <ArrowRight className="ml-1 h-3 w-3" />
               </Link>
             </div>
 
@@ -158,7 +186,7 @@ export default function LocationsPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Featured Location</h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Our newest location in Azizi Riviera, Dubai - now open and ready to serve you.
+              Our newest location in Industrial Area 2, Ajman - now open and ready to serve you.
             </p>
           </div>
 
@@ -168,10 +196,10 @@ export default function LocationsPage() {
                 <div className="bg-white/20 rounded-lg p-4 inline-block mb-6">
                   <Clock className="h-8 w-8" />
                 </div>
-                <h3 className="text-2xl font-serif font-bold mb-4">Azizi Riviera - Dubai</h3>
+                <h3 className="text-2xl font-serif font-bold mb-4">Industrial Area 2, Ajman - UAE</h3>
                 <p className="text-blue-100 mb-6 text-sm">
-                  Unit No. 25, Azizi Riviera3, Al Markada<br />
-                  Nad Al Sheba 1, Dubai
+                  Shed No. 17, Industrial Area 2 <br />
+                  Ajman , UAE
                 </p>
                 <div className="space-y-3 text-sm">
                   <div className="flex items-center">
@@ -180,7 +208,7 @@ export default function LocationsPage() {
                   </div>
                   <div className="flex items-center">
                     <Mail className="h-4 w-4 mr-3" />
-                    <span>azizi3@digitalfirst.com</span>
+                    <span>info@digitalfirst.com</span>
                   </div>
                   <div className="flex items-center">
                     <Clock className="h-4 w-4 mr-3" />

@@ -2,6 +2,34 @@ import Link from "next/link"
 import { Award, Brain, Target, Users, Zap, Shield, Star, CheckCircle } from "lucide-react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Digital First Expertise | Printing & Design Leaders UAE & Canada",
+  description: "Discover Digital First's expertise in digital printing, design, and custom solutions. Serving Dubai, Abu Dhabi, Sharjah, and Canada with innovation and quality.",
+  openGraph: {
+    title: "Digital First Expertise | Printing & Design Leaders UAE & Canada",
+    description: "Discover Digital First's expertise in digital printing, design, and custom solutions. Serving Ajman, Abu Dhabi, Sharjah, and Canada with innovation and quality.",
+    url: "https://digitalfirst.com/digital-first-expertise",
+    siteName: "Digital First",
+    images: [
+      {
+        url: "/digitalfirstlogo.jpg",
+        width: 400,
+        height: 400,
+        alt: "Digital First Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Digital First Expertise | Printing & Design Leaders UAE & Canada",
+    description: "Discover Digital First's expertise in digital printing, design, and custom solutions. Serving Ajman, Abu Dhabi, Sharjah, and Canada with innovation and quality.",
+    images: ["/digitalfirstlogo.jpg"],
+  },
+}
 
 export default function DigitalFirstExpertisePage() {
   return (

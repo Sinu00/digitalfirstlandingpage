@@ -2,6 +2,34 @@ import Link from "next/link"
 import { ArrowRight, MapPin, Clock, Award, Shield, Users, Star } from "lucide-react"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Digital First | Print & Design Solutions UAE, Dubai, Abu Dhabi, Sharjah, Canada",
+  description: "Digital First offers premium digital printing, graphic design, and custom solutions across Dubai, Abu Dhabi, Sharjah, and Canada. 3+ years of excellence. Get a quote today!",
+  openGraph: {
+    title: "Digital First | Print & Design Solutions UAE, Dubai, Abu Dhabi, Sharjah, Canada",
+    description: "Digital First offers premium digital printing, graphic design, and custom solutions across Dubai, Abu Dhabi, Sharjah, and Canada. 3+ years of excellence. Get a quote today!",
+    url: "https://digitalfirst.com/",
+    siteName: "Digital First",
+    images: [
+      {
+        url: "/digitalfirstlogo.jpg",
+        width: 400,
+        height: 400,
+        alt: "Digital First Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Digital First | Print & Design Solutions UAE, Dubai, Abu Dhabi, Sharjah, Canada",
+    description: "Digital First offers premium digital printing, graphic design, and custom solutions across Dubai, Abu Dhabi, Sharjah, and Canada. 3+ years of excellence. Get a quote today!",
+    images: ["/digitalfirstlogo.jpg"],
+  },
+}
 
 export default function HomePage() {
   return (
@@ -221,7 +249,7 @@ export default function HomePage() {
                 <div className="bg-gradient-to-r from-blue-600 to-indigo-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                   <MapPin className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-lg font-serif font-bold text-slate-900 mb-2">Dubai</h3>
+                <h3 className="text-lg font-serif font-bold text-slate-900 mb-2">Ajman</h3>
                 <p className="text-slate-600 text-sm">Main office and production facility</p>
               </div>
             </Link>

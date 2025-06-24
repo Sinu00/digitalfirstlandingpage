@@ -2,6 +2,34 @@ import Link from "next/link"
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Contact Digital First | Print & Design Solutions UAE & Canada",
+  description: "Contact Digital First for all your printing and design needs. Reach our team for support, quotes, and inquiries across the UAE and Canada.",
+  openGraph: {
+    title: "Contact Digital First | Print & Design Solutions UAE & Canada",
+    description: "Contact Digital First for all your printing and design needs. Reach our team for support, quotes, and inquiries across the UAE and Canada.",
+    url: "https://digitalfirst.com/contact",
+    siteName: "Digital First",
+    images: [
+      {
+        url: "/digitalfirstlogo.jpg",
+        width: 400,
+        height: 400,
+        alt: "Digital First Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Digital First | Print & Design Solutions UAE & Canada",
+    description: "Contact Digital First for all your printing and design needs. Reach our team for support, quotes, and inquiries across the UAE and Canada.",
+    images: ["/digitalfirstlogo.jpg"],
+  },
+}
 
 export default function ContactPage() {
   return (
