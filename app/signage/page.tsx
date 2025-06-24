@@ -62,32 +62,32 @@ export default function SignagePage() {
             {[
               {
                 name: 'Outdoor Signage',
-                img: '/signage/outdoor-signage.jpg',
+                img: '/signage/Outdoor-Signage.jpg',
                 desc: 'Desco Signage provides you with durable and high-impact outdoor signage designed to elevate your brand&apos;s visibility and attract attention from any distance.'
               },
               {
                 name: 'Indoor Signage',
-                img: '/signage/indoor-signage.jpg',
+                img: '/signage/Indoor-Signage.jpg',
                 desc: 'Desco Signage provides custom indoor signage that enhances your interiors, creating a welcoming and informative atmosphere that aligns with your brand identity.'
               },
               {
                 name: '3D Signage',
-                img: '/signage/3d-signage.jpg',
+                img: '/signage/3D-Signage.jpg',
                 desc: 'Desco Signage provides you with unique 3D signage that adds depth and dimension, making your brand visually compelling and unforgettable.'
               },
               {
                 name: 'Wall Branding',
-                img: '/signage/wall-branding.jpg',
+                img: '/signage/Wall-Branding.jpg',
                 desc: 'Desco Signage provides you with stunning wall graphics that transform blank walls into powerful storytelling spaces.'
               },
               {
                 name: 'Vehicle Graphics',
-                img: '/signage/vehicle-graphics.jpg',
+                img: '/signage/Vehicle-Graphics.jpg',
                 desc: 'Desco Signage provides you with vibrant vehicle graphics that turn your vehicles into moving advertisements, maximizing brand exposure wherever they go.'
               },
               {
                 name: 'Exhibition Stands',
-                img: '/signage/exhibition-stands.jpg',
+                img: '/signage/Exhibition-Stands.jpg',
                 desc: 'Desco Signage provides custom designed exhibition stands that make a powerful impression at events, helping you showcase your brand&apos;s uniqueness and professionalism.'
               },
             ].map((service) => (
