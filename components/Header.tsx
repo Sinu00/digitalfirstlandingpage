@@ -29,10 +29,10 @@ export default function Header() {
           <nav className="hidden md:flex">
             <ul className="flex space-x-6 list-none m-0 p-0">
               <li className="relative group/nav">
-                <a href="/" className={`flex items-center ${isActive("/") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>
+                <Link href="/" className={`flex items-center ${isActive("/") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>
                   Home
                   <svg className="ml-1 h-4 w-4 text-slate-500 group-hover/nav:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
-                </a>
+                </Link>
                 <button
                   className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10 md:hidden"
                   aria-haspopup="true"
@@ -102,7 +102,10 @@ export default function Header() {
         <div className="md:hidden bg-white border-t border-slate-200 shadow-sm">
           <nav className="flex flex-col space-y-2 px-4 py-4">
             <li className="relative group">
-              <a href="/" className="px-4 py-2 hover:text-blue-700 transition-colors">Home</a>
+              <Link href="/" className="px-4 py-2 hover:text-blue-700 transition-colors flex items-center">
+                Home
+                <svg className="ml-1 h-4 w-4 text-slate-500 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+              </Link>
               <button
                 className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10 md:hidden"
                 aria-haspopup="true"
