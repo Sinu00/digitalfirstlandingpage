@@ -41,7 +41,7 @@ export default function WhyDigitalFirstPage() {
           <h1 className="text-3xl lg:text-5xl font-serif font-bold mb-6">Why Choose Digital First?</h1>
           <p className="text-lg text-blue-100 max-w-3xl mx-auto">
             Discover what makes us the preferred choice for printing and design solutions 
-            across the UAE and Canada.
+            across UAE.
           </p>
         </div>
       </section>
@@ -122,7 +122,7 @@ export default function WhyDigitalFirstPage() {
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">50+ Locations</h3>
               <p className="text-slate-600 leading-relaxed text-sm mb-4">
-                Extensive network of locations across Ajman, Abu Dhabi, Sharjah, and Canada for your convenience.
+                Extensive network of locations across UAE for your convenience.
               </p>
               <ul className="space-y-2 text-slate-600 text-sm">
                 <li className="flex items-center">
