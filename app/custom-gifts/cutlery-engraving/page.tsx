@@ -7,7 +7,7 @@ export default function CutleryEngravingPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/custom-gifts/cutlery-engraving.jpg"
+            src="/custom-gifts/Cutlery-Engraving.jpg"
             alt="Cutlery Engraving"
             width={288}
             height={176}

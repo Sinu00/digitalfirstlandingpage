@@ -7,7 +7,7 @@ export default function TrophyEngravingPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/custom-gifts/trophy-engraving.jpg"
+            src="/custom-gifts/Trophy-Engraving.jpg"
             alt="Trophy Engraving"
             width={288}
             height={176}

@@ -7,7 +7,7 @@ export default function TableRunnerPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/custom-gifts/table-runner.jpg"
+            src="/custom-gifts/Table-Runner.jpg"
             alt="Table Runner"
             className="mx-auto rounded-lg mb-8 w-72 h-44 object-cover"
             width={288}

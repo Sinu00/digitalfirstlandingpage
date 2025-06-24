@@ -7,7 +7,7 @@ export default function SafetyCoverallPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/custom-gifts/safety-coverall.jpg"
+            src="/custom-gifts/Safety-Coverall.jpg"
             alt="Safety Coverall"
             width={288}
             height={176}

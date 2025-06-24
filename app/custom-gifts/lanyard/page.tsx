@@ -7,7 +7,7 @@ export default function LanyardPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/custom-gifts/lanyard.jpg"
+            src="/custom-gifts/Lanyard.jpg"
             alt="Lanyard"
             width={288}
             height={176}

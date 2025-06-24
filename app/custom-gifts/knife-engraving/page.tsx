@@ -7,7 +7,7 @@ export default function KnifeEngravingPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/custom-gifts/knife-engraving.jpg"
+            src="/custom-gifts/Knife-Engraving.jpg"
             alt="Knife Engraving"
             width={288}
             height={176}

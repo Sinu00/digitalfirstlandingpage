@@ -7,7 +7,7 @@ export default function HoodiePrintingPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/custom-gifts/hoodie-printing.jpg"
+            src="/custom-gifts/Hoodie-Printing.jpg"
             alt="Hoodie Printing"
             width={288}
             height={176}

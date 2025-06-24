@@ -7,7 +7,7 @@ export default function PillowCoverPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/custom-gifts/pillow-cover.jpg"
+            src="/custom-gifts/Pillow-Cover.jpg"
             alt="Pillow Cover"
             width={288}
             height={176}

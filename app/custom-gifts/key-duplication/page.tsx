@@ -7,7 +7,7 @@ export default function KeyDuplicationPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/custom-gifts/key-duplication.jpg"
+            src="/custom-gifts/Key-Duplication.jpg"
             alt="Key Duplication"
             width={288}
             height={176}

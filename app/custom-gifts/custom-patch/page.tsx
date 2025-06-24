@@ -7,7 +7,7 @@ export default function CustomPatchPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/custom-gifts/custom-patch.jpg"
+            src="/custom-gifts/Custom-Patch.jpg"
             alt="Custom Patch"
             width={288}
             height={176}
