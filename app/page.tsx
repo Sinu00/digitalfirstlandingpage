@@ -41,11 +41,7 @@ export default function HomePage() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1
-              className="text-3xl lg:text-4xl font-serif font-bold mb-6 leading-tight text-black"
-              style={{
-                WebkitTextStroke: '0.2px white',
-                textShadow: '0 2px 8px rgba(0,0,0,0.5)',
-              }}
+              className="text-3xl lg:text-4xl font-serif font-bold mb-6 leading-tight text-white"
             >
               Digital First Printing & Packaging Industry
             </h1>
@@ -145,14 +141,14 @@ export default function HomePage() {
             </Link>
 
             {/* Photo Studio */}
-            <Link href="/photo-studio" className="group">
+            <Link href="/packaging-printing" className="group">
               <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group-hover:border-blue-300">
                 <div className="bg-gradient-to-r from-purple-600 to-pink-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                   <div className="text-white text-2xl font-bold">P</div>
                 </div>
-                <h3 className="text-xl font-serif font-bold text-slate-900 mb-4">Photo Studio</h3>
+                <h3 className="text-xl font-serif font-bold text-slate-900 mb-4">Packaging & Printing</h3>
                 <p className="text-slate-600 mb-4">
-                  Professional photography services. Portraits, corporate events, and product photography.
+                  High-quality packaging and printing solutions to elevate your brand and products.
                 </p>
                 <div className="flex items-center text-purple-600 font-semibold group-hover:text-purple-700 transition-colors">
                   Learn More <ArrowRight className="ml-1 h-4 w-4" />
