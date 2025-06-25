@@ -18,7 +18,7 @@ export default function Footer() {
             <ul className="space-y-2 text-slate-400 text-sm">
               <li><Link href="/printing-services" className="hover:text-white transition-colors">Printing Services</Link></li>
               <li><Link href="/custom-gifts" className="hover:text-white transition-colors">Custom Gifts</Link></li>
-              <li><Link href="/photo-studio" className="hover:text-white transition-colors">Photo Studio</Link></li>
+              <li><Link href="/packaging-printing" className="hover:text-white transition-colors">Packaging & Printing</Link></li>
               <li><Link href="/signage" className="hover:text-white transition-colors">Signage</Link></li>
             </ul>
           </div>
@@ -33,11 +33,11 @@ export default function Footer() {
             <div className="space-y-2 text-slate-400 text-sm">
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-2" />
-                0506116675
+                <a href="tel:0506116675" className="hover:text-white transition-colors">0506116675</a>
               </div>
               <div className="flex items-center">
                 <Mail className="h-4 w-4 mr-2" />
-                digitalfirst@digitalfirstprint.com
+                <a href="mailto:digitalfirst@digitalfirstprint.com" className="hover:text-white transition-colors">digitalfirst@digitalfirstprint.com</a>
               </div>
             </div>
           </div>

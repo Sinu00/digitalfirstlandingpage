@@ -47,11 +47,11 @@ export default function HomePage() {
                 textShadow: '0 2px 8px rgba(0,0,0,0.5)',
               }}
             >
-              Your Complete Digital Printing & Design Solution
+              Digital First Printing & Packaging Industry
             </h1>
             <p className="text-lg text-blue-100 mb-8 leading-relaxed">
               With over 3 years of excellence, we deliver premium printing services, custom gifts, 
-              professional photography, and innovative signage solutions across the UAE.
+              innovative packaging & commercial printing solutions across the UAE.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/printing-services" className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors">

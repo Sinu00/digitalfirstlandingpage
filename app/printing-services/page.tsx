@@ -64,19 +64,14 @@ export default function PrintingServicesPage() {
               { name: 'Corporate Identity', img: '/printing-services/Corporate-Identity.jpg', slug: 'corporate-identity' },
               { name: 'Flyers & Brochures', img: '/printing-services/Flyers-Brochures.jpg', slug: 'flyers-brochures' },
               { name: 'Binding Services', img: '/printing-services/Binding-Services.jpg', slug: 'binding-services' },
-              { name: 'Passport Size Photo', img: '/printing-services/Passport-Size-Photo.jpg', slug: 'passport-size-photo' },
-              { name: 'Customised Mugs', img: '/printing-services/Customised-Mugs.jpg', slug: 'customised-mugs' },
               { name: 'Rubber Stamp', img: '/printing-services/Rubber-Stamp.jpg', slug: 'rubber-stamp' },
               { name: 'Printing on Gift Items', img: '/printing-services/Printing-on-Gift-Items.jpg', slug: 'printing-on-gift-items' },
               { name: 'Foiling', img: '/printing-services/foiling.jpg', slug: 'foiling' },
               { name: 'Spot UV', img: '/printing-services/Spot-UV.jpg', slug: 'spot-uv' },
               { name: 'Thermal Embossing', img: '/printing-services/Thermal-Embossing.jpg', slug: 'thermal-embossing' },
               { name: 'Large Format Printing', img: '/printing-services/Large-Format-Printing.jpg', slug: 'large-format-printing' },
-              { name: 'Large Format Scanning', img: '/printing-services/Large-Format-Scanning.jpg', slug: 'large-format-scanning' },
-              { name: 'Photocopy Services', img: '/printing-services/Photocopy-Services.jpg', slug: 'photocopy-services' },
               { name: 'Customised Calendar', img: '/printing-services/Customised-Calendar.jpg', slug: 'customised-calendar' },
               { name: 'Menu Cards', img: '/printing-services/Menu-Cards.jpg', slug: 'menu-cards' },
-              { name: 'Autocad Plotting', img: '/printing-services/Autocad-Plotting.jpg', slug: 'autocad-plotting' },
               { name: 'Wedding Cards', img: '/printing-services/Wedding-Cards.jpg', slug: 'wedding-cards' },
               { name: 'Personalized Greeting', img: '/printing-services/Personalized-Greeting.jpg', slug: 'personalized-greeting' },
               { name: 'Foam Board Mounting', img: '/printing-services/Foam-Board-Mounting.jpg', slug: 'foam-board-mounting' },
@@ -88,7 +83,6 @@ export default function PrintingServicesPage() {
               { name: 'PVC ID Card Printing', img: '/printing-services/PVC-ID-Card-Printing.jpg', slug: 'pvc-id-card-printing' },
               { name: 'Canvas & Streching', img: '/printing-services/Canvas-Streching.jpg', slug: 'canvas-streching' },
               { name: 'Papper Bags', img: '/printing-services/Papper-Bags.jpg', slug: 'papper-bags' },
-              { name: 'CD - DVD Writing', img: '/printing-services/CD-DVD-Writing.jpg', slug: 'cd-dvd-writing' },
             ].map((service) => (
               <Link key={service.name} href={`/printing-services/${service.slug}`} className="w-full">
                 <div className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col items-center cursor-pointer">

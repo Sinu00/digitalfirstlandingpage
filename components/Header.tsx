@@ -22,7 +22,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Image src="/digitalfirstlogoremovebg.png" alt="Digital First" className="h-10 w-auto" width={100} height={100} />
+            <Image src="/digitalfirstlogoremovebg.png" alt="Digital First" className="h-13 w-auto" width={100} height={100} />
           </div>
 
           {/* Desktop Navigation */}
@@ -71,8 +71,8 @@ export default function Header() {
               </li>
               <Link href="/printing-services" className={`${isActive("/printing-services") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>Printing Services</Link>
               <Link href="/custom-gifts" className={`${isActive("/custom-gifts") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>Custom Gifts</Link>
-              <Link href="/photo-studio" className={`${isActive("/photo-studio") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>Photo Studio</Link>
               <Link href="/signage" className={`${isActive("/signage") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>Signage</Link>
+              <Link href="/packaging-printing" className={`${isActive("/packaging-printing") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>Packaging & Printing</Link>
               <Link href="/locations" className={`${isActive("/locations") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>Locations</Link>
             </ul>
           </nav>
@@ -92,7 +92,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center text-blue-700">
               <Phone className="h-4 w-4 mr-2" />
-              <span className="text-sm font-medium">0506116675</span>
+              <a href="tel:0506116675" className="text-sm font-medium hover:underline">0506116675</a>
             </div>
           </div>
         </div>
@@ -113,8 +113,8 @@ export default function Header() {
             </div>
             <Link href="/printing-services" className={`${isActive("/printing-services") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-base py-2`} onClick={() => setMenuOpen(false)}>Printing Services</Link>
             <Link href="/custom-gifts" className={`${isActive("/custom-gifts") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-base py-2`} onClick={() => setMenuOpen(false)}>Custom Gifts</Link>
-            <Link href="/photo-studio" className={`${isActive("/photo-studio") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-base py-2`} onClick={() => setMenuOpen(false)}>Photo Studio</Link>
             <Link href="/signage" className={`${isActive("/signage") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-base py-2`} onClick={() => setMenuOpen(false)}>Signage</Link>
+            <Link href="/packaging-printing" className={`${isActive("/packaging-printing") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-base py-2`} onClick={() => setMenuOpen(false)}>Packaging & Printing</Link>
             <Link href="/locations" className={`${isActive("/locations") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-base py-2`} onClick={() => setMenuOpen(false)}>Locations</Link>
           </nav>
         </div>
