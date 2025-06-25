@@ -140,7 +140,7 @@ export default function HomePage() {
               </div>
             </Link>
 
-            {/* Photo Studio */}
+            {/* Packaging and printing */}
             <Link href="/packaging-printing" className="group">
               <div className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group-hover:border-blue-300">
                 <div className="bg-gradient-to-r from-purple-600 to-pink-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">

@@ -172,7 +172,7 @@ export default function ContactPage() {
                   <option value="">Select a service</option>
                   <option value="printing">Printing Services</option>
                   <option value="gifts">Custom Gifts</option>
-                  <option value="photo">Photo Studio</option>
+                  <option value="packaging">Packaging & Printing</option>
                   <option value="signage">Signage</option>
                   <option value="design">Design Studio</option>
                   <option value="other">Other</option>

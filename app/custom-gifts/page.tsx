@@ -47,7 +47,7 @@ export default function CustomGiftsPage() {
           <h1 className="text-4xl lg:text-5xl font-serif font-bold mb-6">Custom Gifts</h1>
           <p className="text-lg text-blue-100 max-w-3xl mx-auto leading-relaxed">
             Create unforgettable moments with personalized gifts that speak from the heart. 
-            From custom mugs to photo albums, we bring your ideas to life.
+            From personalized t-shirts to engraved trophies, we bring your ideas to life.
           </p>
         </div>
       </section>

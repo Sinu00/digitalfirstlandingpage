@@ -9,11 +9,14 @@ export default function PackagingAndPrintingPage() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <Header />
       {/* Hero Section */}
-      <section className="py-16 lg:py-24 bg-gradient-to-r from-blue-700 to-indigo-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-10">
+      <section className="relative py-16 lg:py-24 bg-gradient-to-r from-blue-700 to-indigo-800 text-white overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="w-full h-full bg-black/40" />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-10">
           <div className="flex-1 text-center md:text-left">
-            <h1 className="text-4xl lg:text-5xl font-serif font-bold mb-6">Packaging & Printing</h1>
-            <p className="text-lg text-blue-100 max-w-2xl leading-relaxed mb-6">
+            <h1 className="text-4xl lg:text-5xl font-serif font-bold mb-6" style={{textShadow: '0 4px 24px rgba(0,0,0,0.85), 0 1.5px 0 rgba(0,0,0,0.7)'}}>Packaging & Printing</h1>
+            <p className="text-lg text-blue-100 max-w-2xl leading-relaxed mb-6" style={{textShadow: '0 3px 16px rgba(0,0,0,0.7), 0 1px 0 rgba(0,0,0,0.6)'}}>
               Elevate your brand with our comprehensive packaging and printing solutions. From custom boxes and bags to premium labels and wraps, we deliver quality, creativity, and fast turnaround for every business need.
             </p>
             <Link href="/contact" className="inline-block bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors mt-4">

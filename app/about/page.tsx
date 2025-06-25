@@ -53,7 +53,7 @@ export default function AboutPage() {
             <div className="space-y-8">
               <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900">Our Story</h2>
               <p className="text-lg text-slate-600 leading-relaxed">
-                Founded in 1987, Digital First began as a small printing shop with a big vision: to revolutionize 
+                Founded in 2022, Digital First began as a small printing shop with a big vision: to revolutionize 
                 the printing industry through technology and innovation. Today, we are proud to serve our customers from our main office and production facility in Industrial Area 2, Ajman, UAE.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">

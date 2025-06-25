@@ -133,8 +133,8 @@ export default function LocationsPage() {
               <div className="bg-purple-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
                 <span className="text-white font-bold">📸</span>
               </div>
-              <h3 className="text-xl font-serif font-bold text-slate-900">Photo Studio</h3>
-              <p className="text-slate-600">Professional photography</p>
+              <h3 className="text-xl font-serif font-bold text-slate-900">Packaging & Printing</h3>
+              <p className="text-slate-600">Professional Packaging & Printing</p>
             </div>
             <div className="text-center space-y-4">
               <div className="bg-orange-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">

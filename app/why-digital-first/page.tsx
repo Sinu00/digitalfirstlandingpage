@@ -69,7 +69,7 @@ export default function WhyDigitalFirstPage() {
               <ul className="space-y-2 text-slate-600 text-sm">
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3"></div>
-                  Industry veterans since 1987
+                  Industry veterans since 2022
                 </li>
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3"></div>
@@ -120,26 +120,26 @@ export default function WhyDigitalFirstPage() {
               <div className="bg-gradient-to-r from-slate-600 to-blue-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <MapPin className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">50+ Locations</h3>
+              <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">Our Location</h3>
               <p className="text-slate-600 leading-relaxed text-sm mb-4">
-                Extensive network of locations across UAE for your convenience.
+                Visit us at Digital First Printing & Packaging, Industrial Area 2, Ajman, UAE.
               </p>
               <ul className="space-y-2 text-slate-600 text-sm">
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-slate-600 rounded-full mr-3"></div>
-                  Easy accessibility
+                  Conveniently located in Ajman
                 </li>
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-slate-600 rounded-full mr-3"></div>
-                  Multiple service points
+                  Easy access and parking
                 </li>
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-slate-600 rounded-full mr-3"></div>
-                  Local expertise
+                  Friendly, local service
                 </li>
                 <li className="flex items-center">
                   <div className="w-1.5 h-1.5 bg-slate-600 rounded-full mr-3"></div>
-                  Consistent quality
+                  Consistent quality at our main branch
                 </li>
               </ul>
             </div>
