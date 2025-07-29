@@ -19,7 +19,6 @@ export default function Footer() {
               <li><Link href="/printing-services" className="hover:text-white transition-colors">Printing Services</Link></li>
               <li><Link href="/custom-gifts" className="hover:text-white transition-colors">Custom Gifts</Link></li>
               <li><Link href="/packaging-printing" className="hover:text-white transition-colors">Packaging & Printing</Link></li>
-              <li><Link href="/signage" className="hover:text-white transition-colors">Signage</Link></li>
             </ul>
           </div>
           <div>

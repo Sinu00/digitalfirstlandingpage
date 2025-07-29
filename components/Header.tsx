@@ -71,7 +71,6 @@ export default function Header() {
               </li>
               <Link href="/printing-services" className={`${isActive("/printing-services") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>Printing Services</Link>
               <Link href="/custom-gifts" className={`${isActive("/custom-gifts") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>Custom Gifts</Link>
-              <Link href="/signage" className={`${isActive("/signage") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>Signage</Link>
               <Link href="/packaging-printing" className={`${isActive("/packaging-printing") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>Packaging & Printing</Link>
               <Link href="/locations" className={`${isActive("/locations") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>Locations</Link>
             </ul>
@@ -113,7 +112,6 @@ export default function Header() {
             </div>
             <Link href="/printing-services" className={`${isActive("/printing-services") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-base py-2`} onClick={() => setMenuOpen(false)}>Printing Services</Link>
             <Link href="/custom-gifts" className={`${isActive("/custom-gifts") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-base py-2`} onClick={() => setMenuOpen(false)}>Custom Gifts</Link>
-            <Link href="/signage" className={`${isActive("/signage") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-base py-2`} onClick={() => setMenuOpen(false)}>Signage</Link>
             <Link href="/packaging-printing" className={`${isActive("/packaging-printing") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-base py-2`} onClick={() => setMenuOpen(false)}>Packaging & Printing</Link>
             <Link href="/locations" className={`${isActive("/locations") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-base py-2`} onClick={() => setMenuOpen(false)}>Locations</Link>
           </nav>

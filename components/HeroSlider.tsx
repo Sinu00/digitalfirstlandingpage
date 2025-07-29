@@ -22,9 +22,10 @@ export default function HeroSlider({ children }: { children: ReactNode }) {
   return (
     <section
       className="min-h-[calc(100vh-4rem)] flex items-center relative overflow-hidden"
-      style={{}}
     >
-      <div className="absolute inset-0 w-full h-full z-0 transition-all duration-1000">
+      {/* Background Image */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        <div className="absolute inset-0 bg-black/60 z-10" /> {/* Increased opacity from 40% to 60% */}
         <Image
           src={heroImages[currentHero]}
           alt="Digital First Hero Background"
@@ -33,6 +34,7 @@ export default function HeroSlider({ children }: { children: ReactNode }) {
           priority
         />
       </div>
+      {/* Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         {children}
       </div>
