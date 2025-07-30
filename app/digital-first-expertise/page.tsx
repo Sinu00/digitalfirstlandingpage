@@ -1,34 +1,23 @@
+"use client";
+
 import Link from "next/link"
 import { Award, Brain, Target, Users, Zap, Shield, Star, CheckCircle } from "lucide-react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
-import type { Metadata } from "next"
+import { motion } from "framer-motion"
 
-export const metadata: Metadata = {
-  title: "Digital First Expertise | Printing & Packaging Leaders Ajman, UAE",
-  description: "Discover Digital First's expertise in digital printing, packaging, and custom solutions. Serving Ajman, UAE with innovation and quality.",
-  openGraph: {
-    title: "Digital First Expertise | Printing & Packaging Leaders Ajman, UAE",
-    description: "Discover Digital First's expertise in digital printing, packaging, and custom solutions. Serving Ajman, UAE with innovation and quality.",
-    url: "https://digitalfirst.com/digital-first-expertise",
-    siteName: "Digital First",
-    images: [
-      {
-        url: "/digitalfirstlogo.jpg",
-        width: 400,
-        height: 400,
-        alt: "Digital First Logo",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Digital First Expertise | Printing & Packaging Leaders Ajman, UAE",
-    description: "Discover Digital First's expertise in digital printing, packaging, and custom solutions. Serving Ajman, UAE with innovation and quality.",
-    images: ["/digitalfirstlogo.jpg"],
-  },
+const fadeInUp = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.5 }
+}
+
+const staggerContainer = {
+  animate: {
+    transition: {
+      staggerChildren: 0.2
+    }
+  }
 }
 
 export default function DigitalFirstExpertisePage() {
@@ -38,27 +27,54 @@ export default function DigitalFirstExpertisePage() {
       {/* Hero Section */}
       <section className="py-16 lg:py-24 bg-gradient-to-r from-blue-700 to-indigo-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-3xl lg:text-5xl font-serif font-bold mb-6">The Digital First Expertise</h1>
-          <p className="text-lg text-blue-100 max-w-3xl mx-auto">
+          <motion.h1 
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl lg:text-5xl font-serif font-bold mb-6"
+          >
+            The Digital First Expertise
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+            className="text-lg text-blue-100 max-w-3xl mx-auto"
+          >
             Discover our specialized knowledge, industry expertise, and innovative solutions 
             that set us apart in the digital printing and design industry.
-          </p>
+          </motion.p>
         </div>
       </section>
 
       {/* Core Expertise Areas */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Our Core Expertise</h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
               Decades of experience combined with cutting-edge technology and innovative solutions.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <motion.div 
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+          >
             {/* Digital Printing Expertise */}
-            <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <motion.div 
+              variants={fadeInUp}
+              className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
               <div className="bg-gradient-to-r from-blue-600 to-indigo-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <Brain className="h-6 w-6 text-white" />
               </div>
@@ -88,10 +104,13 @@ export default function DigitalFirstExpertisePage() {
                   Workflow Optimization
                 </li>
               </ul>
-            </div>
+            </motion.div>
 
             {/* Design Expertise */}
-            <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <motion.div 
+              variants={fadeInUp}
+              className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
               <div className="bg-gradient-to-r from-indigo-600 to-blue-700 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <Target className="h-6 w-6 text-white" />
               </div>
@@ -121,10 +140,13 @@ export default function DigitalFirstExpertisePage() {
                   Design Consultation
                 </li>
               </ul>
-            </div>
+            </motion.div>
 
             {/* Technology Expertise */}
-            <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <motion.div 
+              variants={fadeInUp}
+              className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
               <div className="bg-gradient-to-r from-slate-600 to-blue-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <Zap className="h-6 w-6 text-white" />
               </div>
@@ -154,69 +176,96 @@ export default function DigitalFirstExpertisePage() {
                   Process Optimization
                 </li>
               </ul>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 
       {/* Industry Knowledge */}
       <section className="py-16 lg:py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Industry Knowledge & Experience</h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
               3+ years of industry experience across multiple sectors and markets.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center space-y-4">
+          <motion.div 
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+          >
+            <motion.div variants={fadeInUp} className="text-center space-y-4">
               <div className="bg-blue-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
                 <Award className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900">Market Leadership</h3>
               <p className="text-slate-600">Leading position in UAE printing industry</p>
-            </div>
+            </motion.div>
             
-            <div className="text-center space-y-4">
+            <motion.div variants={fadeInUp} className="text-center space-y-4">
               <div className="bg-indigo-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
                 <Users className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900">Expert Team</h3>
               <p className="text-slate-600">Skilled professionals with deep expertise</p>
-            </div>
+            </motion.div>
             
-            <div className="text-center space-y-4">
+            <motion.div variants={fadeInUp} className="text-center space-y-4">
               <div className="bg-slate-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
                 <Shield className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900">Quality Standards</h3>
               <p className="text-slate-600">International quality standards</p>
-            </div>
+            </motion.div>
             
-            <div className="text-center space-y-4">
+            <motion.div variants={fadeInUp} className="text-center space-y-4">
               <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
                 <Star className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900">Innovation</h3>
               <p className="text-slate-600">Continuous innovation and improvement</p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 
       {/* Specialized Solutions */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Specialized Solutions</h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
               Tailored solutions for specific industries and requirements.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300">
+          <motion.div 
+            className="grid md:grid-cols-2 gap-8"
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+          >
+            <motion.div 
+              variants={fadeInUp}
+              className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300"
+            >
               <h3 className="text-xl font-serif font-bold text-slate-900 mb-4">Corporate Solutions</h3>
               <ul className="space-y-3">
                 <li className="flex items-center">
@@ -236,9 +285,12 @@ export default function DigitalFirstExpertisePage() {
                   <span className="text-slate-600 text-sm">Marketing campaign support</span>
                 </li>
               </ul>
-            </div>
+            </motion.div>
 
-            <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300">
+            <motion.div 
+              variants={fadeInUp}
+              className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300"
+            >
               <h3 className="text-xl font-serif font-bold text-slate-900 mb-4">Event & Exhibition</h3>
               <ul className="space-y-3">
                 <li className="flex items-center">
@@ -258,64 +310,96 @@ export default function DigitalFirstExpertisePage() {
                   <span className="text-slate-600 text-sm">Promotional materials</span>
                 </li>
               </ul>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 
       {/* Certifications & Awards */}
       <section className="py-16 lg:py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Certifications & Recognition</h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
               Our expertise is recognized through various certifications and industry awards.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center space-y-4">
+          <motion.div 
+            className="grid md:grid-cols-3 gap-8"
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+          >
+            <motion.div variants={fadeInUp} className="text-center space-y-4">
               <div className="bg-blue-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
                 <Award className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900">Quality Certifications</h3>
               <p className="text-slate-600">ISO certified quality management systems</p>
-            </div>
+            </motion.div>
             
-            <div className="text-center space-y-4">
+            <motion.div variants={fadeInUp} className="text-center space-y-4">
               <div className="bg-indigo-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
                 <Star className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900">Industry Awards</h3>
               <p className="text-slate-600">Recognition for excellence in printing</p>
-            </div>
+            </motion.div>
             
-            <div className="text-center space-y-4">
+            <motion.div variants={fadeInUp} className="text-center space-y-4">
               <div className="bg-slate-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
                 <Shield className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900">Environmental Standards</h3>
               <p className="text-slate-600">Eco-friendly printing practices</p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-16 lg:py-24 bg-gradient-to-r from-blue-700 to-indigo-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-serif font-bold text-white mb-4">Experience Our Expertise</h2>
-          <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl lg:text-4xl font-serif font-bold text-white mb-4"
+          >
+            Experience Our Expertise
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+            className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto"
+          >
             Let our team of experts help you with your printing and design needs.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          </motion.p>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5, duration: 0.6 }}
+            className="flex flex-wrap justify-center gap-4"
+          >
             <Link href="/contact" className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors">
               Consult Our Experts
             </Link>
             <Link href="/locations" className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors">
               Visit Our Studio
             </Link>
-          </div>
+          </motion.div>
         </div>
       </section>
 

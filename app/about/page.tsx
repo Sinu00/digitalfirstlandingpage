@@ -1,34 +1,23 @@
+"use client";
+
 import Link from "next/link"
 import { Award, Clock, Users, Shield, Zap, Star } from "lucide-react"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
-import type { Metadata } from "next"
+import { motion } from "framer-motion"
 
-export const metadata: Metadata = {
-  title: "About Digital First Printing & Packaging | Ajman, UAE",
-  description: "Learn about Digital First Printing & Packaging, located in Industrial Area 2, Ajman, UAE. Discover our story, mission, and expert team.",
-  openGraph: {
-    title: "About Digital First Printing & Packaging | Ajman, UAE",
-    description: "Learn about Digital First Printing & Packaging, located in Industrial Area 2, Ajman, UAE. Discover our story, mission, and expert team.",
-    url: "https://digitalfirst.com/about",
-    siteName: "Digital First",
-    images: [
-      {
-        url: "/digitalfirstlogo.jpg",
-        width: 400,
-        height: 400,
-        alt: "Digital First Logo",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "About Digital First Printing & Packaging | Ajman, UAE",
-    description: "Learn about Digital First Printing & Packaging, located in Industrial Area 2, Ajman, UAE. Discover our story, mission, and expert team.",
-    images: ["/digitalfirstlogo.jpg"],
-  },
+const fadeInUp = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.5 }
+}
+
+const staggerContainer = {
+  animate: {
+    transition: {
+      staggerChildren: 0.2
+    }
+  }
 }
 
 export default function AboutPage() {
@@ -38,11 +27,23 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="py-16 lg:py-24 bg-gradient-to-r from-blue-700 to-indigo-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-3xl lg:text-5xl font-serif font-bold mb-6">About Digital First</h1>
-          <p className="text-lg text-blue-100 max-w-3xl mx-auto">
+          <motion.h1 
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl lg:text-5xl font-serif font-bold mb-6"
+          >
+            About Digital First
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+            className="text-lg text-blue-100 max-w-3xl mx-auto"
+          >
             For over 3 years, we&apos;ve been the trusted partner for printing and design solutions 
             across UAE.
-          </p>
+          </motion.p>
         </div>
       </section>
 
@@ -50,37 +51,67 @@ export default function AboutPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
+            <motion.div 
+              className="space-y-8"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
               <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900">Our Story</h2>
-              <p className="text-lg text-slate-600 leading-relaxed">
+              <motion.p 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3, duration: 0.6 }}
+                className="text-lg text-slate-600 leading-relaxed"
+              >
                 Founded in 2022, Digital First began as a small printing shop with a big vision: to revolutionize 
                 the printing industry through technology and innovation. Today, we are proud to serve our customers from our main office and production facility in Industrial Area 2, Ajman, UAE.
-              </p>
-              <p className="text-lg text-slate-600 leading-relaxed">
+              </motion.p>
+              <motion.p 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4, duration: 0.6 }}
+                className="text-lg text-slate-600 leading-relaxed"
+              >
                 We&apos;re proud to be one of the region&apos;s leading digital printing and packaging companies, 
                 serving satisfied customers with cutting-edge technology and exceptional service.
-              </p>
-            </div>
+              </motion.p>
+            </motion.div>
             
-            <div className="bg-gradient-to-br from-blue-700 to-indigo-800 rounded-xl p-8 text-white text-center shadow-lg">
-              <div className="space-y-4">
-                <div className="bg-white/20 rounded-lg p-4 inline-block">
+            <motion.div 
+              className="bg-gradient-to-br from-blue-700 to-indigo-800 rounded-xl p-8 text-white text-center shadow-lg"
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <motion.div 
+                className="space-y-4"
+                variants={staggerContainer}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+              >
+                <motion.div variants={fadeInUp} className="bg-white/20 rounded-lg p-4 inline-block">
                   <Award className="h-12 w-12 mx-auto" />
-                </div>
-                <h3 className="text-2xl font-serif font-bold">3+ Years of Excellence</h3>
-                <p className="text-blue-100">
+                </motion.div>
+                <motion.h3 variants={fadeInUp} className="text-2xl font-serif font-bold">3+ Years of Excellence</motion.h3>
+                <motion.p variants={fadeInUp} className="text-blue-100">
                   Decades of experience in digital printing and design
-                </p>
-                <div className="flex justify-center space-x-4">
+                </motion.p>
+                <motion.div variants={fadeInUp} className="flex justify-center space-x-4">
                   <div className="bg-white/20 rounded-lg px-4 py-2">
                     <span className="font-semibold">Ajman, UAE</span>
                   </div>
                   <div className="bg-white/20 rounded-lg px-4 py-2">
                     <span className="font-semibold">Expert Team</span>
                   </div>
-                </div>
-              </div>
-            </div>
+                </motion.div>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -88,16 +119,31 @@ export default function AboutPage() {
       {/* Mission & Values */}
       <section className="py-16 lg:py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Our Mission & Values</h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
               We&apos;re committed to delivering excellence in every project while maintaining the highest standards of quality and service.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <motion.div 
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+          >
             {/* Innovation */}
-            <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <motion.div 
+              variants={fadeInUp}
+              className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
               <div className="bg-gradient-to-r from-blue-600 to-indigo-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <Zap className="h-6 w-6 text-white" />
               </div>
@@ -123,10 +169,13 @@ export default function AboutPage() {
                   Future-focused approach
                 </li>
               </ul>
-            </div>
+            </motion.div>
 
             {/* Quality */}
-            <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <motion.div 
+              variants={fadeInUp}
+              className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
               <div className="bg-gradient-to-r from-indigo-600 to-blue-700 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <Shield className="h-6 w-6 text-white" />
               </div>
@@ -152,10 +201,13 @@ export default function AboutPage() {
                   Customer satisfaction
                 </li>
               </ul>
-            </div>
+            </motion.div>
 
             {/* Customer Focus */}
-            <div className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <motion.div 
+              variants={fadeInUp}
+              className="group bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
               <div className="bg-gradient-to-r from-slate-600 to-blue-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <Users className="h-6 w-6 text-white" />
               </div>
@@ -181,72 +233,104 @@ export default function AboutPage() {
                   Long-term partnerships
                 </li>
               </ul>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 
       {/* Team */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">Our Expert Team</h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
               Meet the professionals who make Digital First the trusted choice for printing and design solutions.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center space-y-4">
+          <motion.div 
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+          >
+            <motion.div variants={fadeInUp} className="text-center space-y-4">
               <div className="bg-blue-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
                 <Users className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900">Design Experts</h3>
               <p className="text-slate-600">Creative professionals with years of experience</p>
-            </div>
+            </motion.div>
             
-            <div className="text-center space-y-4">
+            <motion.div variants={fadeInUp} className="text-center space-y-4">
               <div className="bg-indigo-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
                 <Shield className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900">Quality Specialists</h3>
               <p className="text-slate-600">Ensuring every project meets our high standards</p>
-            </div>
+            </motion.div>
             
-            <div className="text-center space-y-4">
+            <motion.div variants={fadeInUp} className="text-center space-y-4">
               <div className="bg-slate-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
                 <Clock className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900">Service Team</h3>
               <p className="text-slate-600">Dedicated to providing exceptional customer service</p>
-            </div>
+            </motion.div>
             
-            <div className="text-center space-y-4">
+            <motion.div variants={fadeInUp} className="text-center space-y-4">
               <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg">
                 <Star className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900">Technical Experts</h3>
               <p className="text-slate-600">Mastering the latest printing technologies</p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-16 lg:py-24 bg-gradient-to-r from-blue-700 to-indigo-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-serif font-bold text-white mb-4">Ready to Work With Us?</h2>
-          <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl lg:text-4xl font-serif font-bold text-white mb-4"
+          >
+            Ready to Work With Us?
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+            className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto"
+          >
             Experience the Digital First difference with our professional printing and design services.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          </motion.p>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5, duration: 0.6 }}
+            className="flex flex-wrap justify-center gap-4"
+          >
             <Link href="/contact" className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors">
               Get Started
             </Link>
             <Link href="/locations" className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors">
               Find Location
             </Link>
-          </div>
+          </motion.div>
         </div>
       </section>
 
