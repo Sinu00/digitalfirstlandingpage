@@ -4,8 +4,8 @@ export const metadata: Metadata = {
   title: "Packaging & Printing Solutions | Digital First Ajman, UAE",
   description: "Professional packaging and printing solutions for businesses. Custom boxes, bags, labels, and more. Fast turnaround and premium quality in Ajman, UAE.",
   openGraph: {
-    title: "Packaging & Printing Solutions | Digital First UAE & Canada",
-    description: "Professional packaging and printing solutions for businesses. Custom boxes, bags, labels, and more. Fast turnaround and premium quality across UAE and Canada.",
+    title: "Packaging & Printing Solutions | Digital First UAE",
+    description: "Professional packaging and printing solutions for businesses. Custom boxes, bags, labels, and more. Fast turnaround and premium quality across UAE ",
     url: "https://digitalfirst.com/packaging-printing",
     siteName: "Digital First",
     images: [
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Packaging & Printing Solutions | Digital First UAE & Canada",
-    description: "Professional packaging and printing solutions for businesses. Custom boxes, bags, labels, and more. Fast turnaround and premium quality across UAE and Canada.",
+    title: "Packaging & Printing Solutions | Digital First UAE",
+    description: "Professional packaging and printing solutions for businesses. Custom boxes, bags, labels, and more. Fast turnaround and premium quality across UAE ",
     images: ["/digitalfirstlogo.jpg"],
   },
 }; 

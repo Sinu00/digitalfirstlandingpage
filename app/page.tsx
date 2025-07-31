@@ -35,7 +35,7 @@ export default function HomePage() {
             className="text-center max-w-4xl mx-auto px-4"
           >
             <h1 className="text-3xl lg:text-5xl font-serif font-bold mb-6 leading-tight text-white">
-              Digital First Printing & Packaging Industry
+              Digital First Printing & Packaging
             </h1>
             <motion.p 
               initial={{ opacity: 0 }}
