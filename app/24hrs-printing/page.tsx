@@ -210,7 +210,7 @@ export default function TwentyFourHoursPrintingPage() {
                   </div>
                   <div>
                     <h3 className="font-serif font-bold text-slate-900">Emergency Hotline</h3>
-                    <p className="text-slate-600 text-sm">0506116675</p>
+                    <p className="text-slate-600 text-sm">+971 50 611 6675</p>
                   </div>
                 </div>
                 

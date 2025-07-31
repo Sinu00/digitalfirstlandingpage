@@ -254,7 +254,7 @@ export default function LocationsPage() {
                   >
                     <Phone className="h-5 w-5 text-white" />
                   </motion.div>
-                  <span>0506116675</span>
+                  <span>+971 50 611 6675</span>
                 </motion.div>
                 <motion.div 
                   variants={slideInFromRight}
@@ -362,7 +362,7 @@ export default function LocationsPage() {
                          <div className="bg-gradient-to-br from-blue-500 to-indigo-500 p-2 rounded-lg mr-3 shadow-md">
                            <Phone className="h-5 w-5 text-white" />
                          </div>
-                         <span className="font-medium">0506116675</span>
+                         <span className="font-medium">+971 50 611 6675</span>
                        </div>
                      </div>
                    </motion.div>
@@ -451,7 +451,7 @@ export default function LocationsPage() {
             <motion.a 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="tel:0506116675" 
+              href="tel:+971506116675" 
               className="bg-white text-purple-700 px-6 py-3 rounded-lg font-semibold hover:bg-pink-50 transition-colors shadow-lg"
             >
               Call Now

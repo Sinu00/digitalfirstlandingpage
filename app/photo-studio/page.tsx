@@ -164,7 +164,7 @@ export default function PhotoStudioPage() {
                 </div>
                 <div className="flex items-center text-blue-700">
                   <Phone className="h-5 w-5 mr-3" />
-                  <span className="text-sm">0506116675</span>
+                  <span className="text-sm">+971 50 611 6675</span>
                 </div>
               </div>
             </div>

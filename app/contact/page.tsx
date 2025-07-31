@@ -75,8 +75,8 @@ export default function ContactPage() {
               <h3 className="text-xl font-serif font-bold text-slate-900 mb-2">Call Us</h3>
               <p className="text-slate-600 leading-relaxed text-sm mb-4">Speak directly with our team</p>
               <div className="space-y-2">
-                <a href="tel:0506116675" className="text-blue-600 font-semibold text-sm hover:text-blue-700 transition-colors">
-                  0506116675
+                <a href="tel:+971506116675" className="text-blue-600 font-semibold text-sm hover:text-blue-700 transition-colors">
+                  +971 50 611 6675
                 </a>
                 <div className="text-xs text-slate-500">Available 24/7</div>
               </div>
@@ -281,7 +281,7 @@ export default function ContactPage() {
                 <Phone className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-serif font-bold text-slate-900">Phone</h3>
-              <a href="tel:0506116675" className="text-slate-600 hover:text-blue-600 transition-colors">0506116675</a>
+              <a href="tel:+971506116675" className="text-slate-600 hover:text-blue-600 transition-colors">+971 50 611 6675</a>
               <p className="text-sm text-slate-500">24/7 Support</p>
             </motion.div>
             
