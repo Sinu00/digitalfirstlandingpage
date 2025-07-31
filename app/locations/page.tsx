@@ -274,106 +274,142 @@ export default function LocationsPage() {
         </div>
       </section>
 
-      {/* Services Available */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <motion.div 
-              initial={{ opacity: 0, scale: 0 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
-              className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-orange-500 to-red-600 rounded-full mb-6 shadow-lg"
-            >
-              <Zap className="h-10 w-10 text-white" />
-            </motion.div>
-            <motion.h2 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4, duration: 0.8 }}
-              className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4"
-            >
-              Services Available
-            </motion.h2>
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.6, duration: 0.8 }}
-              className="text-lg text-slate-600 max-w-3xl mx-auto"
-            >
-              Our Ajman location offers our complete range of services.
-            </motion.p>
-          </motion.div>
-          <motion.div 
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
-            variants={staggerContainer}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <motion.div 
-              variants={bounceIn}
-              className="text-center space-y-4 group"
-            >
-              <motion.div 
-                whileHover={{ scale: 1.1, rotate: 5 }}
-                className="bg-gradient-to-br from-pink-500 to-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg"
-              >
-                <span className="text-white font-bold text-xl">🖨️</span>
-              </motion.div>
-              <h3 className="text-xl font-serif font-bold text-slate-900">Printing Services</h3>
-              <p className="text-slate-600">Digital & offset printing</p>
-            </motion.div>
-            <motion.div 
-              variants={bounceIn}
-              className="text-center space-y-4 group"
-            >
-              <motion.div 
-                whileHover={{ scale: 1.1, rotate: 5 }}
-                className="bg-gradient-to-br from-green-500 to-teal-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg"
-              >
-                <span className="text-white font-bold text-xl">🎁</span>
-              </motion.div>
-              <h3 className="text-xl font-serif font-bold text-slate-900">Custom Gifts</h3>
-              <p className="text-slate-600">Personalized gift items</p>
-            </motion.div>
-            <motion.div 
-              variants={bounceIn}
-              className="text-center space-y-4 group"
-            >
-              <motion.div 
-                whileHover={{ scale: 1.1, rotate: 5 }}
-                className="bg-gradient-to-br from-blue-500 to-indigo-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg"
-              >
-                <span className="text-white font-bold text-xl">📸</span>
-              </motion.div>
-              <h3 className="text-xl font-serif font-bold text-slate-900">Packaging & Printing</h3>
-              <p className="text-slate-600">Professional Packaging & Printing</p>
-            </motion.div>
-            <motion.div 
-              variants={bounceIn}
-              className="text-center space-y-4 group"
-            >
-              <motion.div 
-                whileHover={{ scale: 1.1, rotate: 5 }}
-                className="bg-gradient-to-br from-orange-500 to-red-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto shadow-lg"
-              >
-                <span className="text-white font-bold text-xl">🚗</span>
-              </motion.div>
-              <h3 className="text-xl font-serif font-bold text-slate-900">Signage</h3>
-              <p className="text-slate-600">Banners & vehicle wraps</p>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
+             {/* Location Map */}
+       <section className="py-16 lg:py-24 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+           <motion.div 
+             initial={{ opacity: 0, y: 30 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             viewport={{ once: true, amount: 0.3 }}
+             transition={{ duration: 0.8 }}
+             className="text-center mb-16"
+           >
+             <motion.div 
+               initial={{ opacity: 0, scale: 0 }}
+               whileInView={{ opacity: 1, scale: 1 }}
+               viewport={{ once: true }}
+               transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
+               className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full mb-6 shadow-lg"
+             >
+               <MapPin className="h-10 w-10 text-white" />
+             </motion.div>
+             <motion.h2 
+               initial={{ opacity: 0, y: 20 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               viewport={{ once: true }}
+               transition={{ delay: 0.4, duration: 0.8 }}
+               className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4"
+             >
+               Find Us on the Map
+             </motion.h2>
+             <motion.p 
+               initial={{ opacity: 0, y: 20 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               viewport={{ once: true }}
+               transition={{ delay: 0.6, duration: 0.8 }}
+               className="text-lg text-slate-600 max-w-3xl mx-auto"
+             >
+               Located in Industrial Area 2, Ajman, UAE. Easy to find and accessible 24/7.
+             </motion.p>
+           </motion.div>
+           
+           <motion.div 
+             initial={{ opacity: 0, scale: 0.95, y: 50 }}
+             whileInView={{ opacity: 1, scale: 1, y: 0 }}
+             viewport={{ once: true, amount: 0.3 }}
+             transition={{ duration: 1, ease: "easeOut" }}
+             className="flex justify-center"
+           >
+             <div className="w-full max-w-4xl">
+               <div className="bg-gradient-to-br from-white to-blue-50 rounded-2xl p-8 border-2 border-blue-200 shadow-2xl hover:shadow-3xl transition-all duration-500">
+                 <div className="aspect-video w-full rounded-xl overflow-hidden shadow-lg border border-blue-100">
+                   <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.1234567890123!2d55.45678901234567!3d25.45678901234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDI3JzI0LjQiTiA1NcKwMjcnMjQuNCJF!5e0!3m2!1sen!2sae!4v1234567890123"
+                     width="100%"
+                     height="100%"
+                     style={{ border: 0 }}
+                     allowFullScreen
+                     loading="lazy"
+                     referrerPolicy="no-referrer-when-downgrade"
+                     title="Digital First Printing & Packaging Location"
+                     className="w-full h-full"
+                   ></iframe>
+                 </div>
+                 
+                 <div className="mt-8 grid md:grid-cols-2 gap-8">
+                   <motion.div 
+                     initial={{ opacity: 0, x: -50 }}
+                     whileInView={{ opacity: 1, x: 0 }}
+                     viewport={{ once: true }}
+                     transition={{ delay: 0.3, duration: 0.8 }}
+                     className="space-y-4"
+                   >
+                     <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">📍 Location Details</h3>
+                     <div className="space-y-3">
+                       <div className="flex items-center text-slate-700">
+                         <div className="bg-gradient-to-br from-pink-500 to-purple-600 p-2 rounded-lg mr-3 shadow-md">
+                           <MapPin className="h-5 w-5 text-white" />
+                         </div>
+                         <span className="font-medium">Industrial Area 2, Ajman, UAE</span>
+                       </div>
+                       <div className="flex items-center text-slate-700">
+                         <div className="bg-gradient-to-br from-green-500 to-teal-500 p-2 rounded-lg mr-3 shadow-md">
+                           <Clock className="h-5 w-5 text-white" />
+                         </div>
+                         <span className="font-medium">Open 24/7</span>
+                       </div>
+                       <div className="flex items-center text-slate-700">
+                         <div className="bg-gradient-to-br from-blue-500 to-indigo-500 p-2 rounded-lg mr-3 shadow-md">
+                           <Phone className="h-5 w-5 text-white" />
+                         </div>
+                         <span className="font-medium">0506116675</span>
+                       </div>
+                     </div>
+                   </motion.div>
+                   
+                   <motion.div 
+                     initial={{ opacity: 0, x: 50 }}
+                     whileInView={{ opacity: 1, x: 0 }}
+                     viewport={{ once: true }}
+                     transition={{ delay: 0.5, duration: 0.8 }}
+                     className="space-y-4"
+                   >
+                     <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">🚗 Getting Here</h3>
+                     <div className="space-y-3">
+                       <div className="bg-gradient-to-br from-orange-50 to-red-50 p-4 rounded-lg border border-orange-200">
+                         <h4 className="font-semibold text-slate-900 mb-2">By Car</h4>
+                         <p className="text-slate-600 text-sm">Located in Industrial Area 2, easily accessible from Sheikh Mohammed Bin Zayed Road</p>
+                       </div>
+                       <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-4 rounded-lg border border-blue-200">
+                         <h4 className="font-semibold text-slate-900 mb-2">Parking</h4>
+                         <p className="text-slate-600 text-sm">Free parking available on-site for customers</p>
+                       </div>
+                     </div>
+                   </motion.div>
+                 </div>
+                 
+                 <motion.div 
+                   initial={{ opacity: 0, y: 30 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   viewport={{ once: true }}
+                   transition={{ delay: 0.7, duration: 0.8 }}
+                   className="mt-8 text-center"
+                 >
+                   <a 
+                     href="https://maps.google.com/?q=Industrial+Area+2+Ajman+UAE"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                   >
+                     <MapPin className="h-5 w-5 mr-2" />
+                     Open in Google Maps
+                   </a>
+                 </motion.div>
+               </div>
+             </div>
+           </motion.div>
+         </div>
+       </section>
 
       {/* CTA Section */}
       <section className="py-16 lg:py-24 bg-gradient-to-br from-pink-500 via-purple-600 to-indigo-700">
