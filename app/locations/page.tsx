@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPin, Clock, Phone, Mail, Building, Heart, Zap } from "lucide-react";
+import { MapPin, Clock, Phone, Mail, Building, Heart} from "lucide-react";
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import { motion } from "framer-motion"
