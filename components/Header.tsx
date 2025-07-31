@@ -44,9 +44,6 @@ export default function Header() {
                   onMouseLeave={e => { e.currentTarget.classList.remove('opacity-100', 'pointer-events-auto'); }}
                 >
                   <li>
-                    <a href="/about" className="block px-4 py-2 hover:bg-slate-100">About</a>
-                  </li>
-                  <li>
                     <a href="/why-digital-first" className="block px-4 py-2 hover:bg-slate-100">Why Digital First</a>
                   </li>
                   <li>
@@ -58,9 +55,6 @@ export default function Header() {
                   <summary className="list-none px-4 py-2 cursor-pointer">More</summary>
                   <ul className="bg-white border border-slate-200 rounded-lg shadow-lg mt-2">
                     <li>
-                      <a href="/about" className="block px-4 py-2 hover:bg-slate-100">About</a>
-                    </li>
-                    <li>
                       <a href="/why-digital-first" className="block px-4 py-2 hover:bg-slate-100">Why Digital First</a>
                     </li>
                     <li>
@@ -69,10 +63,11 @@ export default function Header() {
                   </ul>
                 </details>
               </li>
+              <Link href="/about" className={`${isActive("/about") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>About</Link>
               <Link href="/printing-services" className={`${isActive("/printing-services") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>Printing Services</Link>
-              <Link href="/custom-gifts" className={`${isActive("/custom-gifts") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>Custom Gifts</Link>
-              <Link href="/packaging-printing" className={`${isActive("/packaging-printing") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>Packaging & Printing</Link>
+              {/* <Link href="/packaging-printing" className={`${isActive("/packaging-printing") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>Packaging & Printing</Link> */}
               <Link href="/locations" className={`${isActive("/locations") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>Locations</Link>
+              <Link href="/contact" className={`${isActive("/contact") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>Contact</Link>
             </ul>
           </nav>
 
@@ -105,15 +100,16 @@ export default function Header() {
                 Home
               </Link>
               <div className="flex flex-col pl-6 space-y-1 mt-1">
-                <Link href="/about" className="text-slate-600 hover:text-blue-700 text-base py-1">About</Link>
                 <Link href="/why-digital-first" className="text-slate-600 hover:text-blue-700 text-base py-1">Why Digital First</Link>
                 <Link href="/digital-first-expertise" className="text-slate-600 hover:text-blue-700 text-base py-1">Digital First Expertise</Link>
               </div>
             </div>
+            <Link href="/about" className={`${isActive("/about") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>About</Link>
             <Link href="/printing-services" className={`${isActive("/printing-services") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-base py-2`} onClick={() => setMenuOpen(false)}>Printing Services</Link>
-            <Link href="/custom-gifts" className={`${isActive("/custom-gifts") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-base py-2`} onClick={() => setMenuOpen(false)}>Custom Gifts</Link>
-            <Link href="/packaging-printing" className={`${isActive("/packaging-printing") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-base py-2`} onClick={() => setMenuOpen(false)}>Packaging & Printing</Link>
+            {/* <Link href="/custom-gifts" className={`${isActive("/custom-gifts") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-base py-2`} onClick={() => setMenuOpen(false)}>Custom Gifts</Link>
+            <Link href="/packaging-printing" className={`${isActive("/packaging-printing") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-base py-2`} onClick={() => setMenuOpen(false)}>Packaging & Printing</Link> */}
             <Link href="/locations" className={`${isActive("/locations") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-base py-2`} onClick={() => setMenuOpen(false)}>Locations</Link>
+            <Link href="/contact" className={`${isActive("/contact") ? "text-blue-700" : "text-slate-600 hover:text-blue-700"} font-medium transition-colors text-sm`}>Contact</Link>
           </nav>
         </div>
       )}

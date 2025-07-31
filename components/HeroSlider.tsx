@@ -3,11 +3,13 @@ import { useState, useEffect, ReactNode } from "react";
 import Image from "next/image";
 
 const heroImages = [
-  "/herosection/hero1.jpeg",
-  "/herosection/hero2.jpeg",
-  "/herosection/hero3.jpeg",
-  "/herosection/hero4.jpeg",
-  "/herosection/hero5.jpg"
+  "/herosection/banner_01_lm.jpg",
+  "/herosection/DIGITAL PRINT MAIN.jpeg",
+  "/herosection/main.jpg",
+  "/herosection/offset-printing.jpg",
+  "/herosection/Stickers printing.webp",
+  "/herosection/main picture1.webp",
+  "/herosection/Packaging printing.jpg"
 ];
 
 export default function HeroSlider({ children }: { children: ReactNode }) {
