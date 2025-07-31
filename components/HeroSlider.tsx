@@ -9,7 +9,7 @@ const heroImages = [
   "/herosection/offset-printing.jpg",
   "/herosection/Stickers printing.webp",
   "/herosection/main picture1.webp",
-  "/herosection/Packaging printing.jpg"
+  "/herosection/Packaging prinitng.jpg"
 ];
 
 export default function HeroSlider({ children }: { children: ReactNode }) {
