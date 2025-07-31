@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link"
-import { ArrowRight, MapPin, Clock, Award, Shield, Users, Star, Phone, Mail, Palette, Heart } from "lucide-react"
+import { ArrowRight, MapPin, Clock, Award, Shield, Users, Phone, Mail, Palette, Heart } from "lucide-react"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import HeroSlider from "../components/HeroSlider"
