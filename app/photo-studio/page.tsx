@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Photo Studio | Passport, Portrait, Retouching | Digital First Ajman, UAE",
     description: "Professional photo studio services: passport photos, portraits, retouching, restoration, and more. Fast, high-quality photography in Ajman, UAE.",
-    url: "https://digitalfirst.com/photo-studio",
+    url: "https://digitalfirstprint.com/photo-studio",
     siteName: "Digital First",
     images: [
       {

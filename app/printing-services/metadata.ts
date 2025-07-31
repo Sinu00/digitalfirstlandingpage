@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Printing Services | Digital & Offset Printing | Digital First Ajman, UAE",
     description: "Professional digital and offset printing solutions for business and personal needs. Fast turnaround, premium quality, and expert support in Ajman, UAE.",
-    url: "https://digitalfirst.com/printing-services",
+    url: "https://digitalfirstprint.com/printing-services",
     siteName: "Digital First",
     images: [
       {

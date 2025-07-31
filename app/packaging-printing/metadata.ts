@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Packaging & Printing Solutions | Digital First UAE",
     description: "Professional packaging and printing solutions for businesses. Custom boxes, bags, labels, and more. Fast turnaround and premium quality across UAE ",
-    url: "https://digitalfirst.com/packaging-printing",
+    url: "https://digitalfirstprint.com/packaging-printing",
     siteName: "Digital First",
     images: [
       {

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Our Location | Digital First Printing & Packaging, Ajman, UAE",
     description: "Find Digital First Printing & Packaging in Industrial Area 2, Ajman, UAE. One location, serving all your printing and packaging needs.",
-    url: "https://digitalfirst.com/locations",
+    url: "https://digitalfirstprint.com/locations",
     siteName: "Digital First",
     images: [
       {

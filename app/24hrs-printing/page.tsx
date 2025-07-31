@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "24/7 Emergency Printing Services | Digital First UAE & Canada",
     description: "Get urgent printing services any time, day or night. Digital First offers 24/7 emergency printing for documents, marketing materials, and signage across the UAE and Canada.",
-    url: "https://digitalfirst.com/24hrs-printing",
+    url: "https://digitalfirstprint.com/24hrs-printing",
     siteName: "Digital First",
     images: [
       {

@@ -21,14 +21,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://digitalfirst.com"),
+  metadataBase: new URL("https://digitalfirstprint.com"),
   alternates: {
     canonical: "/contact",
   },
   openGraph: {
     title: "Contact Digital First Printing & Packaging | Ajman, UAE",
     description: "Contact Digital First Printing & Packaging in Industrial Area 2, Ajman, UAE. Get quotes, support, and expert consultation for all your printing and design needs. Available 24/7.",
-    url: "https://digitalfirst.com/contact",
+    url: "https://digitalfirstprint.com/contact",
     siteName: "Digital First Printing & Packaging",
     images: [
       {

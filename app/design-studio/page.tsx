@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Design Studio | Creative Graphic Design Services | Digital First UAE & Canada",
     description: "Bring your ideas to life with Digital First's creative design studio. Professional graphic design, branding, and custom artwork for print and digital projects.",
-    url: "https://digitalfirst.com/design-studio",
+    url: "https://digitalfirstprint.com/design-studio",
     siteName: "Digital First",
     images: [
       {

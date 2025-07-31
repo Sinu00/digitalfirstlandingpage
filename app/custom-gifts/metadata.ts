@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Custom Gifts | Personalized Printing & Engraving | Digital First UAE & Canada",
     description: "Create unforgettable moments with personalized gifts from Digital First. Custom mugs, t-shirts, embroidery, and more. Fast delivery across UAE and Canada.",
-    url: "https://digitalfirst.com/custom-gifts",
+    url: "https://digitalfirstprint.com/custom-gifts",
     siteName: "Digital First",
     images: [
       {
