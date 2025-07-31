@@ -27,20 +27,21 @@ export default function HomePage() {
       <Header />
       {/* Hero Section */}
       <HeroSlider>
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="flex justify-center items-center min-h-[60vh]">
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            className="text-center max-w-4xl mx-auto px-4"
           >
-            <h1 className="text-3xl lg:text-4xl font-serif font-bold mb-6 leading-tight text-white">
+            <h1 className="text-3xl lg:text-5xl font-serif font-bold mb-6 leading-tight text-white">
               Digital First Printing & Packaging Industry
             </h1>
             <motion.p 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="text-lg text-blue-100 mb-8 leading-relaxed"
+              className="text-lg lg:text-xl text-blue-100 mb-8 leading-relaxed max-w-3xl mx-auto"
             >
               With over 3 years of excellence, we deliver premium printing services, custom gifts, 
               innovative packaging & commercial printing solutions across the UAE.
@@ -49,60 +50,15 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="flex flex-wrap gap-4"
+              className="flex flex-wrap justify-center gap-4"
             >
-              <Link href="/printing-services" className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <Link href="/printing-services" className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl text-lg">
                 Explore Services
               </Link>
-              <Link href="/contact" className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-700 transition-colors">
+              <Link href="/contact" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-purple-700 transition-colors text-lg">
                 Get Quote
               </Link>
             </motion.div>
-          </motion.div>
-          <motion.div 
-            className="hidden lg:block"
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="bg-gradient-to-br from-white/20 to-purple-500/20 backdrop-blur-sm rounded-2xl p-8 border border-white/30 shadow-2xl">
-              <motion.div 
-                className="grid grid-cols-2 gap-6"
-                variants={staggerContainer}
-                initial="initial"
-                animate="animate"
-              >
-                {/* Stats items */}
-                <motion.div variants={fadeInUp} className="text-center">
-                  <div className="bg-gradient-to-br from-pink-500 to-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                    <Award className="h-8 w-8 text-white" />
-                  </div>
-                  <h3 className="font-semibold mb-2 text-white">3+ Years</h3>
-                  <p className="text-blue-100 text-sm">Industry Experience</p>
-                </motion.div>
-                <motion.div variants={fadeInUp} className="text-center">
-                  <div className="bg-gradient-to-br from-orange-500 to-red-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                    <Users className="h-8 w-8 text-white" />
-                  </div>
-                  <h3 className="font-semibold mb-2 text-white">10,000+</h3>
-                  <p className="text-blue-100 text-sm">Happy Clients</p>
-                </motion.div>
-                <motion.div variants={fadeInUp} className="text-center">
-                  <div className="bg-gradient-to-br from-green-500 to-teal-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                    <Star className="h-8 w-8 text-white" />
-                  </div>
-                  <h3 className="font-semibold mb-2 text-white">Premium</h3>
-                  <p className="text-blue-100 text-sm">Quality Service</p>
-                </motion.div>
-                <motion.div variants={fadeInUp} className="text-center">
-                  <div className="bg-gradient-to-br from-blue-500 to-indigo-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                    <Clock className="h-8 w-8 text-white" />
-                  </div>
-                  <h3 className="font-semibold mb-2 text-white">Fast</h3>
-                  <p className="text-blue-100 text-sm">Turnaround</p>
-                </motion.div>
-              </motion.div>
-            </div>
           </motion.div>
         </div>
       </HeroSlider>
