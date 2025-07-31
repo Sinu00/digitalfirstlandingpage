@@ -105,7 +105,7 @@ export default function PrintingServicesPage() {
               { name: 'Papper Bags', img: '/printing-services/Papper-Bags.jpg', slug: 'papper-bags', color: 'zinc' },
               { name: 'Boxes & Cartons', img: '/printing-services/Flex-Printing.jpg', slug: 'boxes-cartons', color: 'neutral' },
               { name: 'Labels & Stickers', img: '/printing-services/foiling.jpg', slug: 'labels-stickers', color: 'gray' },
-                         ].map((service, index) => {
+                         ].map((service) => {
                const colorClasses: Record<string, string> = {
                  blue: 'from-blue-50 to-blue-100 border-blue-200 hover:border-blue-400',
                  purple: 'from-purple-50 to-purple-100 border-purple-200 hover:border-purple-400',

@@ -1,15 +1,11 @@
 "use client";
 
-import { MapPin, Clock, Phone, Mail, Building, Heart, Zap, Star } from "lucide-react";
+import { MapPin, Clock, Phone, Mail, Building, Heart, Zap } from "lucide-react";
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import { motion } from "framer-motion"
 
-const fadeInUp = {
-  initial: { opacity: 0, y: 50 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.8, ease: "easeOut" }
-}
+
 
 const staggerContainer = {
   animate: {
@@ -19,11 +15,7 @@ const staggerContainer = {
   }
 }
 
-const countUpAnimation = {
-  initial: { opacity: 0, scale: 0.5, y: 30 },
-  animate: { opacity: 1, scale: 1, y: 0 },
-  transition: { duration: 1, ease: "easeOut" }
-}
+
 
 const slideInFromLeft = {
   initial: { opacity: 0, x: -100 },
